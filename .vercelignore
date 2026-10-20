@@ -1,0 +1,13 @@
+.git/
+.vercel/
+node_modules/
+dist/
+test-results/
+playwright-report/
+tests/
+docs/
+scripts/
+*.tsbuildinfo
+playwright.config.ts
+vitest.config.ts
+.env*
