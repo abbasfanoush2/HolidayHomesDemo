@@ -196,7 +196,7 @@ test("clock controls, pause, reset and corrupt-data recovery", async ({
 test("screenshots and overflow checks at desktop, tablet and mobile", async ({
   page,
 }) => {
-  test.setTimeout(120000);
+  test.setTimeout(180000);
   watch(page);
   for (const width of [1920, 1440, 1280, 1024, 390]) {
     await page.setViewportSize({ width, height: 900 });
@@ -207,10 +207,12 @@ test("screenshots and overflow checks at desktop, tablet and mobile", async ({
       "/operations",
       "/revenue",
       "/finance",
+      "/approvals",
     ]) {
       await page.goto(path);
       await expect(page.locator("h1")).toBeVisible();
-      await page.waitForTimeout(350);
+      // Capture final values after the reference-style count and gauge entrances.
+      await page.waitForTimeout(1500);
       expect(
         await page.evaluate(
           () => document.documentElement.scrollWidth <= window.innerWidth,
@@ -255,9 +257,18 @@ test("selected operating screens, approval drawer and mobile overview pass autom
     "/operations",
     "/revenue",
     "/finance",
+    "/approvals",
   ]) {
     await page.goto(path);
     await expect(page.locator("h1")).toBeVisible();
+    // Contrast must be measured after entrance opacity has reached its final state.
+    await page.waitForFunction(() =>
+      Array.from(
+        document.querySelectorAll(
+          ".route-content,.card,.approval-register-row",
+        ),
+      ).every((el) => Number(getComputedStyle(el).opacity) >= 0.999),
+    );
     const result = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
       .analyze();

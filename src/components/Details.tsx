@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { AnimatePresence } from "motion/react";
+import { ApprovalFeedback } from "./Motion";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -571,10 +573,17 @@ function HistoryList({ propertyId }: { propertyId: string }) {
   );
 }
 export function Details() {
-  const { state, detail, setDetail, open, send, filters, t, setModal, notify } =
+  const { detail } = useStore();
+  return (
+    <AnimatePresence>
+      {detail && <DetailContent key="record-details" detail={detail} />}
+    </AnimatePresence>
+  );
+}
+function DetailContent({ detail }: { detail: string }) {
+  const { state, setDetail, open, send, filters, t, setModal, notify } =
       useStore(),
     [quote, setQuote] = useState("");
-  if (!detail) return null;
   const p = entityProperty(state, detail),
     s = summary(state, filters),
     allowed = scopedProperties(state, {
@@ -871,14 +880,17 @@ export function Details() {
               </Button>
             </>
           ) : (
-            <p className="muted">
-              {a.status === "Stale"
-                ? "Evidence changed. Open the source and request a fresh review."
-                : `${a.status} by ${a.approver || "demo reviewer"}.`}{" "}
-              {a.type === "Quote" && a.status === "Approved"
-                ? "Repair remains separate from cost approval."
-                : ""}
-            </p>
+            <>
+              <p className="muted">
+                {a.status === "Stale"
+                  ? "Evidence changed. Open the source and request a fresh review."
+                  : `${a.status} by ${a.approver || "demo reviewer"}.`}{" "}
+                {a.type === "Quote" && a.status === "Approved"
+                  ? "Repair remains separate from cost approval."
+                  : ""}
+              </p>
+              {a.status === "Approved" && <ApprovalFeedback />}
+            </>
           )}
         </div>
         <HistoryList propertyId={a.propertyId} />
@@ -1323,6 +1335,9 @@ export function Details() {
       string,
       { id: string; title: string; status: string }[]
     > = {
+      ready: s.properties
+        .filter((p) => readiness(state, p).status === "Ready")
+        .map((p) => ({ id: p.id, title: p.name, status: "Ready" })),
       arrivals: s.arrivals.map((b) => ({
         id: b.id,
         title: b.guest,

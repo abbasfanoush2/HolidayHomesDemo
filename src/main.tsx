@@ -6,7 +6,8 @@ import { Layout } from "./components/Layout";
 import { Details } from "./components/Details";
 import { Forms } from "./components/Forms";
 import { Assistant } from "./components/Assistant";
-import { Overview, CommandCentre } from "./pages/Overview";
+import { Overview } from "./pages/Dashboard";
+import { CommandCentre } from "./pages/Insights";
 import { Properties, Reservations, InboxPage } from "./pages/Portfolio";
 import {
   Operations,
@@ -23,14 +24,10 @@ import {
   Reputation,
   Reports,
 } from "./pages/Commercial";
-import {
-  Documents,
-  Approvals,
-  ActivityPage,
-  Settings,
-  Studio,
-} from "./pages/Admin";
+import { Documents, ActivityPage, Settings, Studio } from "./pages/Admin";
+import { Approvals } from "./pages/ApprovalInbox";
 import "./styles.css";
+import "./reference.css";
 class ErrorBoundary extends Component<
   { children: ReactNode },
   { error: boolean }

@@ -42,7 +42,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useStore } from "../store";
-import { motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { BRAND, day } from "../domain/seed";
 import { dateTime, scopedProperties } from "../domain/selectors";
 import type { TranslationKey } from "../i18n";
@@ -167,6 +167,9 @@ export function Layout() {
     document.title = `${BRAND.name} AI — ${t(navGroups.flatMap((g) => g.items).find((i) => i[1] === location.pathname)?.[0] || "studio")}`;
   }, [location.pathname, state.language]);
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [location.pathname]);
+  useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
@@ -230,20 +233,37 @@ export function Layout() {
                     isActive ? "nav-link active" : "nav-link"
                   }
                 >
-                  <Icon size={17} strokeWidth={1.65} />
-                  <span>{t(key)}</span>
-                  {key === "approvals" && (
-                    <em>
-                      {
-                        state.approvals.filter(
-                          (a) =>
-                            a.status === "Pending" &&
-                            allIds.includes(a.propertyId),
-                        ).length
-                      }
-                    </em>
+                  {({ isActive }) => (
+                    <>
+                      {isActive && (
+                        <motion.span
+                          className="nav-active-pill"
+                          layoutId="navigation-active"
+                          transition={{
+                            type: "spring",
+                            stiffness: 420,
+                            damping: 36,
+                            duration:
+                              state.motion && !reducedMotion ? undefined : 0,
+                          }}
+                        />
+                      )}
+                      <Icon size={17} strokeWidth={1.65} />
+                      <span>{t(key)}</span>
+                      {key === "approvals" && (
+                        <em>
+                          {
+                            state.approvals.filter(
+                              (a) =>
+                                a.status === "Pending" &&
+                                allIds.includes(a.propertyId),
+                            ).length
+                          }
+                        </em>
+                      )}
+                      {key === "inbox" && <i className="nav-dot" />}
+                    </>
                   )}
-                  {key === "inbox" && <i className="nav-dot" />}
                 </NavLink>
               ))}
             </div>
@@ -592,10 +612,15 @@ export function Layout() {
             className="route-content"
             key={location.pathname}
             initial={
-              state.motion && !reducedMotion ? { opacity: 0, y: 7 } : false
+              state.motion && !reducedMotion
+                ? { opacity: 0, y: 12, filter: "blur(3px)" }
+                : false
             }
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: state.motion && !reducedMotion ? 0.22 : 0 }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{
+              duration: state.motion && !reducedMotion ? 0.48 : 0,
+              ease: [0.16, 1, 0.3, 1],
+            }}
           >
             <Outlet />
           </motion.div>
@@ -623,19 +648,33 @@ export function Layout() {
           </>
         )}
       </button>
-      {toast && (
-        <div
-          className={`toast ${toast.error ? "error" : ""}`}
-          role={toast.error ? "alert" : "status"}
-        >
-          {toast.error ? (
-            <TriangleAlert size={19} />
-          ) : (
-            <CheckCircle2 size={19} />
-          )}
-          <span>{toast.message}</span>
-        </div>
-      )}
+      <AnimatePresence>
+        {toast && (
+          <motion.div
+            key={toast.message}
+            className={`toast ${toast.error ? "error" : ""}`}
+            initial={
+              state.motion && !reducedMotion
+                ? { opacity: 0, y: 18, x: "-50%", scale: 0.96 }
+                : false
+            }
+            animate={{ opacity: 1, y: 0, x: "-50%", scale: 1 }}
+            exit={{ opacity: 0, y: 8, x: "-50%", scale: 0.98 }}
+            transition={{
+              duration: state.motion && !reducedMotion ? 0.3 : 0,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            role={toast.error ? "alert" : "status"}
+          >
+            {toast.error ? (
+              <TriangleAlert size={19} />
+            ) : (
+              <CheckCircle2 size={19} />
+            )}
+            <span>{toast.message}</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <span className="sr-only">
         {day(state.now)}
         {detail}

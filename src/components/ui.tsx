@@ -3,6 +3,7 @@ import {
   useMemo,
   useRef,
   useState,
+  useId,
   Children,
   isValidElement,
   cloneElement,
@@ -23,6 +24,8 @@ import {
 } from "lucide-react";
 import { useStore } from "../store";
 import { translateStatus, phrase } from "../i18n";
+import { motion } from "motion/react";
+import { useMotionEnabled } from "./Motion";
 function translated(node: ReactNode, lang: "en" | "es" | "it"): ReactNode {
   return Children.map(node, (child) => {
     if (typeof child === "string") return phrase(child, lang);
@@ -72,8 +75,14 @@ export function Card({
   className?: string;
 }) {
   const { state } = useStore();
+  const enabled = useMotionEnabled();
   return (
-    <section className={`card ${className}`}>
+    <motion.section
+      className={`card ${className}`}
+      initial={enabled ? { opacity: 0, y: 12 } : false}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: enabled ? 0.5 : 0, ease: [0.16, 1, 0.3, 1] }}
+    >
       {(title || action) && (
         <div className="card-heading">
           <div>
@@ -84,7 +93,7 @@ export function Card({
         </div>
       )}
       {translated(children, state.language)}
-    </section>
+    </motion.section>
   );
 }
 export function Empty({ text }: { text?: string }) {
@@ -129,9 +138,35 @@ export function Tabs({
   className?: string;
 }) {
   const { state } = useStore();
+  const id = useId();
+  const enabled = useMotionEnabled();
   return (
     <div className={`tabs ${className}`}>
-      {translated(children, state.language)}
+      {Children.map(translated(children, state.language), (child) => {
+        if (
+          !isValidElement<{ className?: string; children?: ReactNode }>(
+            child,
+          ) ||
+          !child.props.className?.split(" ").includes("selected")
+        )
+          return child;
+        return cloneElement(
+          child,
+          {},
+          <>
+            {child.props.children}
+            <motion.span
+              className="tab-active-line"
+              layoutId={`tab-${id}`}
+              transition={{
+                duration: enabled ? 0.32 : 0,
+                ease: [0.16, 1, 0.3, 1],
+              }}
+              aria-hidden="true"
+            />
+          </>,
+        );
+      })}
     </div>
   );
 }
@@ -358,6 +393,7 @@ export function Overlay({
   wide?: boolean;
 }) {
   const { state } = useStore();
+  const enabled = useMotionEnabled();
   const ref = useRef<HTMLDivElement>(null),
     previous = useRef<HTMLElement | null>(null);
   useEffect(() => {
@@ -403,15 +439,23 @@ export function Overlay({
     };
   }, []);
   return (
-    <div
+    <motion.div
       className="overlay"
+      initial={enabled ? { opacity: 0 } : false}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: enabled ? 0.25 : 0 }}
       onMouseDown={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div
+      <motion.div
         ref={ref}
         className={`drawer ${wide ? "wide" : ""}`}
+        initial={enabled ? { x: "105%", opacity: 0.6 } : false}
+        animate={{ x: 0, opacity: 1 }}
+        exit={{ x: "105%", opacity: 0.6 }}
+        transition={{ duration: enabled ? 0.42 : 0, ease: [0.16, 1, 0.3, 1] }}
         role="dialog"
         aria-modal="true"
         aria-label={title}
@@ -426,8 +470,8 @@ export function Overlay({
           </Button>
         </div>
         <div className="drawer-body">{children}</div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 export function CheckItem({

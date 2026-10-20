@@ -13,6 +13,7 @@ import {
   Package,
   Users,
 } from "lucide-react";
+import { ReadinessTimeline } from "../components/ReadinessTimeline";
 import { useStore } from "../store";
 import { summary, readiness, dateTime, money } from "../domain/selectors";
 import { day } from "../domain/seed";
@@ -172,59 +173,7 @@ export function Operations() {
           <TaskTable ids={s.ids} />
         </Card>
       ) : (
-        <Card
-          title="Today’s readiness timeline"
-          subtitle="Illustrative shift windows; current blocker status is derived from shared records."
-        >
-          <div className="timeline-scroll">
-            <div className="timeline">
-              <div className="timeline-axis">
-                <span>Property / dependency</span>
-                {["07:00", "09:00", "11:00", "13:00", "15:00", "17:00"].map(
-                  (h) => (
-                    <span key={h}>{h}</span>
-                  ),
-                )}
-              </div>
-              {s.properties.slice(0, 18).map((p) => (
-                <div className="timeline-row" key={p.id}>
-                  <button onClick={() => open(p.id)}>
-                    <strong>{p.name}</strong>
-                    <small>{readiness(state, p).status}</small>
-                  </button>
-                  <div className="timeline-track">
-                    <button
-                      style={{ left: "2%", width: "26%" }}
-                      className={p.clean ? "complete" : "pending"}
-                      onClick={() => open(p.id)}
-                    >
-                      Cleaning {p.clean ? "✓" : ""}
-                    </button>
-                    <button
-                      style={{ left: "31%", width: "27%" }}
-                      className={p.inspection ? "complete" : "pending"}
-                      onClick={() => open(`inspect-${p.id.slice(2)}`)}
-                    >
-                      Inspection {p.inspection ? "✓" : ""}
-                    </button>
-                    <button
-                      style={{ left: "62%", width: "32%" }}
-                      className={
-                        readiness(state, p).status === "Ready"
-                          ? "complete"
-                          : "blocked"
-                      }
-                      onClick={() => open(p.id)}
-                    >
-                      Guest-ready{" "}
-                      {readiness(state, p).status === "Ready" ? "✓" : "blocked"}
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Card>
+        <ReadinessTimeline />
       )}
     </>
   );

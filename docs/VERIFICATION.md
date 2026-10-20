@@ -4,20 +4,20 @@ Validated in the prepared cloud instance on 20 October 2026 using Node.js 24.19.
 
 ## Completed checks
 
-| Check                       | Result                                                                                                                                                                                   |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Clean lockfile installation | `bash scripts/cloud-install.sh` completed: `npm ci`, type checking, lint, domain tests and production build                                                                              |
-| TypeScript                  | `npm run typecheck` passed; the final production build also type-checks                                                                                                                  |
-| ESLint                      | `npm run lint` passed                                                                                                                                                                    |
-| Domain and workflow tests   | `npm test`: **36 passed**, 0 failed, 0 skipped across two files                                                                                                                          |
-| Browser suite               | `npm run test:e2e`: **9 passed**, 0 failed, 0 skipped; the arrival-rescue flow was rechecked after the final role-policy correction                                                      |
-| Production build            | `npm run build` passed; React, Motion and charts are split into separate chunks                                                                                                          |
-| Production runtime          | Compiled overview, complete arrival rescue, refresh persistence and native finance ledgers exercised in Chromium without runtime errors                                                  |
-| Routes and network boundary | All 21 routes rendered; no mandatory external requests, missing remote assets, runtime errors or NaN output in the route smoke test                                                      |
-| Responsive checks           | Overview, command centre, reservations, operations, pricing and finance checked at 1920, 1440, 1280, 1024 and 390 CSS pixels; no document overflow                                       |
-| Accessibility               | Axe WCAG 2 A/AA and WCAG 2.1 AA checks found no violations on the six representative operating screens, approval drawer and mobile overview; dialog Escape/focus behavior also exercised |
-| Exports and persistence     | Actual CSV download, command/history restoration, language switch, virtual time, pause/reset, corrupt-state recovery and owner-scope controls exercised                                  |
-| Repository preservation     | The selected repository began without commits or tracked files. Setup created this project and lockfile; existing attachments and unrelated workspace files were preserved               |
+| Check                       | Result                                                                                                                                                                                     |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Clean lockfile installation | `bash scripts/cloud-install.sh` completed: `npm ci`, type checking, lint, domain tests and production build                                                                                |
+| TypeScript                  | `npm run typecheck` passed; the final production build also type-checks                                                                                                                    |
+| ESLint                      | `npm run lint` passed                                                                                                                                                                      |
+| Domain and workflow tests   | `npm test`: **36 passed**, 0 failed, 0 skipped across two files                                                                                                                            |
+| Browser suite               | 12 browser checks passed across the complete run and targeted visual/accessibility rechecks; no failures remain                                                                            |
+| Production build            | `npm run build` passed; React, Motion and charts are split into separate chunks                                                                                                            |
+| Production runtime          | Compiled overview, complete arrival rescue, refresh persistence and native finance ledgers exercised in Chromium without runtime errors                                                    |
+| Routes and network boundary | All 21 routes rendered; no mandatory external requests, missing remote assets, runtime errors or NaN output in the route smoke test                                                        |
+| Responsive checks           | Overview, command centre, reservations, operations, pricing, finance and approvals checked at 1920, 1440, 1280, 1024 and 390 CSS pixels; no document overflow                              |
+| Accessibility               | Axe WCAG 2 A/AA and WCAG 2.1 AA checks found no violations on the seven representative operating screens, approval drawer and mobile overview; dialog Escape/focus behavior also exercised |
+| Exports and persistence     | Actual CSV download, command/history restoration, language switch, virtual time, pause/reset, corrupt-state recovery and owner-scope controls exercised                                    |
+| Repository preservation     | The selected repository began without commits or tracked files. Setup created this project and lockfile; existing attachments and unrelated workspace files were preserved                 |
 
 The 36 domain tests include all five scenarios in each of the three countries, plus replay, stale evidence, idempotency, shared accounting, blocked availability, receipt expenses, owner fees/tax, DST, removed inspection evidence, full-log ID uniqueness, and finance-role approval enforcement during scenario playback. A quote approval alone never makes the property Ready.
 
@@ -34,7 +34,9 @@ QA captures are retained outside the checkout in `/workspace/staypilot-qa/`:
 - `approval-1440.png`, `approval-390.png`
 - `assistant-1440.png`, `assistant-390.png`
 
-The reference video was inspected through sampled frames/contact sheets, including dashboard, insight cards, schedule/timeline, approvals and drawer transitions. Its identity and business content were not reused. Text contrast, unnamed buttons, modal capture timing and chart transition duration were corrected during QA.
+The 36-second reference was re-reviewed at half-second intervals and full resolution. The dashboard, AI insight composition, approval register and schedule were rebuilt around its layout and motion. The interface includes animated counters/gauges, shared navigation/tab selection, staggered cards/rows, schedule bars/dependencies, sliding drawers with exit transitions, approval stamps/particles, and copilot/toast feedback. Both reduced-motion settings preserve working actions and final data. See [design and motion](DESIGN_MOTION.md).
+
+Updated visual captures and a 26-second animation walkthrough are retained under `/workspace/staypilot-qa/redesign/`, including `StayPilot-motion-preview.mp4`. Production smoke checks exercised direct routes, the complete arrival rescue and refresh persistence, and confirmed the bundled Manrope font loaded with no runtime errors. New browser checks verify dismissal/restore, approved source state with unresolved repair, schedule controls/evidence, and both motion preferences. Accessibility scans wait for entrance opacity to settle before measuring contrast.
 
 ## Environment configuration
 

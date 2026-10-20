@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react";
+import { AnimatePresence } from "motion/react";
 import { Check, Plus } from "lucide-react";
 import { useStore } from "../store";
 import { scopedProperties, money } from "../domain/selectors";
@@ -7,7 +8,11 @@ import type { Country, Property, Task } from "../domain/types";
 import { Button, Overlay } from "./ui";
 export function Forms() {
   const { modal } = useStore();
-  return modal ? <RecordForm key={modal} modal={modal} /> : null;
+  return (
+    <AnimatePresence>
+      {modal && <RecordForm key={modal} modal={modal} />}
+    </AnimatePresence>
+  );
 }
 function RecordForm({ modal }: { modal: string }) {
   const { state, send, setModal, filters, t } = useStore(),

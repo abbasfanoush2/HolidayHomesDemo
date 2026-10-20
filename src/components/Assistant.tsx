@@ -1,10 +1,21 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { useMotionEnabled } from "./Motion";
 import { ArrowUpRight, Send, Sparkles, X, CheckCircle2 } from "lucide-react";
 import { useStore } from "../store";
 import { demoAssistant, suggestions } from "../domain/assistant";
 import type { Command } from "../domain/types";
 import { Button } from "./ui";
 export function Assistant() {
+  const { assistant } = useStore();
+  return (
+    <AnimatePresence>
+      {assistant && <AssistantContent key="copilot" />}
+    </AnimatePresence>
+  );
+}
+function AssistantContent() {
+  const enabled = useMotionEnabled();
   const { state, filters, assistant, setAssistant, send, open, t } = useStore(),
     [text, setText] = useState(""),
     end = useRef<HTMLDivElement>(null),
@@ -22,7 +33,6 @@ export function Assistant() {
     document.addEventListener("keydown", handler);
     return () => document.removeEventListener("keydown", handler);
   }, []);
-  if (!assistant) return null;
   const ask = (message: string) => {
     if (!message.trim()) return;
     send({
@@ -39,8 +49,12 @@ export function Assistant() {
     setText("");
   };
   return (
-    <aside
+    <motion.aside
       className="assistant-panel"
+      initial={enabled ? { opacity: 0, y: 22, scale: 0.97 } : false}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: 15, scale: 0.98 }}
+      transition={{ duration: enabled ? 0.35 : 0, ease: [0.16, 1, 0.3, 1] }}
       aria-label="StayPilot simulated assistant"
     >
       <div className="assistant-header">
@@ -180,6 +194,6 @@ export function Assistant() {
       <p className="assistant-disclaimer">
         Deterministic demo · no live LLM · {t("prepared")}
       </p>
-    </aside>
+    </motion.aside>
   );
 }

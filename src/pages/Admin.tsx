@@ -18,7 +18,6 @@ import {
 import { useStore } from "../store";
 import {
   summary,
-  money,
   dateTime,
   scenarioSnapshot,
 } from "../domain/selectors";
@@ -30,7 +29,6 @@ import {
   ExportButton,
   SectionTitle,
   Table,
-  Tabs,
 } from "../components/ui";
 import { scenarioTranslations } from "../i18n";
 import type { Country, Role } from "../domain/types";
@@ -100,114 +98,6 @@ export function Documents() {
                   Renewal task
                 </Button>
               ),
-            },
-          ]}
-        />
-      </Card>
-    </>
-  );
-}
-export function Approvals() {
-  const { state, filters, t, open } = useStore(),
-    s = summary(state, filters),
-    [status, setStatus] = useState("Pending");
-  const approvals = state.approvals.filter(
-    (a) => s.ids.includes(a.propertyId) && (!status || a.status === status),
-  );
-  return (
-    <>
-      <SectionTitle
-        eyebrow="YOUR JUDGEMENT. YOUR CONTROL."
-        title={t("approvals")}
-        description="Every decision shows its evidence, proposed change and expected effect. Execution revalidates the current record."
-        actions={
-          <ExportButton
-            name="approvals"
-            rows={approvals.map((a) => ({
-              id: a.id,
-              type: a.type,
-              home: a.propertyId,
-              status: a.status,
-              amount: a.amount / 100,
-              currency: a.currency,
-              approver: a.approver || "",
-            }))}
-          />
-        }
-      />
-      <div className="stat-strip">
-        <button onClick={() => setStatus("Pending")}>
-          <span>Waiting for review</span>
-          <strong>{s.approvals.length}</strong>
-          <small>Changes need a human decision</small>
-        </button>
-        <button onClick={() => setStatus("Approved")}>
-          <span>Approved in demo</span>
-          <strong>
-            {
-              state.approvals.filter(
-                (a) => s.ids.includes(a.propertyId) && a.status === "Approved",
-              ).length
-            }
-          </strong>
-          <small>Linked outcomes and audit records</small>
-        </button>
-        <button onClick={() => setStatus("Stale")}>
-          <span>Evidence changed</span>
-          <strong>
-            {
-              state.approvals.filter(
-                (a) => s.ids.includes(a.propertyId) && a.status === "Stale",
-              ).length
-            }
-          </strong>
-          <small>Fresh review required</small>
-        </button>
-      </div>
-      <Tabs>
-        {["Pending", "Approved", "Rejected", "Stale", ""].map((v) => (
-          <button
-            key={v}
-            className={status === v ? "selected" : ""}
-            onClick={() => setStatus(v)}
-          >
-            {v || "All history"}
-          </button>
-        ))}
-      </Tabs>
-      <Card>
-        <Table
-          rows={approvals}
-          label="approvals"
-          onRow={(a) => open(a.id)}
-          columns={[
-            { key: "title", label: "Decision", sort: (a) => a.title },
-            { key: "type", label: "Type" },
-            {
-              key: "property",
-              label: t("property"),
-              render: (a) =>
-                state.properties.find((p) => p.id === a.propertyId)?.name,
-            },
-            {
-              key: "amount",
-              label: "Amount / rate difference",
-              render: (a) => money(a.amount, a.currency, state.language),
-            },
-            {
-              key: "status",
-              label: t("status"),
-              render: (a) => <Badge value={a.status} />,
-            },
-            {
-              key: "requested",
-              label: "Requested",
-              render: (a) => dateTime(a.requested, state.language),
-            },
-            {
-              key: "approver",
-              label: "Approver",
-              render: (a) => a.approver || "Awaiting decision",
             },
           ]}
         />

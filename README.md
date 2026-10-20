@@ -48,3 +48,5 @@ The interface offers English, Spanish and Italian navigation, common controls/st
 Rename the demo in `src/domain/seed.ts` (`BRAND`). The brand is fictional; no trademark clearance is implied. All local illustrations were drawn for this demo; no reference-video identity or business data was reused.
 
 See [architecture](docs/ARCHITECTURE.md), [scenario and data guide](docs/SCENARIOS.md), [five-minute demo script](docs/DEMO_SCRIPT.md), [implementation checklist](docs/CHECKLIST.md) and [verification report](docs/VERIFICATION.md).
+
+The [design and motion guide](docs/DESIGN_MOTION.md) maps the supplied reference recording to the interface: sweeping gauges, animated numbers, spring navigation, timeline dependencies, sliding drawers, approval stamps and particles. Settings → Presentation motion and the system reduced-motion preference control animation. The bundled Manrope font works without external requests.
