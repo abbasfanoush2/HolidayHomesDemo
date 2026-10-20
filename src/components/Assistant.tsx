@@ -85,17 +85,10 @@ function AssistantContent() {
         {!state.chat.length && (
           <div className="assistant-welcome">
             <Sparkles size={30} />
-            <h3>
-              {state.language === "es"
-                ? "Un poco de claridad, justo cuando la necesitas."
-                : state.language === "it"
-                  ? "Un po’ di chiarezza, proprio quando serve."
-                  : "A little clarity, right when you need it."}
-            </h3>
+            <h3>A little clarity, right when you need it.</h3>
             <p>
-              {state.language === "en"
-                ? "Ask about your portfolio. Every answer comes from the current demo records, and every action follows the same rules as your team."
-                : t("prepared")}
+              Ask about your portfolio. Every answer comes from the current demo
+              records, and every action follows the same rules as your team.
             </p>
           </div>
         )}
@@ -135,12 +128,7 @@ function AssistantContent() {
                         message: {
                           id: `chat-result-${state.revision}`,
                           role: "assistant",
-                          text:
-                            state.language === "es"
-                              ? "Comando ejecutado en la demo. Consulte el registro vinculado para verificar el resultado."
-                              : state.language === "it"
-                                ? "Comando eseguito nella demo. Apri il record collegato per verificare il risultato."
-                                : "The local command was evaluated successfully. Open the linked records to verify the result; required approvals still apply.",
+                          text: "The local command was evaluated successfully. Open the linked records to verify the result; required approvals still apply.",
                           sources: m.sources,
                         },
                       });
@@ -150,11 +138,7 @@ function AssistantContent() {
                 }}
               >
                 <CheckCircle2 size={14} />
-                {state.language === "es"
-                  ? "Ejecutar acción local"
-                  : state.language === "it"
-                    ? "Esegui azione locale"
-                    : "Run local action"}
+                Run local action
               </Button>
             )}
           </div>

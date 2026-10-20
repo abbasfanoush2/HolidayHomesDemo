@@ -1,3 +1,4 @@
+import { localiseText } from "../localization/catalogue";
 import type {
   State,
   Command,
@@ -313,21 +314,13 @@ function draft(s: State, id: string, language: "en" | "es" | "it") {
   const existing = s.messages.find((m) => m.id === `draft-${id}-${language}`);
   if (existing) return existing;
   const blocked = readiness(s, p).status !== "Ready";
-  const templates = blocked
-    ? {
-        en: `Thank you for letting us know. Our team is reviewing the issue at ${p.name}. We will confirm once the repair and inspection have been verified. Please contact the demo operations desk for urgent assistance.`,
-        es: `Gracias por avisarnos. Nuestro equipo está revisando la incidencia en ${p.name}. Confirmaremos cuando se hayan verificado la reparación y la inspección. Para ayuda urgente, contacte con el equipo de operaciones de la demo.`,
-        it: `Grazie per averci avvisato. Il nostro team sta verificando il problema presso ${p.name}. Confermeremo dopo la verifica della riparazione e dell’ispezione. Per assistenza urgente, contattate il team operativo della demo.`,
-      }
-    : {
-        en: `Your home at ${p.name} is inspected and ready. ${p.checkin} We look forward to welcoming you.`,
-        es: `Su alojamiento ${p.name} está inspeccionado y listo. Entrada autónoma desde las 15:00. Código de demostración: DEMO-ONLY. ¡Le esperamos!`,
-        it: `La vostra casa ${p.name} è stata ispezionata ed è pronta. Check-in autonomo dalle 15:00. Codice demo: DEMO-ONLY. Vi aspettiamo!`,
-      };
+  const prepared = blocked
+    ? `Thank you for letting us know. Our team is reviewing the issue at ${p.name}. We will confirm once the repair and inspection have been verified. Please contact the demo operations desk for urgent assistance.`
+    : `Your home at ${p.name} is inspected and ready. ${p.checkin} We look forward to welcoming you.`;
   const m: Message = {
     ...msg,
     id: `draft-${id}-${language}`,
-    text: templates[language],
+    text: localiseText(prepared, language),
     language,
     direction: "Draft",
     time: s.now,

@@ -36,10 +36,15 @@ import {
   Table,
   Tabs,
 } from "./ui";
-const PHOTO =
+import { phrase } from "../i18n";
+import type { Language } from "../domain/types";
+const photo = (language: Language) =>
   "data:image/svg+xml;charset=utf-8," +
   encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="480" height="260"><rect width="480" height="260" fill="#d8e6df"/><rect x="65" y="70" width="350" height="160" rx="15" fill="#8ba69a"/><rect x="88" y="90" width="140" height="65" rx="12" fill="#fff8ea"/><rect x="248" y="90" width="140" height="65" rx="12" fill="#fff8ea"/><rect x="65" y="143" width="350" height="63" rx="10" fill="#e7d6b6"/><text x="240" y="35" font-family="sans-serif" font-size="15" fill="#29463b" text-anchor="middle">PREPARED DEMO BEDROOM EVIDENCE · ILLUSTRATION</text></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" width="480" height="260"><rect width="480" height="260" fill="#d8e6df"/><rect x="65" y="70" width="350" height="160" rx="15" fill="#8ba69a"/><rect x="88" y="90" width="140" height="65" rx="12" fill="#fff8ea"/><rect x="248" y="90" width="140" height="65" rx="12" fill="#fff8ea"/><rect x="65" y="143" width="350" height="63" rx="10" fill="#e7d6b6"/><text x="240" y="35" font-family="sans-serif" font-size="15" fill="#29463b" text-anchor="middle">PREPARED DEMO BEDROOM EVIDENCE · ILLUSTRATION</text></svg>'.replace(
+      "PREPARED DEMO BEDROOM EVIDENCE · ILLUSTRATION",
+      phrase("Prepared demo bedroom evidence · illustration", language),
+    ),
   );
 function OwnerAgreement({ owner }: { owner: Owner }) {
   const { state, send } = useStore();
@@ -185,7 +190,12 @@ export function TaskDetail({ task }: { task: Task }) {
           <div className="evidence-upload">
             {task.photo && (
               <img
-                src={task.photoData || PHOTO}
+                src={
+                  task.photoData?.startsWith("data:image/svg+xml") ||
+                  !task.photoData
+                    ? photo(state.language)
+                    : task.photoData
+                }
                 alt="Local demo bedroom evidence; no live analysis"
               />
             )}
@@ -209,7 +219,7 @@ export function TaskDetail({ task }: { task: Task }) {
                       type: "updateTask",
                       id: task.id,
                       photo: true,
-                      photoData: PHOTO,
+                      photoData: photo(state.language),
                     },
                     "Prepared synthetic bedroom evidence attached.",
                   )

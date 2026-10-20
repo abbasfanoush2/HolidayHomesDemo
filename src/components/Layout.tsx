@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
+import { useMarketNavigate as useNavigate } from "../localization/navigation";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import {
   Home,
   LayoutDashboard,
@@ -31,7 +32,6 @@ import {
   PanelLeftClose,
   PanelLeftOpen,
   Menu,
-  Globe,
   Play,
   Pause,
   SkipForward,
@@ -41,10 +41,12 @@ import {
   Compass,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { MarketSelector } from "./MarketSelector";
 import { useStore } from "../store";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { BRAND, day } from "../domain/seed";
 import { dateTime, scopedProperties } from "../domain/selectors";
+import { phrase } from "../i18n";
 import type { TranslationKey } from "../i18n";
 import { Button } from "./ui";
 export const navGroups: {
@@ -158,7 +160,9 @@ export function Layout() {
             .map((o) => ({ id: o.id, title: o.name, sub: "Owner" })),
         ]
           .filter((x) =>
-            `${x.title} ${x.sub}`.toLowerCase().includes(query.toLowerCase()),
+            `${x.title} ${x.sub} ${phrase(x.title, state.language)} ${phrase(x.sub, state.language)}`
+              .toLowerCase()
+              .includes(query.toLowerCase()),
           )
           .slice(0, 8)
       : [];
@@ -200,7 +204,11 @@ export function Layout() {
         />
       )}
       <aside className="sidebar">
-        <NavLink to="/" className="brand" aria-label="StayPilot home">
+        <NavLink
+          to={{ pathname: "/", search: location.search }}
+          className="brand"
+          aria-label="StayPilot home"
+        >
           <span className="brand-icon">
             <Home size={23} strokeWidth={1.8} />
             <i />
@@ -226,7 +234,7 @@ export function Layout() {
               {g.items.map(([key, path, Icon]) => (
                 <NavLink
                   key={path}
-                  to={path}
+                  to={{ pathname: path, search: location.search }}
                   end={path === "/"}
                   title={t(key)}
                   className={({ isActive }) =>
@@ -271,7 +279,7 @@ export function Layout() {
         </nav>
         <div className="sidebar-bottom">
           <NavLink
-            to="/studio"
+            to={{ pathname: "/studio", search: location.search }}
             className="studio-link"
             aria-label={t("studio")}
           >
@@ -350,25 +358,7 @@ export function Layout() {
               <i className={state.playing ? "live" : ""} />
               {state.playing ? t("monitoring") : t("paused")}
             </span>
-            <label className="language-select">
-              <Globe size={15} />
-              <select
-                aria-label="Interface language"
-                value={state.language}
-                onChange={(e) =>
-                  send({
-                    type: "settings",
-                    values: {
-                      language: e.target.value as typeof state.language,
-                    },
-                  })
-                }
-              >
-                <option value="en">EN</option>
-                <option value="es">ES</option>
-                <option value="it">IT</option>
-              </select>
-            </label>
+            <MarketSelector />
             <div className="popover-wrap">
               <Button
                 variant="primary"

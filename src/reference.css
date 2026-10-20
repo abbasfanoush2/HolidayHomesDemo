@@ -3519,3 +3519,170 @@ html[data-motion="false"] *::after {
     display: none;
   }
 }
+
+/* Locale preferences keep domain records separate from display choices. */
+.market-loading {
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  gap: 28px;
+  background:
+    radial-gradient(ellipse at 20% 10%, #d7f1ec, transparent 65%), #edf6f3;
+}
+.market-loading-mark {
+  position: relative;
+  margin: auto;
+  width: 62px;
+  height: 62px;
+  border-radius: 19px 19px 19px 6px;
+  background: #7acdc0;
+  color: #254c48;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+.market-loading-mark > span {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  font-size: 22px;
+  color: #5b8670;
+}
+.market-loading-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.market-loading-lines i {
+  width: 160px;
+  height: 7px;
+  background: #c9dfd4;
+  border-radius: 5px;
+}
+.market-loading-lines i:nth-child(2) {
+  width: 110px;
+}
+.market-loading-lines i:nth-child(3) {
+  width: 135px;
+}
+.market-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  color: #3d5f54;
+  padding: 7px 4px;
+  white-space: nowrap;
+}
+.market-popover {
+  width: 310px;
+  padding: 17px;
+  right: 0;
+  top: calc(100% + 13px);
+}
+.market-popover > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.market-popover h3 {
+  font-size: 13px;
+  letter-spacing: -0.3px;
+}
+.market-fields {
+  display: grid;
+  gap: 12px;
+  text-align: left;
+}
+.market-fields > label {
+  display: grid;
+  gap: 6px;
+  font-size: 10px;
+  color: #3e5f51;
+}
+.market-fields select {
+  width: 100%;
+  font-size: 11px;
+  padding: 9px 10px;
+}
+.market-fields p,
+.market-fields small {
+  font-size: 9px;
+  line-height: 1.8;
+  color: #4d6e59;
+}
+.market-fields small {
+  font-size: 8px;
+}
+.settings-grid .market-fields {
+  max-width: 500px;
+}
+.finance-display-summary {
+  margin-bottom: 20px;
+}
+.finance-display-summary .quote-compare {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.finance-display-summary .quote-compare > span {
+  font-size: 10px;
+}
+html[lang="es-ES"] .button,
+html[lang="it-IT"] .button {
+  white-space: normal;
+}
+html[lang="es-ES"] .suggestion-actions,
+html[lang="it-IT"] .suggestion-actions {
+  flex-wrap: wrap;
+}
+html[lang="es-ES"] .nav-link,
+html[lang="it-IT"] .nav-link {
+  font-size: 10px;
+}
+@media (max-width: 700px) {
+  .market-toggle > span {
+    font-size: 8px;
+  }
+  .market-toggle > svg:last-child {
+    display: none;
+  }
+  .market-popover {
+    position: fixed;
+    right: 10px;
+    top: 60px;
+    width: min(330px, calc(100vw - 20px));
+  }
+  .market-fields select {
+    font-size: 12px;
+  }
+  .market-popover h3 {
+    font-size: 14px;
+  }
+  .market-fields > label {
+    font-size: 11px;
+  }
+  .finance-display-summary .quote-compare {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .finance-display-summary .quote-compare > span {
+    min-width: 40%;
+  }
+  html[lang="es-ES"] .morning-intro h1,
+  html[lang="it-IT"] .morning-intro h1 {
+    font-size: 27px;
+    flex-wrap: wrap;
+  }
+  html[lang="es-ES"] .intelligence-stats,
+  html[lang="it-IT"] .intelligence-stats {
+    gap: 8px;
+  }
+  html[lang="es-ES"] .suggestion-toolbar,
+  html[lang="it-IT"] .suggestion-toolbar {
+    align-items: flex-start;
+  }
+}

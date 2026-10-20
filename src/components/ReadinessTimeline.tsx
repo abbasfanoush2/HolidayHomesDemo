@@ -1,3 +1,4 @@
+import { localeFor } from "../localization/preferences";
 import { useState } from "react";
 import {
   CalendarDays,
@@ -25,7 +26,7 @@ export function ReadinessTimeline({ compact = false }: { compact?: boolean }) {
       ? ["07:00", "09:00", "11:00", "13:00", "15:00", "17:00", "19:00"]
       : Array.from({ length: 7 }, (_, i) =>
           new Date(day(from, i) + "T12:00:00Z").toLocaleDateString(
-            state.language,
+            localeFor(state.language),
             { weekday: "short", day: "numeric" },
           ),
         );
@@ -99,11 +100,14 @@ export function ReadinessTimeline({ compact = false }: { compact?: boolean }) {
           Blocked
         </span>
         <span className="schedule-date">
-          {new Date(from + "T12:00:00Z").toLocaleDateString(state.language, {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          })}
+          {new Date(from + "T12:00:00Z").toLocaleDateString(
+            localeFor(state.language),
+            {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            },
+          )}
         </span>
       </div>
       <div className="schedule-scroll">

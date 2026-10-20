@@ -1,6 +1,25 @@
 import type { Chat, Command, Filters, State } from "./types";
 import { summary, readiness, money, scopedProperties } from "./selectors";
 import { day } from "./seed";
+const normalise = (value: string) =>
+  value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+const cityAliases: Record<string, string[]> = {
+  London: ["londres", "londra"],
+  Rome: ["roma"],
+  Florence: ["florencia", "firenze"],
+  Edinburgh: ["edimburgo"],
+  Seville: ["sevilla", "siviglia"],
+  Milan: ["milan", "milano"],
+};
+const homeTypes: Record<string, string[]> = {
+  Townhouse: ["casa adosada", "casa a schiera"],
+  Apartment: ["apartamento", "appartamento"],
+  Villa: ["villa"],
+  Cottage: ["casa rural", "cottage"],
+};
 export interface AssistantAdapter {
   respond: (state: State, filters: Filters, text: string) => Chat;
 }
@@ -21,46 +40,14 @@ const copy = {
       "I found an available inspector with the right service area. Assignment will revalidate shift capacity.",
     runs: "Here are the filtered agent runs. Open the sources for evidence, policy checks and outcomes.",
   },
-  es: {
-    outside:
-      "Puedo consultar registros de demo, preparar respuestas, proponer precios, asignar inspecciones y crear tareas. No puedo acceder a servicios reales ni realizar solicitudes no admitidas.",
-    choose:
-      "¿Qué alojamiento quiere consultar? Elija una fuente o seleccione un alojamiento en los filtros.",
-    ready: "La preparación se calcula a partir de estas evidencias:",
-    draft:
-      "Puedo preparar una respuesta contextual de demostración. Se crea un borrador; el envío sensible necesita aprobación.",
-    pricing:
-      "Puedo proponer una reducción del 8% para cinco noches disponibles, dentro de los límites. Las reservas confirmadas no cambian.",
-    growth:
-      "Puedo crear tres tareas vinculadas a 30 / 60 / 90 días. Es una hipótesis medible, no una promesa de ingresos.",
-    assign:
-      "Hay un inspector disponible en la zona. La asignación comprobará la capacidad del turno.",
-    runs: "Estas son las ejecuciones de agentes filtradas. Abra las fuentes para consultar evidencia y resultados.",
-  },
-  it: {
-    outside:
-      "Posso consultare record demo, preparare risposte, proporre prezzi, assegnare ispezioni e creare attività. Non posso accedere a servizi reali o eseguire richieste non supportate.",
-    choose:
-      "Quale alloggio intendi? Scegli una fonte o seleziona un alloggio nei filtri.",
-    ready: "La preparazione deriva dalle seguenti evidenze:",
-    draft:
-      "Posso preparare una risposta contestuale di esempio. Viene creata una bozza; l’invio sensibile richiede approvazione.",
-    pricing:
-      "Posso proporre una riduzione dell’8% per cinque notti disponibili, entro i limiti. Le prenotazioni confermate restano invariate.",
-    growth:
-      "Posso creare tre attività collegate a 30 / 60 / 90 giorni. È un’ipotesi misurabile, non una promessa di ricavi.",
-    assign:
-      "Ho trovato un ispettore disponibile nella zona. L’assegnazione ricontrollerà la capacità del turno.",
-    runs: "Ecco le esecuzioni filtrate degli agenti. Apri le fonti per evidenze, regole e risultati.",
-  },
 };
 export const demoAssistant: AssistantAdapter = {
   respond(state, filters, text) {
-    const q = text.toLowerCase(),
+    const q = normalise(text),
       s = summary(state, filters),
       ps = scopedProperties(state, filters),
       lang = state.language,
-      c = copy[lang],
+      c = copy.en,
       result: Chat = {
         id: `chat-a-${state.revision}`,
         role: "assistant",
@@ -69,12 +56,17 @@ export const demoAssistant: AssistantAdapter = {
       };
     let targets = ps.filter(
       (p) =>
-        q.includes(p.name.toLowerCase()) ||
-        (q.includes(p.city.toLowerCase()) &&
-          (q.includes(p.type.toLowerCase()) ||
+        q.includes(normalise(p.name)) ||
+        ([p.city, ...(cityAliases[p.city] || [])].some((city) =>
+          q.includes(normalise(city)),
+        ) &&
+          ([p.type, ...(homeTypes[p.type] || [])].some((type) =>
+            q.includes(normalise(type)),
+          ) ||
             q.includes("home") ||
             q.includes("casa") ||
-            q.includes("alojamiento"))),
+            q.includes("alojamiento") ||
+            q.includes("alloggio"))),
     );
     if (!targets.length && filters.propertyId)
       targets = ps.filter((p) => p.id === filters.propertyId);
@@ -105,13 +97,9 @@ export const demoAssistant: AssistantAdapter = {
       (result.action = JSON.stringify(command));
     if (/owner payable|propietario|proprietario|earnings|finance/.test(q)) {
       result.text =
-        {
-          en: `Owner payable for the filtered period is ${money(s.owner, filters.currency, lang)} (display conversion). Native ledgers: `,
-          es: `El importe al propietario del período filtrado es ${money(s.owner, filters.currency, lang)} (conversión de visualización). Libros nativos: `,
-          it: `L’importo al proprietario per il periodo filtrato è ${money(s.owner, filters.currency, lang)} (conversione di visualizzazione). Registri nativi: `,
-        }[lang] +
+        `Owner payable for the filtered period is ${money(s.owner, filters.currency, "en")} (display conversion). Native ledgers: ` +
         s.native
-          .map((l) => `${l.currency} ${money(l.owner, l.currency, lang)}`)
+          .map((l) => `${l.currency} ${money(l.owner, l.currency, "en")}`)
           .join(" · ");
       result.sources = s.properties.slice(0, 4).map((p) => p.id);
     } else if (
@@ -162,14 +150,12 @@ export const demoAssistant: AssistantAdapter = {
           action({ type: "assignTask", id: task.id, staffId: staff.id });
         } else
           result.text =
-            lang === "es"
-              ? "No hay una asignación viable. Revise la tarea y el turno."
-              : lang === "it"
-                ? "Non esiste un’assegnazione fattibile. Controlla attività e turno."
-                : "No feasible assignment is available. Review the task and shift; I have not assigned anyone.";
+            "No feasible assignment is available. Review the task and shift; I have not assigned anyone.";
       }
     } else if (
-      /draft|reply|spanish|respuesta|responder|risposta|bozza/.test(q)
+      /draft|reply|spanish|respuesta|responder|redacta|borrador|risposta|rispondi|bozza/.test(
+        q,
+      )
     ) {
       if (!needsProperty()) {
         const m = state.messages.find(
@@ -181,14 +167,14 @@ export const demoAssistant: AssistantAdapter = {
           action({
             type: "draftReply",
             id: m.id,
-            language: /spanish|español|spagnol/.test(q)
+            language: /spanish|espanol|spagnol/.test(q)
               ? "es"
               : /italian|italiano/.test(q)
                 ? "it"
                 : lang,
           });
       }
-    } else if (/price|prices|pricing|precio|prezz/.test(q)) {
+    } else if (/price|prices|pricing|precio|tarifa|prezz|tariff/.test(q)) {
       if (!needsProperty()) {
         result.text = c.pricing;
         result.sources = [first.id];
@@ -204,7 +190,7 @@ export const demoAssistant: AssistantAdapter = {
         result.sources = [first.id];
         action({ type: "growthPlan", propertyId: first.id });
       }
-    } else if (/source|fuente|fonte|alert/.test(q)) {
+    } else if (/source|fuente|fonte|alert|origen|origine|aviso/.test(q)) {
       const selected =
         first || ps.find((p) => readiness(state, p).status !== "Ready");
       if (selected) {
@@ -222,13 +208,13 @@ export const demoAssistant: AssistantAdapter = {
         ];
       }
     } else if (
-      /ready|attention|arrival|atención|llegad|pront|attenzione|arriv|not ready|performance|rendimiento|andamento/.test(
+      /ready|attention|arrival|atencion|llegad|list[oa]|preparad|pront|attenzione|arriv|not ready|performance|rendimiento|andamento|prestazion/.test(
         q,
       )
     ) {
       if (first && targets.length === 1) {
         const r = readiness(state, first);
-        result.text = `${first.name}: ${r.status}. ${c.ready} ${r.blockers.join("; ") || { en: "All required evidence is complete.", es: "Todas las evidencias están completas.", it: "Tutte le evidenze sono complete." }[lang]}`;
+        result.text = `${first.name}: ${r.status}. ${c.ready} ${r.blockers.join("; ") || "All required evidence is complete."}`;
         result.sources = [
           first.id,
           ...state.issues
@@ -238,13 +224,10 @@ export const demoAssistant: AssistantAdapter = {
             .filter((t) => t.propertyId === first.id && t.kind === "Inspection")
             .map((t) => t.id),
         ];
-        if (/performance|rendimiento|andamento/.test(q))
+        if (/performance|rendimiento|andamento|prestazion/.test(q))
           result.text =
-            {
-              en: "The current record supports reviewing channel fees and posted costs; it does not prove a causal performance decline. ",
-              es: "Los registros permiten revisar comisiones y costes, pero no demuestran una caída causal. ",
-              it: "I record consentono di esaminare commissioni e costi, senza dimostrare un calo causale. ",
-            }[lang] + result.text;
+            "The current record supports reviewing channel fees and posted costs; it does not prove a causal performance decline. " +
+            result.text;
       } else {
         const risky = ps.filter(
           (p) =>
@@ -256,7 +239,7 @@ export const demoAssistant: AssistantAdapter = {
                 b.status !== "Cancelled",
             ),
         );
-        result.text = `${c.ready} ${risky.map((p) => `${p.name}: ${readiness(state, p).blockers.join(", ")}`).join(" · ") || { en: "No arrival blockers in the selected portfolio.", es: "No hay bloqueos de llegadas en la cartera seleccionada.", it: "Nessun blocco degli arrivi nel portafoglio selezionato." }[lang]}`;
+        result.text = `${c.ready} ${risky.map((p) => `${p.name}: ${readiness(state, p).blockers.join(", ")}`).join(" · ") || "No arrival blockers in the selected portfolio."}`;
         result.sources = risky.map((p) => p.id);
       }
     }

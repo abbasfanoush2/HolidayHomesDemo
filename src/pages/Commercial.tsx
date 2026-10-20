@@ -1,3 +1,4 @@
+import { localeFor } from "../localization/preferences";
 import { useState } from "react";
 import {
   ArrowRight,
@@ -75,7 +76,13 @@ export function Revenue() {
       <div className="stat-strip">
         <button onClick={() => open("list:bookings")}>
           <span>Occupancy</span>
-          <strong>{s.occupancy.toFixed(1)}%</strong>
+          <strong>
+            {new Intl.NumberFormat(localeFor(state.language), {
+              minimumFractionDigits: 1,
+              maximumFractionDigits: 1,
+            }).format(s.occupancy)}
+            %
+          </strong>
           <small>
             {s.nights} booked / {s.available} available nights
           </small>
@@ -173,7 +180,7 @@ export function Revenue() {
                   >
                     <small>
                       {new Date(date + "T12:00:00Z").toLocaleDateString(
-                        state.language,
+                        localeFor(state.language),
                         { weekday: "short", day: "numeric", month: "short" },
                       )}
                     </small>
@@ -431,6 +438,33 @@ export function Finance() {
           </>
         }
       />
+      <Card
+        className="finance-display-summary"
+        title="Display totals — converted at DEMO FX"
+        subtitle={t("fx")}
+      >
+        <div className="quote-compare">
+          <span>
+            {t("revenueKpi")}
+            <strong>
+              {money(s.revenue, filters.currency, state.language)}
+            </strong>
+          </span>
+          <span>
+            {t("ownerPayable")}
+            <strong>{money(s.owner, filters.currency, state.language)}</strong>
+          </span>
+          <span>
+            {t("operatorIncome")}
+            <strong>
+              {money(s.operator, filters.currency, state.language)}
+            </strong>
+          </span>
+        </div>
+        <p className="muted small">
+          Original transaction currencies and native ledgers stay unchanged.
+        </p>
+      </Card>
       <Tabs>
         {[
           ["ledger", "Native ledgers"],
@@ -815,7 +849,11 @@ export function Reputation() {
         <button onClick={() => open("list:reviews")}>
           <span>Fictional guest rating</span>
           <strong>
-            {s.sentiment.toFixed(1)} <Star size={22} />
+            {new Intl.NumberFormat(localeFor(state.language), {
+              minimumFractionDigits: 1,
+              maximumFractionDigits: 1,
+            }).format(s.sentiment)}{" "}
+            <Star size={22} />
           </strong>
           <small>{reviews.length} seeded reviews</small>
         </button>
@@ -932,7 +970,7 @@ export function Reports() {
       day(state.now).slice(0, 4) + "-" + String(i + 1).padStart(2, "0");
     return {
       month: new Date(month + "-15T12:00:00Z").toLocaleDateString(
-        state.language,
+        localeFor(state.language),
         { month: "short" },
       ),
       revenue: Math.round(
@@ -1017,6 +1055,11 @@ export function Reports() {
                   tick={{ fontSize: 12 }}
                 />
                 <YAxis
+                  tickFormatter={(v) =>
+                    new Intl.NumberFormat(localeFor(state.language), {
+                      notation: "compact",
+                    }).format(Number(v))
+                  }
                   axisLine={false}
                   tickLine={false}
                   tick={{ fontSize: 11 }}
@@ -1027,6 +1070,7 @@ export function Reports() {
                   }
                 />
                 <Bar
+                  name={t("revenueKpi")}
                   dataKey="revenue"
                   fill="#78bbaa"
                   radius={[5, 5, 0, 0]}

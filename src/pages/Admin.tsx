@@ -15,12 +15,9 @@ import {
   Activity,
   AlertTriangle,
 } from "lucide-react";
+import { MarketSelector } from "../components/MarketSelector";
 import { useStore } from "../store";
-import {
-  summary,
-  dateTime,
-  scenarioSnapshot,
-} from "../domain/selectors";
+import { summary, dateTime, scenarioSnapshot } from "../domain/selectors";
 import { SCENARIOS, BRAND } from "../domain/seed";
 import {
   Badge,
@@ -159,6 +156,9 @@ export function Settings() {
         title={t("settings")}
         description={t("about")}
       />
+      <Card title="Market, language and currency">
+        <MarketSelector inline />
+      </Card>
       <div className="insight-grid">
         <Card
           title="Workspace & presentation"

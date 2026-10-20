@@ -1,3 +1,4 @@
+import { localeFor } from "../localization/preferences";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import { useStore } from "../store";
@@ -16,7 +17,7 @@ export function MiniCalendar() {
     <div className="mini-calendar">
       <div className="calendar-month">
         <strong>
-          {date.toLocaleDateString(state.language, {
+          {date.toLocaleDateString(localeFor(state.language), {
             month: "long",
             year: "numeric",
             timeZone: "UTC",

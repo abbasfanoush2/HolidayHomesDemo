@@ -1,4 +1,5 @@
-import { useNavigate } from "react-router-dom";
+import { localeFor } from "../localization/preferences";
+import { useMarketNavigate as useNavigate } from "../localization/navigation";
 import { motion } from "motion/react";
 import {
   Activity,
@@ -72,7 +73,7 @@ export function Overview() {
     const start = day(filters.from, Math.floor((i * span) / bins));
     const end = day(filters.from, Math.floor(((i + 1) * span) / bins) - 1);
     return {
-      week: new Date(at(start)).toLocaleDateString(state.language, {
+      week: new Date(at(start)).toLocaleDateString(localeFor(state.language), {
         day: "numeric",
         month: "short",
       }),
@@ -110,7 +111,7 @@ export function Overview() {
     },
     {
       label: t("occupancy"),
-      value: `${s.occupancy.toFixed(1)}%`,
+      value: `${new Intl.NumberFormat(localeFor(state.language), { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(s.occupancy)}%`,
       sub: `${s.nights} / ${s.available} available nights`,
       icon: BedDouble,
       id: "list:bookings",
@@ -148,13 +149,16 @@ export function Overview() {
           <div className="morning-intro">
             <span className="morning-date">
               <CalendarDays size={13} />
-              {new Date(state.now).toLocaleDateString(state.language, {
-                weekday: "long",
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-                timeZone: "Europe/London",
-              })}
+              {new Date(state.now).toLocaleDateString(
+                localeFor(state.language),
+                {
+                  weekday: "long",
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                  timeZone: "Europe/London",
+                },
+              )}
             </span>
             <h1>
               {t("goodMorning")}
@@ -462,6 +466,7 @@ export function Overview() {
                     }}
                   />
                   <Area
+                    name={t("revenueKpi")}
                     type="monotone"
                     dataKey="revenue"
                     stroke="#58ae9d"

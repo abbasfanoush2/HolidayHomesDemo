@@ -34,7 +34,7 @@ The browser suite uses the environment's installed `/usr/bin/chromium`. Set `CHR
 
 Settings → Reset demo restores the fixed seed, every scenario, policy, clock, conversation, approval and ledger. The virtual clock begins on **20 October 2026, 08:00 UTC / 09:00 London**. Clock progression and agent scheduling stop when the tab is hidden. Reload restores the saved business state with clock and presentation playback paused; no closed-tab monitoring is claimed.
 
-The interface offers English, Spanish and Italian navigation, common controls/statuses, prepared replies, assistant interactions and scenario steps. Source records retain fictional names and prepared operational content. GBP/EUR remain separate in statements; display conversion is labelled **€1 = £0.86 DEMO FX**.
+The entire prepared experience supports British English, Spanish and Italian, including finance, records, agent history, copilot, exports and print statements. Initial preferences follow a market link, deliberate manual choice, IP country, browser language, then UK fallback. The globe control provides manual choices and Automatic. GBP/EUR ledgers remain separate; display conversion uses **€1 = £0.86 DEMO FX**. See [localisation and preference rules](docs/LOCALISATION.md).
 
 ## Explore
 

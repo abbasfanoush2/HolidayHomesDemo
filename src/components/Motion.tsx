@@ -8,6 +8,7 @@ import {
 } from "motion/react";
 import { Check } from "lucide-react";
 import { useStore } from "../store";
+import { localeFor } from "../localization/preferences";
 
 export function useMotionEnabled() {
   const { state } = useStore();
@@ -30,11 +31,11 @@ export function CountUp({
   delay?: number;
 }) {
   const enabled = useMotionEnabled();
+  const { state } = useStore();
+  const format = (n: number) =>
+    `${prefix}${new Intl.NumberFormat(localeFor(state.language), { minimumFractionDigits: decimals, maximumFractionDigits: decimals, useGrouping: "always" }).format(n)}${suffix}`;
   const count = useMotionValue(enabled ? 0 : value);
-  const display = useTransform(
-    count,
-    (n) => `${prefix}${n.toFixed(decimals)}${suffix}`,
-  );
+  const display = useTransform(count, format);
   useEffect(() => {
     const control = animate(count, value, {
       duration: enabled ? 1.35 : 0,
@@ -46,20 +47,32 @@ export function CountUp({
   return (
     <span className="count-up">
       <motion.span aria-hidden="true">{display}</motion.span>
-      <span className="sr-only">{`${prefix}${value.toFixed(decimals)}${suffix}`}</span>
+      <span className="sr-only">{format(value)}</span>
     </span>
   );
 }
 
 export function AnimatedValue({ value }: { value: string | number }) {
-  const match = String(value).match(/^([^\d]*)(\d+(?:\.\d+)?)(.*)$/);
+  const { state } = useStore();
+  const match = String(value).match(/^([^\d]*)(\d[\d.,\s\u00a0\u202f]*)(.*)$/);
   if (!match) return <>{value}</>;
+  const parts = new Intl.NumberFormat(localeFor(state.language)).formatToParts(
+    12345.6,
+  );
+  const decimal = parts.find((p) => p.type === "decimal")?.value || ".";
+  const group = parts.find((p) => p.type === "group")?.value || ",";
+  const numeric = match[2]
+    .trim()
+    .split(group)
+    .join("")
+    .replace(/\s/g, "")
+    .replace(decimal, ".");
   return (
     <CountUp
-      value={Number(match[2])}
-      decimals={match[2].split(".")[1]?.length || 0}
+      value={Number(numeric)}
+      decimals={numeric.split(".")[1]?.length || 0}
       prefix={match[1]}
-      suffix={match[3]}
+      suffix={(match[2].match(/\s+$/)?.[0] || "") + match[3]}
     />
   );
 }

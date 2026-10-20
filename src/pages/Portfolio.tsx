@@ -1,3 +1,5 @@
+import { phrase } from "../i18n";
+import { localeFor } from "../localization/preferences";
 import { useState } from "react";
 import {
   ArrowUpRight,
@@ -163,7 +165,7 @@ export function Properties() {
                     <small>/ night</small>
                   </span>
                   <span>
-                    {new Intl.DateTimeFormat(state.language, {
+                    {new Intl.DateTimeFormat(localeFor(state.language), {
                       hour: "2-digit",
                       minute: "2-digit",
                       timeZone: p.timezone,
@@ -307,7 +309,7 @@ export function Reservations() {
                   key={d}
                 >
                   {new Date(d + "T12:00:00Z").toLocaleDateString(
-                    state.language,
+                    localeFor(state.language),
                     { weekday: "short" },
                   )}
                   <strong>{Number(d.slice(8))}</strong>
@@ -337,7 +339,7 @@ export function Reservations() {
                       <button
                         key={d}
                         className={`booking-cell ${blocked ? "blocked-night" : ""} ${b ? "booked " + (b.channel === "Direct" ? "direct" : "ota") : ""} ${d === day(state.now) ? "current" : ""}`}
-                        aria-label={`${p.name}, ${d}, ${b ? b.guest : blocked ? "blocked" : "available"}`}
+                        aria-label={`${p.name}, ${new Intl.DateTimeFormat(localeFor(state.language), { dateStyle: "medium", timeZone: "UTC" }).format(new Date(d + "T12:00:00Z"))}, ${b ? b.guest : phrase(blocked ? "Blocked" : "Available", state.language)}`}
                         onClick={() =>
                           b ? open(b.id) : open(`rate:${p.id}:${d}`)
                         }

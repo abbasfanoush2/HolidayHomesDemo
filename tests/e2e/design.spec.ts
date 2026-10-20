@@ -26,7 +26,7 @@ test("suggestion filtering, dismissal, approval feedback and evidence reflect sh
     .locator(".suggestion-kinds")
     .getByRole("button", { name: /Decisions/ })
     .click();
-  await expect(page.locator(".suggestion-card")).toHaveCount(3);
+  await expect(page.locator(".suggestion-card")).toHaveCount(1);
   const decision = page.locator(".suggestion-card").first();
   await decision
     .getByRole("button", { name: "Approve in demo", exact: true })
@@ -89,7 +89,7 @@ test("motion settles to current values and both motion preferences preserve work
       .locator(".dashboard-metrics .kpi")
       .first()
       .locator("strong [aria-hidden=true]"),
-  ).toHaveText("12");
+  ).toHaveText("4");
   await page.goto("/settings");
   await page.getByRole("checkbox", { name: /Presentation motion/ }).uncheck();
   await expect(page.locator("html")).toHaveAttribute("data-motion", "false");

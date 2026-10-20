@@ -10,6 +10,19 @@ import type { State, Command, Filters } from "./domain/types";
 import { makeSeed, day } from "./domain/seed";
 import { execute } from "./domain/engine";
 import { dictionaries, type TranslationKey } from "./i18n";
+import { useLocation, useNavigate } from "react-router-dom";
+import { serialiseState, hydrateMessages } from "./localization/catalogue";
+import { LocaleContext } from "./localization/context";
+import {
+  detectCountry,
+  localeFor,
+  markets,
+  resolvePreferences,
+  savePreferences,
+  urlMarket,
+  type Market,
+  type Preferences,
+} from "./localization/preferences";
 const KEY = "staypilot-demo-v1";
 const FILTER_KEY = "staypilot-filters-v1";
 function defaultFilters(now: string): Filters {
@@ -35,7 +48,8 @@ export function restoreState(raw: string | null): {
 } {
   if (!raw) return { state: makeSeed(), notice: "" };
   try {
-    const data = JSON.parse(raw);
+    const data = hydrateMessages(JSON.parse(raw)) as State &
+      Record<string, unknown>;
     if (
       data.schema !== 1 ||
       !Array.isArray(data.properties) ||
@@ -97,14 +111,41 @@ interface Store {
   setAssistant: (v: boolean) => void;
   modal: string | null;
   setModal: (v: string | null) => void;
+  preferences: Preferences;
+  setMarket: (market: Market | "automatic") => Promise<void>;
 }
 const Context = createContext<Store | null>(null);
-export function StoreProvider({ children }: { children: ReactNode }) {
-  const [initial] = useState(() => restoreState(localStorage.getItem(KEY)));
+export function StoreProvider({
+  children,
+  preferences: bootPreferences,
+}: {
+  children: ReactNode;
+  preferences: Preferences;
+}) {
+  const [initial] = useState(() => {
+    let raw = null;
+    try {
+      raw = localStorage.getItem(KEY);
+    } catch {
+      /* Storage can be unavailable. */
+    }
+    const restored = restoreState(raw);
+    restored.state.language = bootPreferences.language;
+    return restored;
+  });
+  const [preferences, setPreferences] = useState(bootPreferences);
+  const preferenceRef = useRef(preferences);
+  const preferenceVersion = useRef(0);
+  const location = useLocation(),
+    navigate = useNavigate();
   const [state, setState] = useState(initial.state);
   const ref = useRef(state);
   const [filters, setFilterState] = useState<Filters>(() => {
-    const defaults = defaultFilters(state.now);
+    const defaults = {
+      ...defaultFilters(state.now),
+      country: markets[bootPreferences.market].country,
+      currency: bootPreferences.currency,
+    };
     try {
       const saved = JSON.parse(localStorage.getItem(FILTER_KEY) || "null");
       if (
@@ -116,7 +157,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         !Number.isNaN(Date.parse(saved.to)) &&
         saved.to >= saved.from
       )
-        return { ...defaults, ...saved };
+        return {
+          ...defaults,
+          ...saved,
+          ...(!bootPreferences.hadPreferences ||
+          bootPreferences.source === "url"
+            ? { country: defaults.country, city: "", propertyId: "", team: "" }
+            : {}),
+          currency: bootPreferences.currency,
+        };
     } catch {
       /* Invalid filter preferences use the fixed reporting period. */
     }
@@ -128,14 +177,117 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     [modal, setModal] = useState<string | null>(null);
   const notify = (message: string, error = false) =>
     setToast({ message, error });
+  const clearOutreach = () => {
+    const query = new URLSearchParams(location.search);
+    if (query.has("market")) {
+      query.delete("market");
+      navigate(
+        {
+          pathname: location.pathname,
+          search: query.toString(),
+          hash: location.hash,
+        },
+        { replace: true },
+      );
+    }
+  };
+  const saveManual = (
+    language = ref.current.language,
+    currency = preferenceRef.current.currency,
+  ) => {
+    preferenceVersion.current++;
+    const next: Preferences = {
+      ...preferenceRef.current,
+      language,
+      currency,
+      mode: "manual",
+      source: "manual",
+      hadPreferences: true,
+    };
+    preferenceRef.current = next;
+    setPreferences(next);
+    savePreferences({
+      version: 2,
+      mode: "manual",
+      market: next.market,
+      language,
+      currency,
+    });
+    clearOutreach();
+  };
+  const applyMarket = (next: Preferences) => {
+    preferenceRef.current = next;
+    setPreferences(next);
+    const updated = execute(ref.current, {
+      type: "settings",
+      values: { language: next.language },
+    });
+    ref.current = updated;
+    setState(updated);
+    setFilterState((current) => {
+      const value = {
+        ...current,
+        country: markets[next.market].country,
+        city: "",
+        propertyId: "",
+        team: "",
+        currency: next.currency,
+      };
+      try {
+        localStorage.setItem(FILTER_KEY, JSON.stringify(value));
+      } catch {
+        /* Tab-local preferences remain available. */
+      }
+      return value;
+    });
+    try {
+      localStorage.setItem(KEY, serialiseState(updated));
+    } catch {
+      /* Reported by normal command persistence. */
+    }
+  };
+  const setMarket = async (market: Market | "automatic") => {
+    const version = ++preferenceVersion.current;
+    clearOutreach();
+    if (market === "automatic") {
+      savePreferences({ version: 2, mode: "automatic" });
+      const next = resolvePreferences({
+        search: "",
+        saved: null,
+        country: await detectCountry(),
+        languages: navigator.languages || [navigator.language],
+      });
+      if (version !== preferenceVersion.current) return;
+      applyMarket({ ...next, hadPreferences: true });
+    } else {
+      const next: Preferences = {
+        market,
+        language: markets[market].language,
+        currency: markets[market].currency,
+        mode: "manual",
+        source: "manual",
+        hadPreferences: true,
+      };
+      savePreferences({
+        version: 2,
+        mode: "manual",
+        market,
+        language: next.language,
+        currency: next.currency,
+      });
+      applyMarket(next);
+    }
+  };
   const send = (c: Command, message?: string) => {
     try {
+      if (c.type === "settings" && c.values.language)
+        saveManual(c.values.language);
       const next = execute(ref.current, c);
       ref.current = next;
       setState(next);
       let storageFailed = false;
       try {
-        localStorage.setItem(KEY, JSON.stringify(next));
+        localStorage.setItem(KEY, serialiseState(next));
       } catch {
         storageFailed = true;
         notify(
@@ -154,8 +306,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     }
   };
   useEffect(() => {
+    if (!bootPreferences.hadPreferences)
+      savePreferences({ version: 2, mode: "automatic" });
     try {
-      localStorage.setItem(KEY, JSON.stringify(state));
+      localStorage.setItem(KEY, serialiseState(state));
     } catch {
       notify(
         "Your browser storage is full. Changes remain in this tab; export or reset before closing.",
@@ -163,6 +317,22 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       );
     }
   }, []);
+  const outreachRef = useRef(urlMarket(location.search));
+  useEffect(() => {
+    const market = urlMarket(location.search);
+    if (market && market !== outreachRef.current) {
+      preferenceVersion.current++;
+      applyMarket({
+        market,
+        language: markets[market].language,
+        currency: markets[market].currency,
+        mode: preferenceRef.current.mode,
+        source: "url",
+        hadPreferences: true,
+      });
+    }
+    outreachRef.current = market;
+  }, [location.search]);
   useEffect(() => {
     if (initial.notice)
       notify(
@@ -205,59 +375,67 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     return () => document.removeEventListener("visibilitychange", visibility);
   }, []);
   useEffect(() => {
-    document.documentElement.lang = state.language;
+    document.documentElement.lang = localeFor(state.language);
     document.documentElement.dataset.motion = String(state.motion);
   }, [state.language, state.motion]);
   const reset = () => {
     const fresh = makeSeed();
+    fresh.language = ref.current.language;
     ref.current = fresh;
     setState(fresh);
-    localStorage.setItem(KEY, JSON.stringify(fresh));
-    localStorage.setItem(FILTER_KEY, JSON.stringify(defaultFilters(fresh.now)));
+    localStorage.setItem(KEY, serialiseState(fresh));
     setDetail(null);
-    setFilterState({
-      country: "All",
+    const resetFilters: Filters = {
+      country: markets[preferenceRef.current.market].country,
       city: "",
       propertyId: "",
       team: "",
       from: "2026-10-01",
       to: "2026-10-31",
-      currency: "GBP",
+      currency: preferenceRef.current.currency,
       search: "",
-    });
+    };
+    localStorage.setItem(FILTER_KEY, JSON.stringify(resetFilters));
+    setFilterState(resetFilters);
     notify("Demo reset to 20 October 2026, 09:00 London time.");
   };
   return (
-    <Context.Provider
-      value={{
-        state,
-        send,
-        filters,
-        setFilters: (f) =>
-          setFilterState((v) => {
-            const next = { ...v, ...f };
-            try {
-              localStorage.setItem(FILTER_KEY, JSON.stringify(next));
-            } catch {
-              /* Business state persistence reports quota errors. */
-            }
-            return next;
-          }),
-        open: setDetail,
-        detail,
-        setDetail,
-        toast,
-        notify,
-        reset,
-        t: (k) => dictionaries[state.language][k],
-        assistant,
-        setAssistant,
-        modal,
-        setModal,
-      }}
-    >
-      {children}
-    </Context.Provider>
+    <LocaleContext.Provider value={state.language}>
+      <Context.Provider
+        value={{
+          state,
+          send,
+          filters,
+          setFilters: (f) => {
+            if (f.currency) saveManual(ref.current.language, f.currency);
+            return setFilterState((v) => {
+              const next = { ...v, ...f };
+              try {
+                localStorage.setItem(FILTER_KEY, serialiseState(next));
+              } catch {
+                /* Business state persistence reports quota errors. */
+              }
+              return next;
+            });
+          },
+          open: setDetail,
+          detail,
+          setDetail,
+          toast,
+          notify,
+          reset,
+          t: (k) => dictionaries[state.language][k],
+          assistant,
+          setAssistant,
+          modal,
+          setModal,
+          preferences,
+          setMarket,
+        }}
+      >
+        {children}
+      </Context.Provider>
+    </LocaleContext.Provider>
   );
 }
 export function useStore() {

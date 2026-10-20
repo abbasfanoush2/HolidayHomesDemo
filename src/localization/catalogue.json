@@ -1,0 +1,3569 @@
+{
+  "Rate calendar": ["Calendario de precios", "Calendario tariffe"],
+  "Proposal & rate history": [
+    "Historial de propuestas y precios",
+    "Cronologia proposte e tariffe"
+  ],
+  "Reservations list": ["Lista de reservas", "Elenco prenotazioni"],
+  "All conversations": ["Todas las conversaciones", "Tutte le conversazioni"],
+  "Readiness board": ["Tablero de preparación", "Bacheca preparazione"],
+  "Task list": ["Lista de tareas", "Elenco attività"],
+  "Readiness timeline": [
+    "Cronología de preparación",
+    "Cronologia preparazione"
+  ],
+  "Cleaning": ["Limpieza", "Pulizie"],
+  "Inspection": ["Inspección", "Ispezione"],
+  "Stock & purchasing": ["Existencias y compras", "Scorte e acquisti"],
+  "Supplier directory & mock quotes": [
+    "Proveedores y presupuestos ficticios",
+    "Fornitori e preventivi fittizi"
+  ],
+  "Native ledgers": ["Libros por moneda", "Registri per valuta"],
+  "Invoices & reconciliation": [
+    "Facturas y conciliación",
+    "Fatture e riconciliazione"
+  ],
+  "Guest balances": ["Saldos de huéspedes", "Saldi ospiti"],
+  "Revenue": ["Ingresos", "Ricavi"],
+  "Operations & suppliers": [
+    "Operaciones y proveedores",
+    "Operazioni e fornitori"
+  ],
+  "Owners & countries": ["Propietarios y países", "Proprietari e paesi"],
+  "AI activity": ["Actividad IA", "Attività IA"],
+  "All history": ["Todo el historial", "Tutta la cronologia"],
+  "Task": ["Tarea", "Attività"],
+  "Type": ["Tipo", "Tipo"],
+  "Due / SLA": ["Vencimiento / SLA", "Scadenza / SLA"],
+  "Evidence": ["Evidencia", "Evidenza"],
+  "Guest": ["Huésped", "Ospite"],
+  "Arrival": ["Llegada", "Arrivo"],
+  "Departure": ["Salida", "Partenza"],
+  "City": ["Ciudad", "Città"],
+  "Base rate": ["Precio base", "Tariffa base"],
+  "Accommodation": ["Alojamiento", "Soggiorni"],
+  "Guest balance": ["Saldo del huésped", "Saldo ospite"],
+  "Channel · simulated": ["Canal · simulado", "Canale · simulato"],
+  "Priority": ["Prioridad", "Priorità"],
+  "Demo supplier": ["Proveedor ficticio", "Fornitore fittizio"],
+  "Quote": ["Presupuesto", "Preventivo"],
+  "Repair evidence": ["Evidencia de reparación", "Evidenza riparazione"],
+  "Item": ["Artículo", "Articolo"],
+  "Available": ["Disponible", "Disponibile"],
+  "Minimum": ["Mínimo", "Minimo"],
+  "On order": ["En pedido", "In ordine"],
+  "Reference": ["Referencia", "Riferimento"],
+  "Fictional supplier": ["Proveedor ficticio", "Fornitore fittizio"],
+  "Amount": ["Importe", "Importo"],
+  "Category": ["Categoría", "Categoria"],
+  "Exception": ["Excepción", "Eccezione"],
+  "Document / checklist": ["Documento / lista", "Documento / lista"],
+  "Review due": ["Revisión pendiente", "Revisione entro"],
+  "Decision": ["Decisión", "Decisione"],
+  "Requested": ["Solicitado", "Richiesto"],
+  "Approver": ["Aprobador", "Approvatore"],
+  "Observed event": ["Evento observado", "Evento osservato"],
+  "Actor": ["Actor", "Autore"],
+  "Simulated time": ["Hora simulada", "Ora simulata"],
+  "Source record": ["Registro de origen", "Record sorgente"],
+  "Before": ["Antes", "Prima"],
+  "Proposed": ["Propuesto", "Proposto"],
+  "Night": ["Noche", "Notte"],
+  "Assignment": ["Asignación", "Assegnazione"],
+  "Assign": ["Asignar", "Assegna"],
+  "Start work": ["Comenzar trabajo", "Inizia lavoro"],
+  "Flag a blocker": ["Marcar bloqueo", "Segnala blocco"],
+  "Complete task": ["Completar tarea", "Completa attività"],
+  "Verify inspection": ["Verificar inspección", "Verifica ispezione"],
+  "Fail & request rework": ["Rechazar y repetir", "Non superata: rifare"],
+  "Attach demo evidence": ["Adjuntar evidencia demo", "Allega evidenza demo"],
+  "Upload local image": ["Subir imagen local", "Carica immagine locale"],
+  "Request cost approval": [
+    "Solicitar aprobación de coste",
+    "Richiedi approvazione costo"
+  ],
+  "Assign repair": ["Asignar reparación", "Assegna riparazione"],
+  "Start repair": ["Comenzar reparación", "Inizia riparazione"],
+  "Record demo repair evidence": [
+    "Registrar evidencia de reparación",
+    "Registra evidenza riparazione"
+  ],
+  "Independently verify repair": [
+    "Verificar reparación independientemente",
+    "Verifica indipendente riparazione"
+  ],
+  "Save revised quote": [
+    "Guardar presupuesto revisado",
+    "Salva preventivo rivisto"
+  ],
+  "Request 12 units": ["Solicitar 12 unidades", "Richiedi 12 unità"],
+  "Confirm receipt": ["Confirmar recepción", "Conferma ricezione"],
+  "Use 1 unit": ["Consumir 1 unidad", "Usa 1 unità"],
+  "Request exception review": [
+    "Solicitar revisión de excepción",
+    "Richiedi revisione eccezione"
+  ],
+  "Match & post invoice": [
+    "Conciliar y contabilizar",
+    "Abbina e registra fattura"
+  ],
+  "Send in demo": ["Enviar en demo", "Invia nella demo"],
+  "Draft contextual reply": [
+    "Preparar respuesta contextual",
+    "Prepara risposta contestuale"
+  ],
+  "Edit reservation": ["Editar reserva", "Modifica prenotazione"],
+  "Cancel in demo": ["Cancelar en demo", "Annulla nella demo"],
+  "Edit property": ["Editar alojamiento", "Modifica alloggio"],
+  "Open inspection": ["Abrir inspección", "Apri ispezione"],
+  "Renewal task": ["Tarea de renovación", "Attività rinnovo"],
+  "Undo batch": ["Deshacer lote", "Annulla gruppo"],
+  "Review workload": ["Revisar carga de trabajo", "Esamina carico di lavoro"],
+  "Source stay": ["Estancia de origen", "Soggiorno sorgente"],
+  "Follow up": ["Dar seguimiento", "Segui"],
+  "Draft factual reply": [
+    "Preparar respuesta objetiva",
+    "Prepara risposta fattuale"
+  ],
+  "Print report": ["Imprimir informe", "Stampa report"],
+  "Replay": ["Repetir", "Ripeti"],
+  "Earlier": ["Anterior", "Precedente"],
+  "Later": ["Siguiente", "Successivo"],
+  "Today": ["Hoy", "Oggi"],
+  "Overview": ["Resumen", "Panoramica"],
+  "Calendar": ["Calendario", "Calendario"],
+  "Guests": ["Huéspedes", "Ospiti"],
+  "Assets": ["Activos", "Beni"],
+  "Inspections": ["Inspecciones", "Ispezioni"],
+  "Agreement": ["Acuerdo", "Accordo"],
+  "Performance": ["Rendimiento", "Prestazioni"],
+  "Documents": ["Documentos", "Documenti"],
+  "Maintenance": ["Mantenimiento", "Manutenzione"],
+  "Work notes": ["Notas de trabajo", "Note di lavoro"],
+  "Workspace & presentation": [
+    "Espacio y presentación",
+    "Spazio e presentazione"
+  ],
+  "Simulated roles": ["Roles simulados", "Ruoli simulati"],
+  "Agent permission policies": [
+    "Políticas de permisos IA",
+    "Regole di autorizzazione IA"
+  ],
+  "Simulation controls": ["Controles de simulación", "Controlli simulazione"],
+  "Simulated integrations": [
+    "Integraciones simuladas",
+    "Integrazioni simulate"
+  ],
+  "Current role": ["Rol actual", "Ruolo attuale"],
+  "Interface language": ["Idioma de interfaz", "Lingua dell’interfaccia"],
+  "Illustrative tax adjustment (%)": [
+    "Ajuste fiscal ilustrativo (%)",
+    "Rettifica fiscale illustrativa (%)"
+  ],
+  "Permission policy": ["Política de permisos", "Politica dei permessi"],
+  "Accounting assumptions & cashflow": [
+    "Supuestos contables y flujo de caja",
+    "Ipotesi contabili e flussi di cassa"
+  ],
+  "Draft versus posted expenses": [
+    "Gastos en borrador y contabilizados",
+    "Spese in bozza e registrate"
+  ],
+  "Source-based portfolio report": [
+    "Informe basado en registros",
+    "Report basato sui record"
+  ],
+  "Portfolio risk matrix": [
+    "Matriz de riesgos de cartera",
+    "Matrice rischi portafoglio"
+  ],
+  "Open findings & recommended actions": [
+    "Hallazgos y acciones recomendadas",
+    "Risultati e azioni raccomandate"
+  ],
+  "Required evidence checklist": [
+    "Lista de evidencias requeridas",
+    "Lista evidenze richieste"
+  ],
+  "Incident & activity history": [
+    "Historial de incidencias y actividad",
+    "Cronologia incidenti e attività"
+  ],
+  "Policy & expected effect": [
+    "Política y efecto esperado",
+    "Regole ed effetto previsto"
+  ],
+  "Triggered": ["Activado", "Attivato"],
+  "Viewed": ["Consultado", "Visualizzato"],
+  "Reviewed": ["Revisado", "Esaminato"],
+  "Executed": ["Ejecutado", "Eseguito"],
+  "Waiting for review": ["Pendiente de revisión", "In attesa di revisione"],
+  "Approved in demo": ["Aprobado en demo", "Approvato nella demo"],
+  "Evidence changed": ["Evidencia modificada", "Evidenza modificata"],
+  "A calmer morning": ["Una mañana más tranquila", "Una mattina più serena"],
+  "Follow the signal": ["Sigue la señal", "Segui il segnale"],
+  "Keep control": ["Mantén el control", "Mantieni il controllo"],
+  "Verify the result": ["Verifica el resultado", "Verifica il risultato"],
+  "See the whole business": ["Ve todo el negocio", "Osserva l’intera attività"],
+  "Make the boundary clear": ["Aclara los límites", "Chiarisci i limiti"],
+  "Every home, every detail, all in one place. Original illustrations of fictional homes.": [
+    "Cada alojamiento y cada detalle en un solo lugar. Ilustraciones originales de viviendas ficticias.",
+    "Ogni alloggio e ogni dettaglio in un unico luogo. Illustrazioni originali di case fittizie."
+  ],
+  "Simulated channels. Real local availability checks. Adjacent checkout and check-in are supported.": [
+    "Canales simulados y comprobación local de disponibilidad. Se permite salida y entrada el mismo día.",
+    "Canali simulati e controlli locali di disponibilità. Partenza e arrivo adiacenti sono consentiti."
+  ],
+  "Prepared multilingual conversations. Sending creates local records only.": [
+    "Conversaciones multilingües preparadas. El envío solo crea registros locales.",
+    "Conversazioni multilingue preparate. L’invio crea solo record locali."
+  ],
+  "A home becomes ready when the evidence says it is. Cost approval and repair verification are separate steps.": [
+    "Un alojamiento está listo cuando lo demuestra la evidencia. Aprobar el coste y verificar la reparación son pasos distintos.",
+    "Una casa è pronta quando lo dimostrano le evidenze. Approvazione del costo e verifica della riparazione sono passaggi distinti."
+  ],
+  "Turnover work follows reservations automatically. Cleaning completion never replaces inspection sign-off.": [
+    "La limpieza se programa con las reservas. Terminar la limpieza no sustituye la inspección.",
+    "Le pulizie seguono automaticamente le prenotazioni. La pulizia completata non sostituisce l’ispezione."
+  ],
+  "Quote → cost approval → scheduled work → repair evidence → independent verification. Each stage has a distinct result.": [
+    "Presupuesto → aprobación del coste → trabajo programado → evidencia → verificación independiente. Cada fase tiene su resultado.",
+    "Preventivo → approvazione costo → lavoro programmato → evidenza → verifica indipendente. Ogni fase ha un risultato distinto."
+  ],
+  "Approved purchases remain on order until receipt. Stock usage is logged and cannot create negative quantities.": [
+    "Las compras aprobadas siguen en pedido hasta su recepción. El consumo se registra y no permite existencias negativas.",
+    "Gli acquisti approvati restano in ordine fino alla ricezione. Il consumo è registrato e non può creare quantità negative."
+  ],
+  "Assignments validate skills, availability, service area and a maximum of four tasks per shift. Impossible assignments explain their blocker.": [
+    "Las asignaciones comprueban habilidades, disponibilidad, zona y un máximo de cuatro tareas por turno. Los conflictos se explican.",
+    "Le assegnazioni verificano competenze, disponibilità, zona e massimo quattro attività per turno. I conflitti vengono spiegati."
+  ],
+  "Synthetic market signals. Bounded proposals for available nights. Confirmed booking amounts stay fixed.": [
+    "Señales de mercado sintéticas. Propuestas limitadas a noches disponibles. Los importes confirmados no cambian.",
+    "Segnali di mercato sintetici. Proposte limitate alle notti disponibili. Gli importi confermati restano fissi."
+  ],
+  "Evidence → hypothesis → action → owner → measurement. Illustrative opportunities stay separate from realised income.": [
+    "Evidencia → hipótesis → acción → responsable → medición. Las oportunidades ilustrativas no son ingresos realizados.",
+    "Evidenza → ipotesi → azione → responsabile → misurazione. Le opportunità illustrative restano separate dai ricavi realizzati."
+  ],
+  "Simplified demo accounting. Separate GBP and EUR ledgers; no real banking, tax advice or payouts.": [
+    "Contabilidad de demo simplificada. Libros separados en GBP y EUR; sin banca, asesoramiento fiscal ni pagos reales.",
+    "Contabilità demo semplificata. Registri separati GBP ed EUR; nessuna banca, consulenza fiscale o pagamento reale."
+  ],
+  "Fictional owner agreements. Native-currency statements reconcile with the shared booking and expense records.": [
+    "Acuerdos ficticios de propietarios. Los extractos por moneda concilian con reservas y gastos compartidos.",
+    "Accordi fittizi dei proprietari. I rendiconti per valuta si riconciliano con prenotazioni e spese condivise."
+  ],
+  "Synthetic guest feedback and prepared replies. Fixing an issue never rewrites a historical rating.": [
+    "Reseñas sintéticas y respuestas preparadas. Reparar una incidencia no modifica valoraciones históricas.",
+    "Recensioni sintetiche e risposte preparate. Risolvere un problema non riscrive una valutazione storica."
+  ],
+  "Illustrative document categories do not establish legal compliance or certify a property safe.": [
+    "Las categorías documentales ilustrativas no acreditan cumplimiento legal ni certifican seguridad.",
+    "Le categorie documentali illustrative non attestano conformità legale o sicurezza dell’alloggio."
+  ],
+  "Every decision shows its evidence, proposed change and expected effect. Execution revalidates the current record.": [
+    "Cada decisión muestra evidencia, cambio propuesto y efecto esperado. La ejecución vuelve a comprobar el registro.",
+    "Ogni decisione mostra evidenze, modifica proposta ed effetto previsto. L’esecuzione ricontrolla il record."
+  ],
+  "Observations, decisions and local side effects. All times follow the demo clock.": [
+    "Observaciones, decisiones y efectos locales. Todos los horarios siguen el reloj de la demo.",
+    "Osservazioni, decisioni ed effetti locali. Tutti gli orari seguono l’orologio demo."
+  ],
+  "Propose a quiet-week adjustment": [
+    "Proponer ajuste de semana tranquila",
+    "Proponi modifica per una settimana debole"
+  ],
+  "View agreement settings": [
+    "Ver ajustes del acuerdo",
+    "Vedi impostazioni accordo"
+  ],
+  "Save agreement": ["Guardar acuerdo", "Salva accordo"],
+  "Create reservation": ["Crear reserva", "Crea prenotazione"],
+  "Block this night": ["Bloquear esta noche", "Blocca questa notte"],
+  "Release this night": ["Liberar esta noche", "Libera questa notte"],
+  "Prepare pricing proposal": [
+    "Preparar propuesta de precios",
+    "Prepara proposta prezzi"
+  ],
+  "View shift & assign work": [
+    "Ver turno y asignar trabajo",
+    "Vedi turno e assegna lavoro"
+  ],
+  "Turnovers & cleaning evidence": [
+    "Limpiezas y evidencias",
+    "Pulizie ed evidenze"
+  ],
+  "Arrival inspections & rework": [
+    "Inspecciones y repetición",
+    "Ispezioni arrivi e rilavorazioni"
+  ],
+  "Assets & recurring issues": [
+    "Activos e incidencias recurrentes",
+    "Beni e problemi ricorrenti"
+  ],
+  "Today’s readiness timeline": [
+    "Cronología de preparación de hoy",
+    "Cronologia preparazione di oggi"
+  ],
+  "Year of booked stays": [
+    "Año de estancias reservadas",
+    "Anno di soggiorni prenotati"
+  ],
+  "Review requests & journey touchpoints": [
+    "Solicitudes de reseña y etapas del viaje",
+    "Richieste recensioni e tappe del soggiorno"
+  ],
+  "PLACES WITH PERSONALITY": [
+    "ALOJAMIENTOS CON PERSONALIDAD",
+    "ALLOGGI CON PERSONALITÀ"
+  ],
+  "MAKE ROOM FOR MEMORABLE STAYS": [
+    "ESPACIO PARA ESTANCIAS MEMORABLES",
+    "SPAZIO PER SOGGIORNI MEMORABILI"
+  ],
+  "EVERY CONVERSATION, A WARMER WELCOME": [
+    "CADA CONVERSACIÓN, UNA MEJOR BIENVENIDA",
+    "OGNI CONVERSAZIONE, UN’ACCOGLIENZA MIGLIORE"
+  ],
+  "THE DETAILS MAKE THE DIFFERENCE": [
+    "LOS DETALLES MARCAN LA DIFERENCIA",
+    "I DETTAGLI FANNO LA DIFFERENZA"
+  ],
+  "THE ART OF A READY HOME": [
+    "EL ARTE DE PREPARAR UN ALOJAMIENTO",
+    "L’ARTE DI UNA CASA PRONTA"
+  ],
+  "SMALL FIXES, BETTER STAYS": [
+    "PEQUEÑAS REPARACIONES, MEJORES ESTANCIAS",
+    "PICCOLE RIPARAZIONI, SOGGIORNI MIGLIORI"
+  ],
+  "THE RIGHT THINGS, RIGHT ON TIME": [
+    "LO NECESARIO, EN EL MOMENTO PRECISO",
+    "LE COSE GIUSTE, AL MOMENTO GIUSTO"
+  ],
+  "GOOD PEOPLE. A CLEAR PLAN.": [
+    "BUEN EQUIPO. UN PLAN CLARO.",
+    "UN BUON TEAM. UN PIANO CHIARO."
+  ],
+  "THOUGHTFUL PRICING, HEALTHIER STAYS": [
+    "PRECIOS MEDITADOS, MEJORES ESTANCIAS",
+    "PREZZI ATTENTI, SOGGIORNI MIGLIORI"
+  ],
+  "MAKE YOUR NEXT CHAPTER INTENTIONAL": [
+    "PLANIFICA TU PRÓXIMO CAPÍTULO",
+    "PIANIFICA IL PROSSIMO CAPITOLO"
+  ],
+  "CLARITY IN EVERY NUMBER": [
+    "CLARIDAD EN CADA CIFRA",
+    "CHIAREZZA IN OGNI NUMERO"
+  ],
+  "PARTNERSHIPS BUILT ON TRANSPARENCY": [
+    "ALIANZAS BASADAS EN TRANSPARENCIA",
+    "COLLABORAZIONI BASATE SULLA TRASPARENZA"
+  ],
+  "THOUGHTFUL STAYS, HONEST FEEDBACK": [
+    "ESTANCIAS ATENTAS, OPINIONES HONESTAS",
+    "SOGGIORNI ATTENTI, RECENSIONI ONESTE"
+  ],
+  "LESS GUESSWORK. MORE PERSPECTIVE.": [
+    "MENOS CONJETURAS. MÁS PERSPECTIVA.",
+    "MENO SUPPOSIZIONI. PIÙ PROSPETTIVA."
+  ],
+  "CLEAR RECORDS. HONEST ASSURANCE.": [
+    "REGISTROS CLAROS. GARANTÍAS HONESTAS.",
+    "RECORD CHIARI. GARANZIE ONESTE."
+  ],
+  "YOUR JUDGEMENT. YOUR CONTROL.": [
+    "TU CRITERIO. TU CONTROL.",
+    "IL TUO GIUDIZIO. IL TUO CONTROLLO."
+  ],
+  "A RECORD OF WHAT REALLY CHANGED": [
+    "UN REGISTRO DE LO QUE CAMBIÓ",
+    "UN RECORD DI CIÒ CHE È CAMBIATO"
+  ],
+  "MAKE SPACE FOR THE WAY YOU WORK": [
+    "ESPACIO PARA TU FORMA DE TRABAJAR",
+    "SPAZIO PER IL TUO MODO DI LAVORARE"
+  ],
+  "A BETTER WAY TO TELL THE STORY": [
+    "UNA MEJOR FORMA DE CONTAR LA HISTORIA",
+    "UN MODO MIGLIORE DI RACCONTARE LA STORIA"
+  ],
+  "YOUR SIMULATED OPERATING TEAM": [
+    "TU EQUIPO OPERATIVO SIMULADO",
+    "IL TUO TEAM OPERATIVO SIMULATO"
+  ],
+  "Ready": ["Listo", "Pronto"],
+  "At risk": ["En riesgo", "A rischio"],
+  "Not ready": ["No preparado", "Non pronto"],
+  "Pending": ["Pendiente", "In attesa"],
+  "Complete": ["Completado", "Completato"],
+  "Queued": ["En cola", "In coda"],
+  "In progress": ["En curso", "In corso"],
+  "Confirmed": ["Confirmado", "Confermato"],
+  "Cancelled": ["Cancelado", "Annullato"],
+  "Checked in": ["Alojado", "Ospite arrivato"],
+  "Checked out": ["Salida realizada", "Partito"],
+  "Open": ["Abierto", "Aperto"],
+  "Assigned": ["Asignado", "Assegnato"],
+  "Awaiting approval": ["Pendiente de aprobación", "In attesa di approvazione"],
+  "Scheduled": ["Programado", "Programmato"],
+  "Resolved": ["Resuelto", "Risolto"],
+  "Closed": ["Cerrado", "Chiuso"],
+  "Draft": ["Borrador", "Bozza"],
+  "Approved": ["Aprobado", "Approvato"],
+  "Rejected": ["Rechazado", "Rifiutato"],
+  "Stale": ["Desactualizado", "Obsoleto"],
+  "Current": ["Vigente", "Attuale"],
+  "Needs review": ["Requiere revisión", "Da esaminare"],
+  "Unknown": ["Desconocido", "Sconosciuto"],
+  "Missing": ["Falta", "Mancante"],
+  "Blocked": ["Bloqueado", "Bloccato"],
+  "Critical": ["Crítico", "Critico"],
+  "High": ["Alta", "Alta"],
+  "Normal": ["Normal", "Normale"],
+  "Routine": ["Rutinario", "Ordinario"],
+  "Urgent": ["Urgente", "Urgente"],
+  "Positive": ["Positivo", "Positivo"],
+  "Negative": ["Negativo", "Negativo"],
+  "Neutral": ["Neutro", "Neutro"],
+  "Outbound": ["Enviado localmente", "Inviato localmente"],
+  "Inbound": ["Recibido", "Ricevuto"],
+  "Simulated": ["Simulado", "Simulato"],
+  "Paused": ["En pausa", "In pausa"],
+  "Posted": ["Contabilizado", "Registrato"],
+  "Matched": ["Conciliado", "Abbinato"],
+  "Duplicate": ["Duplicado", "Duplicato"],
+  "Undone": ["Deshecho", "Annullato"],
+  "Review": ["Revisar", "Esamina"],
+  "needs information": ["necesita información", "richiede informazioni"],
+  "awaiting approval": ["pendiente de aprobación", "in attesa di approvazione"],
+  "completed": ["completado", "completato"],
+  "queued": ["en cola", "in coda"],
+  "escalated": ["escalado", "inoltrato"],
+  "failed": ["fallido", "non riuscito"],
+  "executing": ["ejecutando", "in esecuzione"],
+  "analysing": ["analizando", "analisi in corso"],
+  "proposed": ["propuesto", "proposto"],
+  "AI Command Centre": ["Centro de mando IA", "Centro di comando IA"],
+  "Properties": ["Alojamientos", "Alloggi"],
+  "Reservations": ["Reservas", "Prenotazioni"],
+  "Unified inbox": ["Bandeja unificada", "Posta unificata"],
+  "Operations": ["Operaciones", "Operazioni"],
+  "Housekeeping": ["Limpieza", "Pulizie"],
+  "Inventory & suppliers": [
+    "Inventario y proveedores",
+    "Inventario e fornitori"
+  ],
+  "Team & scheduling": ["Equipo y turnos", "Team e turni"],
+  "Revenue & pricing": ["Ingresos y precios", "Ricavi e prezzi"],
+  "Growth strategy": ["Estrategia comercial", "Strategia commerciale"],
+  "Finance": ["Finanzas", "Finanze"],
+  "Owners & statements": [
+    "Propietarios y extractos",
+    "Proprietari e rendiconti"
+  ],
+  "Guest experience": ["Experiencia del huésped", "Esperienza ospiti"],
+  "Reports & analytics": ["Informes y análisis", "Report e analisi"],
+  "Documents & safety": ["Documentos y seguridad", "Documenti e sicurezza"],
+  "Approvals": ["Aprobaciones", "Approvazioni"],
+  "Activity history": ["Historial de actividad", "Cronologia attività"],
+  "Settings": ["Configuración", "Impostazioni"],
+  "Demo Studio": ["Estudio de demos", "Studio demo"],
+  "TODAY & AI": ["HOY E IA", "OGGI E IA"],
+  "PORTFOLIO & GUESTS": ["ALOJAMIENTOS Y HUÉSPEDES", "ALLOGGI E OSPITI"],
+  "OPERATIONS": ["OPERACIONES", "OPERAZIONI"],
+  "REVENUE & GROWTH": ["INGRESOS Y CRECIMIENTO", "RICAVI E CRESCITA"],
+  "FINANCE & OWNERS": ["FINANZAS Y PROPIETARIOS", "FINANZE E PROPRIETARI"],
+  "ADMINISTRATION": ["ADMINISTRACIÓN", "AMMINISTRAZIONE"],
+  "Search homes, guests, tasks…": [
+    "Buscar alojamientos, huéspedes, tareas…",
+    "Cerca alloggi, ospiti, attività…"
+  ],
+  "All countries": ["Todos los países", "Tutti i paesi"],
+  "All cities": ["Todas las ciudades", "Tutte le città"],
+  "All properties": ["Todos los alojamientos", "Tutti gli alloggi"],
+  "All teams": ["Todos los equipos", "Tutti i team"],
+  "Create": ["Crear", "Crea"],
+  "Export CSV": ["Exportar CSV", "Esporta CSV"],
+  "View all": ["Ver todo", "Vedi tutto"],
+  "Save changes": ["Guardar cambios", "Salva modifiche"],
+  "Cancel": ["Cancelar", "Annulla"],
+  "Close": ["Cerrar", "Chiudi"],
+  "Approve in demo": ["Aprobar en demo", "Approva nella demo"],
+  "Reject": ["Rechazar", "Rifiuta"],
+  "Source evidence": ["Fuentes de evidencia", "Fonti delle evidenze"],
+  "No records match your filters.": [
+    "Ningún registro coincide con los filtros.",
+    "Nessun record corrisponde ai filtri."
+  ],
+  "Reset demo": ["Reiniciar demo", "Reimposta demo"],
+  "Pause": ["Pausar", "Pausa"],
+  "Play": ["Reproducir", "Riproduci"],
+  "Step": ["Avanzar", "Avanza"],
+  "Monitoring while demo is running": [
+    "Supervisión mientras se ejecuta la demo",
+    "Monitoraggio durante la demo"
+  ],
+  "Simulation paused": ["Simulación en pausa", "Simulazione in pausa"],
+  "Demo • Synthetic data • Simulated AI": [
+    "Demo • Datos sintéticos • IA simulada",
+    "Demo • Dati sintetici • IA simulata"
+  ],
+  "Ask StayPilot": ["Preguntar a StayPilot", "Chiedi a StayPilot"],
+  "Good morning, Alex": ["Buenos días, Alex", "Buongiorno, Alex"],
+  "A clear view of your homes. A calmer start to your day.": [
+    "Una visión clara de tus alojamientos. Un comienzo más tranquilo.",
+    "Una visione chiara dei tuoi alloggi. Un inizio più sereno."
+  ],
+  "Portfolio overview": ["Resumen de la cartera", "Panoramica del portafoglio"],
+  "Your morning, made simple.": [
+    "Tu mañana, más sencilla.",
+    "La tua mattina, più semplice."
+  ],
+  "Your team of simulated agents has prepared the handover. Here is where a little attention will make a big difference.": [
+    "Tus agentes simulados han preparado el relevo. Estas son las prioridades de hoy.",
+    "I tuoi agenti simulati hanno preparato il passaggio di consegne. Ecco le priorità di oggi."
+  ],
+  "Portfolio health": ["Estado de la cartera", "Stato del portafoglio"],
+  "Needs your attention": ["Necesita tu atención", "Richiede attenzione"],
+  "Arrivals today": ["Llegadas de hoy", "Arrivi di oggi"],
+  "Departures today": ["Salidas de hoy", "Partenze di oggi"],
+  "Occupancy": ["Ocupación", "Occupazione"],
+  "Booked revenue": ["Ingresos reservados", "Ricavi prenotati"],
+  "Owner payable": ["Importe al propietario", "Importo al proprietario"],
+  "Operator earnings": ["Ingresos del operador", "Ricavi operatore"],
+  "Arrival readiness": [
+    "Preparación para llegadas",
+    "Preparazione agli arrivi"
+  ],
+  "A little foresight goes a long way.": [
+    "Anticiparse marca la diferencia.",
+    "Anticipare fa la differenza."
+  ],
+  "AI INSIGHTS": ["INFORMACIÓN IA", "APPROFONDIMENTI IA"],
+  "Recommendations grounded in your records": [
+    "Recomendaciones basadas en tus registros",
+    "Raccomandazioni basate sui tuoi dati"
+  ],
+  "Your calendar": ["Tu calendario", "Il tuo calendario"],
+  "Today’s focus": ["Prioridades de hoy", "Priorità di oggi"],
+  "Your team, already on it.": [
+    "Tu equipo ya está trabajando.",
+    "Il tuo team è già al lavoro."
+  ],
+  "Property": ["Alojamiento", "Alloggio"],
+  "Status": ["Estado", "Stato"],
+  "Action": ["Acción", "Azione"],
+  "Country": ["País", "Paese"],
+  "Date": ["Fecha", "Data"],
+  "Assigned to": ["Asignado a", "Assegnato a"],
+  "Run agent checks": ["Ejecutar comprobaciones", "Esegui controlli agenti"],
+  "Open record": ["Abrir registro", "Apri record"],
+  "All records and actions are fictional. No live integrations.": [
+    "Todos los datos y acciones son ficticios. Sin conexiones reales.",
+    "Tutti i dati e le azioni sono fittizi. Nessuna connessione reale."
+  ],
+  "View evidence": ["Ver evidencia", "Vedi evidenze"],
+  "Open operations": ["Abrir operaciones", "Apri operazioni"],
+  "Arrival needs a rescue": [
+    "Una llegada necesita ayuda",
+    "Un arrivo ha bisogno di aiuto"
+  ],
+  "Repair quote": ["Presupuesto de reparación", "Preventivo riparazione"],
+  "Tasks": ["Tareas", "Attività"],
+  "Source": ["Fuente", "Fonte"],
+  "Details": ["Detalles", "Dettagli"],
+  "History": ["Historial", "Cronologia"],
+  "New property": ["Nuevo alojamiento", "Nuovo alloggio"],
+  "New reservation": ["Nueva reserva", "Nuova prenotazione"],
+  "New task": ["Nueva tarea", "Nuova attività"],
+  "New maintenance issue": ["Nueva incidencia", "Nuova segnalazione"],
+  "New draft invoice": ["Nueva factura borrador", "Nuova bozza fattura"],
+  "Reporting period": ["Período del informe", "Periodo del report"],
+  "DEMO FX: €1 = £0.86. Native ledgers stay separate.": [
+    "CAMBIO DEMO: €1 = £0,86. Los libros se mantienen separados.",
+    "CAMBIO DEMO: €1 = £0,86. I registri restano separati."
+  ],
+  "Property local time": ["Hora local", "Ora locale"],
+  "Prepared demo content": [
+    "Contenido de demo preparado",
+    "Contenuto demo preparato"
+  ],
+  "Back": ["Volver", "Indietro"],
+  "Reset every fictional record, scenario and conversation?": [
+    "¿Reiniciar todos los registros, escenarios y conversaciones?",
+    "Reimpostare tutti i record, scenari e conversazioni?"
+  ],
+  "Your previous demo session has been restored. The clock resumes paused.": [
+    "Sesión recuperada. El reloj continúa en pausa.",
+    "Sessione ripristinata. L’orologio riparte in pausa."
+  ],
+  "Saved data could not be read. A fresh deterministic demo has been loaded.": [
+    "No se pudieron leer los datos. Se ha cargado una demo nueva.",
+    "Dati non leggibili. È stata caricata una nuova demo."
+  ],
+  "A fictional operating system for thoughtful hospitality.": [
+    "Un sistema operativo ficticio para una hospitalidad atenta.",
+    "Un sistema operativo fittizio per un’ospitalità attenta."
+  ],
+  "Five stories. One connected operating team.": [
+    "Cinco historias. Un equipo conectado.",
+    "Cinque storie. Un team connesso."
+  ],
+  "See the evidence, make the decision, and follow the result through your portfolio.": [
+    "Consulta las pruebas, decide y observa el resultado.",
+    "Esamina le prove, decidi e segui il risultato."
+  ],
+  "Launch scenario": ["Iniciar escenario", "Avvia scenario"],
+  "Next step": ["Siguiente paso", "Prossimo passo"],
+  "Auto-play": ["Reproducción automática", "Riproduzione automatica"],
+  "Current state": ["Estado actual", "Stato attuale"],
+  "Verified result": ["Resultado verificado", "Risultato verificato"],
+  "Local simulation · no external side effects": [
+    "Simulación local · sin efectos externos",
+    "Simulazione locale · nessun effetto esterno"
+  ],
+  "Readiness blockers": ["Bloqueos de preparación", "Blocchi di preparazione"],
+  "Figures follow the reporting period and active portfolio filters.": [
+    "Las cifras siguen el período y los filtros activos.",
+    "Le cifre seguono il periodo e i filtri attivi."
+  ],
+  "Nothing here yet": ["Todavía no hay registros", "Nessun record"],
+  "Review queue": ["Cola de revisión", "Coda di revisione"],
+  "Print statement": ["Imprimir extracto", "Stampa rendiconto"],
+  "Expand navigation": ["Expandir navegación", "Espandi navigazione"],
+  "Collapse navigation": ["Contraer navegación", "Comprimi navigazione"],
+  "Rescue an arrival": ["Rescatar una llegada", "Salvare un arrivo"],
+  "From blocked to guest-ready": [
+    "De bloqueado a preparado",
+    "Da bloccato a pronto per l’ospite"
+  ],
+  "Fill a quiet week": [
+    "Mejorar una semana tranquila",
+    "Migliorare una settimana debole"
+  ],
+  "A bounded, evidence-led pricing decision": [
+    "Una decisión de precios con evidencia",
+    "Una decisione prezzi basata su evidenze"
+  ],
+  "Make the numbers add up": ["Conciliar las cifras", "Far quadrare i conti"],
+  "Resolve a duplicate supplier bill": [
+    "Resolver una factura duplicada",
+    "Risolvere una fattura duplicata"
+  ],
+  "Never miss a guest": ["Atender a cada huésped", "Non perdere un ospite"],
+  "A careful handover across shifts": [
+    "Un relevo atento entre turnos",
+    "Un passaggio attento tra i turni"
+  ],
+  "Turn opportunity into action": [
+    "Convertir oportunidad en trabajo",
+    "Trasformare opportunità in lavoro"
+  ],
+  "A measurable 30 / 60 / 90 day plan": [
+    "Un plan medible a 30 / 60 / 90 días",
+    "Un piano misurabile a 30 / 60 / 90 giorni"
+  ],
+  "The demo needs a fresh start.": [
+    "La demo necesita empezar de nuevo.",
+    "La demo deve ripartire da zero."
+  ],
+  "Your local data may be from a different version. Reset it to load the deterministic seed.": [
+    "Los datos locales pueden pertenecer a otra versión. Reinícialos para cargar los datos de ejemplo.",
+    "I dati locali potrebbero appartenere a un’altra versione. Reimpostali per caricare i dati di esempio."
+  ],
+  "Reset local demo data": [
+    "Reiniciar los datos locales de la demo",
+    "Reimposta i dati locali della demo"
+  ],
+  "That route has wandered off.": [
+    "Esta página no está disponible.",
+    "Questa pagina non è disponibile."
+  ],
+  "Return to your portfolio": ["Volver a la cartera", "Torna al portafoglio"],
+  "All": ["Todo", "Tutto"],
+  "Invalid saved state": [
+    "Los datos guardados no son válidos",
+    "I dati salvati non sono validi"
+  ],
+  "Spain": ["España", "Spagna"],
+  "Italy": ["Italia", "Italia"],
+  "Your browser storage is full. Changes remain in this tab; export or reset before closing.": [
+    "El almacenamiento del navegador está lleno. Los cambios siguen en esta pestaña; exporta o reinicia antes de cerrarla.",
+    "Lo spazio del browser è esaurito. Le modifiche restano in questa scheda: esporta o reimposta prima di chiuderla."
+  ],
+  "The action could not be completed.": [
+    "No se ha podido completar la acción.",
+    "Impossibile completare l’azione."
+  ],
+  "Demo reset to 20 October 2026, 09:00 London time.": [
+    "Demo reiniciada al 20 de octubre de 2026, a las 09:00 de Londres.",
+    "Demo reimpostata al 20 ottobre 2026, ore 09:00 di Londra."
+  ],
+  "StayPilot simulated assistant": [
+    "Asistente simulado de StayPilot",
+    "Assistente simulato StayPilot"
+  ],
+  "StayPilot copilot": ["Copiloto de StayPilot", "Copilota StayPilot"],
+  "Close assistant": ["Cerrar asistente", "Chiudi assistente"],
+  "A little clarity, right when you need it.": [
+    "Un poco de claridad, justo cuando la necesitas.",
+    "Un po’ di chiarezza, proprio quando serve."
+  ],
+  "Ask about your portfolio. Every answer comes from the current demo records, and every action follows the same rules as your team.": [
+    "Pregunta por tu cartera. Las respuestas se basan en los registros actuales de la demo y las acciones siguen las mismas reglas que tu equipo.",
+    "Fai una domanda sul portafoglio. Le risposte si basano sui record attuali della demo e le azioni seguono le stesse regole del tuo team."
+  ],
+  "StayPilot · Simulated AI": [
+    "StayPilot · IA simulada",
+    "StayPilot · IA simulata"
+  ],
+  "Demo command executed or safely deduplicated. Open its source to inspect the result.": [
+    "Comando de demo ejecutado o deduplicado de forma segura. Abre la fuente para consultar el resultado.",
+    "Comando demo eseguito o deduplicato in sicurezza. Apri la fonte per verificare il risultato."
+  ],
+  "The local command was evaluated successfully. Open the linked records to verify the result; required approvals still apply.": [
+    "El comando local se ha evaluado correctamente. Abre los registros vinculados para verificar el resultado; las aprobaciones necesarias siguen vigentes.",
+    "Il comando locale è stato valutato correttamente. Apri i record collegati per verificare il risultato: restano necessarie le approvazioni previste."
+  ],
+  "Run local action": ["Ejecutar acción local", "Esegui azione locale"],
+  "Message the simulated copilot": [
+    "Enviar un mensaje al copiloto simulado",
+    "Scrivi al copilota simulato"
+  ],
+  "Send assistant message": [
+    "Enviar mensaje al asistente",
+    "Invia messaggio all’assistente"
+  ],
+  "Deterministic demo · no live LLM ·": [
+    "Demo determinista · sin modelo de IA en directo ·",
+    "Demo deterministica · nessun modello IA in tempo reale ·"
+  ],
+  "· fictional owner. Agreement basis: accommodation after channel fees. Cleaning is passed through at cost; posted expenses and illustrative tax are allocated separately.": [
+    "· propietario ficticio. El acuerdo se calcula sobre el alojamiento tras las comisiones del canal. La limpieza se repercute al coste; los gastos contabilizados y el ajuste fiscal ilustrativo se asignan por separado.",
+    "· proprietario fittizio. L’accordo si basa sul soggiorno al netto delle commissioni del canale. Le pulizie sono addebitate al costo; spese registrate e imposte illustrative sono ripartite separatamente."
+  ],
+  "Management fee (%)": [
+    "Comisión de gestión (%)",
+    "Commissione di gestione (%)"
+  ],
+  "Owner management fee": [
+    "Comisión de gestión del propietario",
+    "Commissione di gestione del proprietario"
+  ],
+  "Admin": ["Administrador", "Amministratore"],
+  "Fictional agreement saved. Statements and native ledgers recalculated.": [
+    "Acuerdo ficticio guardado. Extractos y libros por moneda recalculados.",
+    "Accordo fittizio salvato. Rendiconti e registri per valuta ricalcolati."
+  ],
+  "Follow the requirements below. Evidence is recorded locally; no uploaded image is analysed by a vision model.": [
+    "Sigue los requisitos siguientes. La evidencia se guarda localmente; ningún modelo de visión analiza las imágenes subidas.",
+    "Segui i requisiti riportati sotto. Le evidenze sono registrate localmente; nessun modello visivo analizza le immagini caricate."
+  ],
+  "Assign team member": [
+    "Asignar miembro del equipo",
+    "Assegna membro del team"
+  ],
+  "Choose a team member": [
+    "Elegir miembro del equipo",
+    "Scegli un membro del team"
+  ],
+  "Assignment saved after skills, service-area and workload checks.": [
+    "Asignación guardada tras comprobar habilidades, zona y carga de trabajo.",
+    "Assegnazione salvata dopo la verifica di competenze, zona e carico di lavoro."
+  ],
+  "Work started in the local demo.": [
+    "Trabajo iniciado en la demo local.",
+    "Lavoro avviato nella demo locale."
+  ],
+  "Task marked blocked.": [
+    "Tarea marcada como bloqueada.",
+    "Attività contrassegnata come bloccata."
+  ],
+  "Bedroom and linen checked": [
+    "Dormitorio y ropa de cama revisados",
+    "Camera e biancheria controllate"
+  ],
+  "Bathroom, access and essentials checked": [
+    "Baño, acceso y elementos básicos revisados",
+    "Bagno, accesso e dotazioni essenziali controllati"
+  ],
+  "Final room evidence and condition checked": [
+    "Estado y evidencia final de la habitación revisados",
+    "Condizioni ed evidenze finali della stanza controllate"
+  ],
+  "Local demo bedroom evidence; no live analysis": [
+    "Evidencia local del dormitorio de demo; sin análisis en directo",
+    "Evidenza locale della camera demo; nessuna analisi in tempo reale"
+  ],
+  "Photo evidence recorded": [
+    "Evidencia fotográfica registrada",
+    "Evidenza fotografica registrata"
+  ],
+  "Bedroom evidence required": [
+    "Se requiere evidencia del dormitorio",
+    "È richiesta un’evidenza della camera"
+  ],
+  "Original prepared illustration or your local image. No image analysis.": [
+    "Ilustración preparada o imagen local propia. Sin análisis de imagen.",
+    "Illustrazione predisposta o immagine locale. Nessuna analisi dell’immagine."
+  ],
+  "Prepared synthetic bedroom evidence attached.": [
+    "Evidencia sintética del dormitorio adjuntada.",
+    "Evidenza sintetica della camera allegata."
+  ],
+  "Choose a PNG, JPEG or WebP under 700 KB for local persistence.": [
+    "Elige un PNG, JPEG o WebP de menos de 700 KB para guardarlo localmente.",
+    "Scegli un PNG, JPEG o WebP inferiore a 700 KB per il salvataggio locale."
+  ],
+  "Choose a supported image type.": [
+    "Elige un formato de imagen compatible.",
+    "Scegli un formato immagine supportato."
+  ],
+  "Local image attached. No image analysis was performed.": [
+    "Imagen local adjuntada. No se ha realizado ningún análisis.",
+    "Immagine locale allegata. Non è stata eseguita alcuna analisi."
+  ],
+  "Inspection verified. Shared readiness updated.": [
+    "Inspección verificada. Preparación compartida actualizada.",
+    "Ispezione verificata. Preparazione condivisa aggiornata."
+  ],
+  "Task completed with required evidence checks.": [
+    "Tarea completada con las comprobaciones de evidencia necesarias.",
+    "Attività completata con le verifiche delle evidenze richieste."
+  ],
+  "Inspection failed. Rework task created.": [
+    "Inspección no superada. Creada una tarea de corrección.",
+    "Ispezione non superata. Creata un’attività di ripristino."
+  ],
+  "Linked source": ["Fuente vinculada", "Fonte collegata"],
+  "guests ·": ["huéspedes ·", "ospiti ·"],
+  "All required readiness evidence is complete.": [
+    "Toda la evidencia de preparación requerida está completa.",
+    "Tutte le evidenze di preparazione richieste sono complete."
+  ],
+  "House rules & arrival": [
+    "Normas de la casa y llegada",
+    "Regole della casa e arrivo"
+  ],
+  "Fictional address:": ["Dirección ficticia:", "Indirizzo fittizio:"],
+  "Onboarding record complete.": [
+    "Registro de incorporación completo.",
+    "Registrazione iniziale completa."
+  ],
+  "Onboarding fields need review.": [
+    "Los datos de incorporación necesitan revisión.",
+    "I dati di registrazione iniziale richiedono una revisione."
+  ],
+  "Complete property onboarding review": [
+    "Completar la revisión de incorporación del alojamiento",
+    "Completa la revisione iniziale dell’alloggio"
+  ],
+  "Document": ["Documento", "Documento"],
+  "Onboarding review task created.": [
+    "Tarea de revisión de incorporación creada.",
+    "Attività di revisione iniziale creata."
+  ],
+  "Create onboarding task": [
+    "Crear tarea de incorporación",
+    "Crea attività di registrazione iniziale"
+  ],
+  "property reservations": [
+    "reservas del alojamiento",
+    "prenotazioni dell’alloggio"
+  ],
+  "work records": ["registros de trabajo", "registri di lavoro"],
+  "Due": ["Vencimiento", "Scadenza"],
+  "Fictional asset register: heating/cooling, fixtures, kitchen appliances and access hardware. Repair records retain costs and independent verification.": [
+    "Registro ficticio de activos: climatización, instalaciones, electrodomésticos y dispositivos de acceso. Las reparaciones conservan costes y verificación independiente.",
+    "Registro fittizio dei beni: climatizzazione, impianti, elettrodomestici e dispositivi di accesso. Le riparazioni conservano costi e verifiche indipendenti."
+  ],
+  "asset issues": ["incidencias de activos", "problemi dei beni"],
+  "Issue": ["Incidencia", "Problema"],
+  "Asset": ["Activo", "Bene"],
+  "New issue": ["Nueva incidencia", "Nuovo problema"],
+  "Management fee: 20% of accommodation after channel fees. Cleaning pass-through at cost. Owner bears approved maintenance expense. All agreement terms are illustrative.": [
+    "Comisión de gestión: 20% del alojamiento tras las comisiones del canal. Limpieza repercutida al coste. El propietario asume el mantenimiento aprobado. Todas las condiciones son ilustrativas.",
+    "Commissione di gestione: 20% del soggiorno al netto delle commissioni del canale. Pulizie addebitate al costo. La manutenzione approvata è a carico del proprietario. Tutte le condizioni sono illustrative."
+  ],
+  "Base nightly accommodation": [
+    "Tarifa base por noche",
+    "Tariffa base per notte"
+  ],
+  "Bounded pricing range": ["Límites de precios", "Limiti di prezzo"],
+  "Active historical & future reservations": [
+    "Reservas históricas y futuras activas",
+    "Prenotazioni storiche e future attive"
+  ],
+  "Historical ratings do not change when repair state changes. Future booked stays are not realised earnings.": [
+    "Las valoraciones históricas no cambian al reparar una incidencia. Las estancias futuras reservadas no son ingresos realizados.",
+    "Le valutazioni storiche non cambiano dopo una riparazione. I soggiorni futuri prenotati non sono ricavi realizzati."
+  ],
+  "Owner view": ["Vista del propietario", "Vista proprietario"],
+  "This record is outside this fictional owner’s portfolio.": [
+    "Este registro no pertenece a la cartera de este propietario ficticio.",
+    "Questo record non appartiene al portafoglio di questo proprietario fittizio."
+  ],
+  "Asset / supplier": ["Activo / proveedor", "Bene / fornitore"],
+  "Cost responsibility": ["Responsable del coste", "Responsabile del costo"],
+  "Fictional owner": ["Propietario ficticio", "Proprietario fittizio"],
+  "Operator": ["Operador", "Gestore"],
+  "Mock quote · version": [
+    "Presupuesto simulado · versión",
+    "Preventivo simulato · versione"
+  ],
+  "Independent verification": [
+    "Verificación independiente",
+    "Verifica indipendente"
+  ],
+  "Cost approval schedules work. The critical issue keeps readiness blocked until repair evidence and independent verification exist.": [
+    "Aprobar el coste programa el trabajo. La incidencia crítica sigue bloqueando la preparación hasta que existan evidencia de reparación y verificación independiente.",
+    "L’approvazione del costo programma il lavoro. Il problema critico continua a bloccare la preparazione finché non sono disponibili evidenze della riparazione e verifica indipendente."
+  ],
+  "Quote sent to the shared approval inbox.": [
+    "Presupuesto enviado a la bandeja compartida de aprobaciones.",
+    "Preventivo inviato alla casella condivisa delle approvazioni."
+  ],
+  "Repair assigned in the demo.": [
+    "Reparación asignada en la demo.",
+    "Riparazione assegnata nella demo."
+  ],
+  "Repair work started. Home remains blocked.": [
+    "Reparación iniciada. El alojamiento sigue bloqueado.",
+    "Riparazione avviata. L’alloggio resta bloccato."
+  ],
+  "Demo repair evidence recorded. Independent verification is still required.": [
+    "Evidencia de reparación de demo registrada. Sigue siendo necesaria la verificación independiente.",
+    "Evidenza della riparazione demo registrata. È ancora necessaria la verifica indipendente."
+  ],
+  "Repair independently verified. Expense posted once; inspection still required.": [
+    "Reparación verificada de forma independiente. Gasto contabilizado una sola vez; falta la inspección.",
+    "Riparazione verificata in modo indipendente. Spesa registrata una sola volta; l’ispezione resta necessaria."
+  ],
+  "Revise quote (": ["Revisar presupuesto (", "Modifica preventivo ("],
+  "Revised quote": ["Presupuesto revisado", "Preventivo aggiornato"],
+  "Quote changed. Previous approvals are stale.": [
+    "Presupuesto modificado. Las aprobaciones anteriores han quedado desactualizadas.",
+    "Preventivo modificato. Le approvazioni precedenti non sono più valide."
+  ],
+  "Sources & approvals": ["Fuentes y aprobaciones", "Fonti e approvazioni"],
+  "approval · version": ["aprobación · versión", "approvazione · versione"],
+  "Pricing": ["Precios", "Prezzi"],
+  "Total nightly rate difference": [
+    "Diferencia total de tarifas por noche",
+    "Differenza totale delle tariffe notturne"
+  ],
+  "Proposed local demo amount": [
+    "Importe propuesto en la demo local",
+    "Importo proposto nella demo locale"
+  ],
+  "No money moves. No external service is contacted.": [
+    "No se mueve dinero ni se contacta con servicios externos.",
+    "Nessun trasferimento di denaro e nessun contatto con servizi esterni."
+  ],
+  "A Finance or Admin approver can authorise the cost. Approval schedules repair work; it never resolves the issue or makes the home ready.": [
+    "Finanzas o Administración pueden autorizar el coste. La aprobación programa la reparación; nunca resuelve la incidencia ni prepara el alojamiento por sí sola.",
+    "Finanza o Amministrazione possono autorizzare il costo. L’approvazione programma la riparazione; da sola non risolve il problema né rende pronto l’alloggio."
+  ],
+  "Change only the selected available nights, within property bounds. Existing confirmed booking revenue stays fixed. Revalidate availability and current rates before execution.": [
+    "Modificar solo las noches disponibles seleccionadas, dentro de los límites del alojamiento. El importe de las reservas confirmadas no cambia. Volver a comprobar disponibilidad y tarifas antes de ejecutar.",
+    "Modifica solo le notti disponibili selezionate, entro i limiti dell’alloggio. Gli importi delle prenotazioni confermate restano fissi. Ricontrolla disponibilità e tariffe prima dell’esecuzione."
+  ],
+  "Purchase": ["Compra", "Acquisto"],
+  "Approve an order for 12 units. Available stock increases only when a separate receipt is recorded.": [
+    "Aprobar un pedido de 12 unidades. Las existencias solo aumentan cuando se registra su recepción por separado.",
+    "Approva un ordine di 12 unità. Le scorte aumentano solo quando viene registrata separatamente la ricezione."
+  ],
+  "Exclude a duplicate draft invoice while retaining the original posted bill. No cash recovered and no change to posted ledger amounts.": [
+    "Excluir una factura duplicada en borrador y conservar la original contabilizada. No se recupera efectivo ni se modifica el libro contabilizado.",
+    "Escludi una fattura duplicata in bozza conservando l’originale registrato. Nessun recupero di denaro e nessuna modifica agli importi contabilizzati."
+  ],
+  "Approve a prepared sensitive guest reply. Sending creates a local outbound message only.": [
+    "Aprobar una respuesta preparada de contenido sensible. El envío solo crea un mensaje saliente local.",
+    "Approva una risposta sensibile predisposta. L’invio crea soltanto un messaggio in uscita locale."
+  ],
+  "Approval executed after current-state validation. Inspect the linked source for its result.": [
+    "Aprobación ejecutada tras validar el estado actual. Consulta el resultado en la fuente vinculada.",
+    "Approvazione eseguita dopo la verifica dello stato attuale. Consulta il risultato nella fonte collegata."
+  ],
+  "Proposal rejected. No proposed change was applied.": [
+    "Propuesta rechazada. No se ha aplicado el cambio propuesto.",
+    "Proposta rifiutata. La modifica proposta non è stata applicata."
+  ],
+  "Evidence changed. Open the source and request a fresh review.": [
+    "La evidencia ha cambiado. Abre la fuente y solicita una nueva revisión.",
+    "Le evidenze sono cambiate. Apri la fonte e richiedi una nuova revisione."
+  ],
+  "demo reviewer": ["revisor de demo", "revisore demo"],
+  "Repair remains separate from cost approval.": [
+    "La reparación sigue siendo independiente de la aprobación del coste.",
+    "La riparazione resta distinta dall’approvazione del costo."
+  ],
+  "Reservation · {0}": ["Reserva · {0}", "Prenotazione · {0}"],
+  "Home": ["Alojamiento", "Alloggio"],
+  "Arrival / departure": ["Llegada / salida", "Arrivo / partenza"],
+  "Channel": ["Canal", "Canale"],
+  "· simulated": ["· simulado", "· simulato"],
+  "Synthetic guest email": [
+    "Correo sintético del huésped",
+    "Email sintetica dell’ospite"
+  ],
+  "Cleaning pass-through": [
+    "Limpieza repercutida al coste",
+    "Pulizie addebitate al costo"
+  ],
+  "Special requests:": ["Peticiones especiales:", "Richieste speciali:"],
+  "None": ["Ninguna", "Nessuna"],
+  "Reservation cancelled locally; future turnover work removed.": [
+    "Reserva cancelada localmente; trabajo de limpieza futura eliminado.",
+    "Prenotazione annullata localmente; pulizie future rimosse."
+  ],
+  "Conversation · {0}": ["Conversación · {0}", "Conversazione · {0}"],
+  "· Simulated ·": ["· Simulado ·", "· Simulato ·"],
+  "Prepared multilingual reply added to this conversation.": [
+    "Respuesta multilingüe preparada añadida a la conversación.",
+    "Risposta multilingue predisposta aggiunta alla conversazione."
+  ],
+  "Reply evaluated against demo policy; approval may be required.": [
+    "Respuesta evaluada según las reglas de la demo; puede requerir aprobación.",
+    "Risposta valutata secondo le regole della demo; potrebbe essere necessaria un’approvazione."
+  ],
+  "Pricing batch": ["Lote de precios", "Gruppo di tariffe"],
+  "Selected unbooked nights only. Fixed confirmed bookings are preserved. A batch may be undone only if no later booking or rate change depends on it.": [
+    "Solo las noches seleccionadas sin reserva. Se conservan las reservas confirmadas. Solo se puede deshacer el lote si ninguna reserva o tarifa posterior depende de él.",
+    "Solo le notti selezionate non prenotate. Le prenotazioni confermate restano invariate. Il gruppo è annullabile solo se nessuna prenotazione o tariffa successiva ne dipende."
+  ],
+  "Available rates restored.": [
+    "Tarifas disponibles restauradas.",
+    "Tariffe disponibili ripristinate."
+  ],
+  "Undo pricing batch": [
+    "Deshacer lote de precios",
+    "Annulla gruppo di tariffe"
+  ],
+  "{0} · run evidence": [
+    "{0} · evidencia de ejecución",
+    "{0} · evidenze dell’esecuzione"
+  ],
+  "Trigger": ["Desencadenante", "Evento scatenante"],
+  "Evidence summary": ["Resumen de evidencias", "Riepilogo delle evidenze"],
+  "Policy checks": ["Comprobaciones de permisos", "Verifiche delle regole"],
+  "Proposed action": ["Acción propuesta", "Azione proposta"],
+  "Expected effect": ["Efecto esperado", "Effetto previsto"],
+  "Execution result": ["Resultado de ejecución", "Risultato dell’esecuzione"],
+  "Verification result": [
+    "Resultado de verificación",
+    "Risultato della verifica"
+  ],
+  "{0} · stock record": [
+    "{0} · registro de existencias",
+    "{0} · registro scorte"
+  ],
+  "Usage is logged with an idempotency key. An approved purchase does not change available stock until receipt.": [
+    "El consumo se registra con una clave de idempotencia. Aprobar una compra no cambia las existencias hasta su recepción.",
+    "Il consumo è registrato con una chiave di idempotenza. Un acquisto approvato non modifica le scorte prima della ricezione."
+  ],
+  "Purchase request created. Approval does not receive stock.": [
+    "Solicitud de compra creada. Aprobar no equivale a recibir existencias.",
+    "Richiesta d’acquisto creata. L’approvazione non equivale alla ricezione delle scorte."
+  ],
+  "Stock receipt recorded once.": [
+    "Recepción de existencias registrada una sola vez.",
+    "Ricezione delle scorte registrata una sola volta."
+  ],
+  "One unit consumed and logged.": [
+    "Una unidad consumida y registrada.",
+    "Un’unità consumata e registrata."
+  ],
+  "Invoice · {0}": ["Factura · {0}", "Fattura · {0}"],
+  "Expense category": ["Categoría del gasto", "Categoria della spesa"],
+  "Expense category saved.": [
+    "Categoría del gasto guardada.",
+    "Categoria della spesa salvata."
+  ],
+  "Supplies": ["Suministros", "Forniture"],
+  "Uncategorised": ["Sin categoría", "Senza categoria"],
+  "This draft matches an existing posted supplier reference. Excluding it does not recover cash or reduce posted expense.": [
+    "Este borrador coincide con la referencia de un proveedor ya contabilizada. Excluirlo no recupera efectivo ni reduce el gasto contabilizado.",
+    "Questa bozza coincide con un riferimento fornitore già registrato. Escluderla non recupera denaro né riduce la spesa registrata."
+  ],
+  "A unique draft invoice can be matched and posted to the local ledger.": [
+    "Una factura única en borrador puede conciliarse y contabilizarse en el libro local.",
+    "Una fattura univoca in bozza può essere abbinata e contabilizzata nel registro locale."
+  ],
+  "Exception review requested.": [
+    "Revisión de la excepción solicitada.",
+    "Revisione dell’eccezione richiesta."
+  ],
+  "Unique invoice matched and posted locally.": [
+    "Factura única conciliada y contabilizada localmente.",
+    "Fattura univoca abbinata e registrata localmente."
+  ],
+  ". This illustrative record does not certify safety or legal compliance. Missing and unknown evidence must be assessed by a qualified human.": [
+    ". Este registro ilustrativo no certifica seguridad ni cumplimiento legal. La evidencia ausente o desconocida debe evaluarla una persona cualificada.",
+    ". Questo record illustrativo non certifica sicurezza o conformità legale. Le evidenze mancanti o sconosciute devono essere valutate da una persona qualificata."
+  ],
+  "Human document review task created.": [
+    "Tarea de revisión humana del documento creada.",
+    "Attività di revisione umana del documento creata."
+  ],
+  "Create renewal review task": [
+    "Crear tarea de revisión para renovación",
+    "Crea attività di revisione per il rinnovo"
+  ],
+  "Guest review · {0}": [
+    "Reseña del huésped · {0}",
+    "Recensione dell’ospite · {0}"
+  ],
+  "Factual reply prepared; no real post was made.": [
+    "Respuesta factual preparada; no se ha publicado nada realmente.",
+    "Risposta basata sui fatti predisposta; nessuna pubblicazione reale."
+  ],
+  "Prepare reply": ["Preparar respuesta", "Prepara risposta"],
+  "Native ledger sources": [
+    "Fuentes de los libros por moneda",
+    "Fonti dei registri per valuta"
+  ],
+  "{0} available": ["{0} disponibles", "{0} disponibili"],
+  "{0} stars": ["{0} estrellas", "{0} stelle"],
+  "source records": ["registros de origen", "record di origine"],
+  "Available rate · {0}": [
+    "Tarifa disponible · {0}",
+    "Tariffa disponibile · {0}"
+  ],
+  ". No reservation or pricing proposal can use this night.": [
+    ". No se puede usar esta noche para una reserva o una propuesta de precios.",
+    ". Nessuna prenotazione o proposta tariffaria può utilizzare questa notte."
+  ],
+  "Owner / operations availability block": [
+    "Bloqueo de disponibilidad por el propietario o las operaciones",
+    "Blocco disponibilità del proprietario o delle operazioni"
+  ],
+  "Night released for reservations.": [
+    "Noche liberada para reservas.",
+    "Notte resa disponibile per le prenotazioni."
+  ],
+  "Night blocked. Availability and pricing updated.": [
+    "Noche bloqueada. Disponibilidad y precios actualizados.",
+    "Notte bloccata. Disponibilità e prezzi aggiornati."
+  ],
+  "No rate in this window": [
+    "No hay tarifa en este período",
+    "Nessuna tariffa in questo periodo"
+  ],
+  "Booked": ["Reservado", "Prenotato"],
+  ". Original rate:": [". Tarifa original:", ". Tariffa originale:"],
+  "A bounded available-night proposal was created.": [
+    "Propuesta acotada para noches disponibles creada.",
+    "Proposta limitata alle notti disponibili creata."
+  ],
+  ". Capacity: 4 tasks per shift. Country, city, skills and conflicts are validated by the assignment command.": [
+    ". Capacidad: 4 tareas por turno. El comando de asignación valida país, ciudad, habilidades y conflictos.",
+    ". Capacità: 4 attività per turno. Il comando di assegnazione verifica paese, città, competenze e conflitti."
+  ],
+  "tasks to assign": ["tareas por asignar", "attività da assegnare"],
+  "Skill": ["Habilidad", "Competenza"],
+  "Assigned to {0}.": ["Asignado a {0}.", "Assegnato a {0}."],
+  "Evidence record": ["Registro de evidencia", "Record delle evidenze"],
+  "This rate is part of the selected pricing proposal. Open its batch to see before and after amounts.": [
+    "Esta tarifa forma parte de la propuesta seleccionada. Abre el lote para ver los importes anteriores y posteriores.",
+    "Questa tariffa fa parte della proposta selezionata. Apri il gruppo per vedere gli importi prima e dopo."
+  ],
+  "This record is outside the active portfolio or no longer exists after a reset.": [
+    "Este registro está fuera de la cartera activa o ya no existe tras un reinicio.",
+    "Questo record è fuori dal portafoglio attivo o non esiste più dopo una reimpostazione."
+  ],
+  "Open a related property or current record from the operating screen.": [
+    "Abre un alojamiento relacionado o un registro actual desde la pantalla operativa.",
+    "Apri un alloggio collegato o un record attuale dalla schermata operativa."
+  ],
+  "Direct": ["Directo", "Diretto"],
+  "Apartment": ["Apartamento", "Appartamento"],
+  "Quiet hours 22:00–08:00. No smoking indoors.": [
+    "Horario de silencio: 22:00–08:00. No se permite fumar en el interior.",
+    "Orario di silenzio: 22:00–08:00. Vietato fumare all’interno."
+  ],
+  "Self check-in from 15:00. Access code: DEMO-ONLY.": [
+    "Entrada autónoma desde las 15:00. Código de acceso: DEMO-ONLY.",
+    "Check-in autonomo dalle 15:00. Codice di accesso: DEMO-ONLY."
+  ],
+  "Booking": ["Reserva", "Prenotazione"],
+  "Fictional Demo Lane": [
+    "Calle de ejemplo ficticia",
+    "Via fittizia di esempio"
+  ],
+  "Kitchen": ["Cocina", "Cucina"],
+  "Fresh linen": ["Ropa de cama limpia", "Biancheria pulita"],
+  "Property saved with local onboarding records.": [
+    "Alojamiento guardado con sus registros locales de incorporación.",
+    "Alloggio salvato con i record locali di registrazione iniziale."
+  ],
+  "Reservation updated. Its single turnover job follows the checkout date.": [
+    "Reserva actualizada. Su única tarea de limpieza sigue la fecha de salida.",
+    "Prenotazione aggiornata. La singola attività di pulizia segue la data di partenza."
+  ],
+  "Created through local demo form.": [
+    "Creado desde el formulario local de demo.",
+    "Creato dal modulo locale della demo."
+  ],
+  "Reservation created. One checkout cleaning job has been scheduled.": [
+    "Reserva creada. Se ha programado una única tarea de limpieza a la salida.",
+    "Prenotazione creata. È stata programmata una sola pulizia alla partenza."
+  ],
+  "Linked task created.": [
+    "Tarea vinculada creada.",
+    "Attività collegata creata."
+  ],
+  "Maintenance issue created and linked to its home.": [
+    "Incidencia de mantenimiento creada y vinculada al alojamiento.",
+    "Problema di manutenzione creato e collegato all’alloggio."
+  ],
+  "Bill": ["Factura", "Fattura"],
+  "Unique draft invoice created.": [
+    "Factura única en borrador creada.",
+    "Fattura univoca in bozza creata."
+  ],
+  ". Use fictional names and reserved example.test emails.": [
+    ". Utiliza nombres ficticios y correos reservados de example.test.",
+    ". Usa nomi fittizi ed email riservate example.test."
+  ],
+  "Property name": ["Nombre del alojamiento", "Nome dell’alloggio"],
+  "Home type": ["Tipo de alojamiento", "Tipo di alloggio"],
+  "Townhouse": ["Casa adosada", "Casa a schiera"],
+  "Cottage": ["Casa rural", "Casa di campagna"],
+  "Villa": ["Villa", "Villa"],
+  "Guest capacity": ["Capacidad de huéspedes", "Capacità ospiti"],
+  "Base nightly rate (": [
+    "Tarifa base por noche (",
+    "Tariffa base per notte ("
+  ],
+  "House rules": ["Normas de la casa", "Regole della casa"],
+  "Prepared check-in instructions": [
+    "Instrucciones de entrada preparadas",
+    "Istruzioni di check-in predisposte"
+  ],
+  "Fictional guest name": [
+    "Nombre ficticio del huésped",
+    "Nome fittizio dell’ospite"
+  ],
+  "Demo email": ["Correo de demo", "Email demo"],
+  "Simulated channel": ["Canal simulado", "Canale simulato"],
+  "cleaning. The new guest balance is unpaid.": [
+    "de limpieza. El nuevo saldo del huésped está pendiente de pago.",
+    "di pulizie. Il nuovo saldo dell’ospite è da pagare."
+  ],
+  "Task title": ["Título de la tarea", "Titolo dell’attività"],
+  "Issue description": [
+    "Descripción de la incidencia",
+    "Descrizione del problema"
+  ],
+  "Task type": ["Tipo de tarea", "Tipo di attività"],
+  "Growth": ["Crecimiento", "Crescita"],
+  "Unique invoice reference": [
+    "Referencia única de factura",
+    "Riferimento univoco della fattura"
+  ],
+  "Amount (": ["Importe (", "Importo ("],
+  "Owner": ["Propietario", "Proprietario"],
+  "Skip to content": ["Saltar al contenido", "Vai al contenuto"],
+  "Close navigation": ["Cerrar navegación", "Chiudi navigazione"],
+  "StayPilot home": ["Inicio de StayPilot", "Home di StayPilot"],
+  "HOSPITALITY, IN HARMONY": [
+    "HOSPITALIDAD EN ARMONÍA",
+    "OSPITALITÀ IN ARMONIA"
+  ],
+  "homes. One team.": ["alojamientos. Un equipo.", "alloggi. Un team."],
+  "Main navigation": ["Navegación principal", "Navigazione principale"],
+  "Your next great demo starts here": [
+    "Tu próxima gran demo empieza aquí",
+    "La tua prossima demo inizia qui"
+  ],
+  "Portfolio administrator": [
+    "Administrador de la cartera",
+    "Amministratore del portafoglio"
+  ],
+  "Open navigation": ["Abrir navegación", "Apri navigazione"],
+  "No matching records": [
+    "No hay registros coincidentes",
+    "Nessun record corrispondente"
+  ],
+  "Notifications": ["Notificaciones", "Notifiche"],
+  "Profile settings": ["Configuración del perfil", "Impostazioni profilo"],
+  "Pause clock": ["Pausar reloj", "Metti in pausa l’orologio"],
+  "Play clock": ["Iniciar reloj", "Avvia orologio"],
+  "Step clock 15 minutes": [
+    "Avanzar reloj 15 minutos",
+    "Avanza l’orologio di 15 minuti"
+  ],
+  "Clock speed": ["Velocidad del reloj", "Velocità dell’orologio"],
+  "1 min / tick": ["1 min / paso", "1 min / avanzamento"],
+  "5 min / tick": ["5 min / paso", "5 min / avanzamento"],
+  "30 min / tick": ["30 min / paso", "30 min / avanzamento"],
+  "60 min / tick": ["60 min / paso", "60 min / avanzamento"],
+  "Country filter": ["Filtro de país", "Filtro paese"],
+  "🇬🇧 United Kingdom": ["🇬🇧 Reino Unido", "🇬🇧 Regno Unito"],
+  "City filter": ["Filtro de ciudad", "Filtro città"],
+  "Property filter": ["Filtro de alojamiento", "Filtro alloggio"],
+  "Team filter": ["Filtro de equipo", "Filtro team"],
+  "Display currency": ["Moneda de visualización", "Valuta di visualizzazione"],
+  "Period start": ["Inicio del período", "Inizio periodo"],
+  "Period end": ["Fin del período", "Fine periodo"],
+  "A little less managing. A lot more hosting.": [
+    "Menos gestiones. Más hospitalidad.",
+    "Meno gestione. Più ospitalità."
+  ],
+  "Portfolio readiness {0}%": [
+    "Preparación de la cartera: {0}%",
+    "Preparazione del portafoglio: {0}%"
+  ],
+  "out of 100": ["de 100", "su 100"],
+  "Readiness schedule": [
+    "Calendario de preparación",
+    "Calendario di preparazione"
+  ],
+  "homes · cleaning, inspection & arrival dependencies": [
+    "alojamientos · dependencias de limpieza, inspección y llegada",
+    "alloggi · dipendenze di pulizia, ispezione e arrivo"
+  ],
+  "Timeline scale": ["Escala del calendario", "Scala del calendario"],
+  "Daily": ["Diario", "Giornaliero"],
+  "Weekly": ["Semanal", "Settimanale"],
+  "Previous schedule period": [
+    "Período anterior del calendario",
+    "Periodo precedente del calendario"
+  ],
+  "Next schedule period": [
+    "Período siguiente del calendario",
+    "Periodo successivo del calendario"
+  ],
+  "Pending evidence": ["Evidencia pendiente", "Evidenze in attesa"],
+  "PROPERTY / WORKFLOW": [
+    "ALOJAMIENTO / FLUJO DE TRABAJO",
+    "ALLOGGIO / FLUSSO DI LAVORO"
+  ],
+  "Evidence required": ["Se requiere evidencia", "Evidenza richiesta"],
+  "No scheduled turnover on this date": [
+    "No hay limpieza programada para esta fecha",
+    "Nessuna pulizia programmata per questa data"
+  ],
+  "No tasks in this week": [
+    "No hay tareas esta semana",
+    "Nessuna attività in questa settimana"
+  ],
+  "Now": ["Ahora", "Adesso"],
+  "Illustrative shift windows · statuses and evidence come from shared records": [
+    "Franjas de turno ilustrativas · los estados y evidencias proceden de los registros compartidos",
+    "Fasce di turno illustrative · stati ed evidenze provengono dai record condivisi"
+  ],
+  "Scheduled task dates from shared records": [
+    "Fechas de tareas programadas de los registros compartidos",
+    "Date delle attività programmate dai record condivisi"
+  ],
+  "Click any stage to inspect its evidence": [
+    "Selecciona una etapa para consultar su evidencia",
+    "Seleziona una fase per consultare le evidenze"
+  ],
+  "Search {0}…": ["Buscar {0}…", "Cerca {0}…"],
+  "Previous page": ["Página anterior", "Pagina precedente"],
+  "Next page": ["Página siguiente", "Pagina successiva"],
+  "STAYPILOT / RECORD DETAILS": [
+    "STAYPILOT / DETALLES DEL REGISTRO",
+    "STAYPILOT / DETTAGLI DEL RECORD"
+  ],
+  "Close details": ["Cerrar detalles", "Chiudi dettagli"],
+  "Original illustration of a fictional {0} holiday home": [
+    "Ilustración original de un alojamiento vacacional ficticio de {0}",
+    "Illustrazione originale di un alloggio vacanze fittizio di {0}"
+  ],
+  "I can inspect demo records, prepare guest replies, propose rates, assign inspections and create tasks. I cannot access live services or perform unsupported requests. Try one of the suggested questions.": [
+    "Puedo consultar registros de demo, preparar respuestas, proponer tarifas, asignar inspecciones y crear tareas. No puedo acceder a servicios reales ni realizar solicitudes no admitidas. Prueba una pregunta sugerida.",
+    "Posso consultare record demo, preparare risposte, proporre tariffe, assegnare ispezioni e creare attività. Non posso accedere a servizi reali o eseguire richieste non supportate. Prova una domanda suggerita."
+  ],
+  "Which home do you mean? Choose a source below or select a property in the portfolio filters.": [
+    "¿A qué alojamiento te refieres? Elige una fuente o selecciona un alojamiento en los filtros de la cartera.",
+    "A quale alloggio ti riferisci? Scegli una fonte o seleziona un alloggio nei filtri del portafoglio."
+  ],
+  "Readiness is derived from the following evidence:": [
+    "La preparación se basa en las siguientes evidencias:",
+    "La preparazione si basa sulle seguenti evidenze:"
+  ],
+  "I can prepare a contextual, scripted reply. The action creates a draft; sensitive sending still requires approval.": [
+    "Puedo preparar una respuesta contextual de demo. La acción crea un borrador; el envío sensible sigue requiriendo aprobación.",
+    "Posso predisporre una risposta contestuale di esempio. L’azione crea una bozza; l’invio sensibile richiede comunque un’approvazione."
+  ],
+  "I can propose an 8% reduction on up to five available nights next week, within the property bounds. Confirmed booking values remain unchanged.": [
+    "Puedo proponer una reducción del 8% en hasta cinco noches disponibles de la próxima semana, dentro de los límites del alojamiento. Las reservas confirmadas no cambian.",
+    "Posso proporre una riduzione dell’8% per un massimo di cinque notti disponibili la prossima settimana, entro i limiti dell’alloggio. Gli importi delle prenotazioni confermate non cambiano."
+  ],
+  "I can create three linked 30 / 60 / 90 day tasks. This is a measurable hypothesis, not a promise of revenue.": [
+    "Puedo crear tres tareas vinculadas a 30, 60 y 90 días. Es una hipótesis medible, no una promesa de ingresos.",
+    "Posso creare tre attività collegate a 30, 60 e 90 giorni. È un’ipotesi misurabile, non una promessa di ricavi."
+  ],
+  "I found an available inspector with the right service area. Assignment will revalidate shift capacity.": [
+    "He encontrado un inspector disponible en la zona adecuada. La asignación volverá a comprobar la capacidad del turno.",
+    "Ho trovato un ispettore disponibile nella zona corretta. L’assegnazione ricontrollerà la capacità del turno."
+  ],
+  "Here are the filtered agent runs. Open the sources for evidence, policy checks and outcomes.": [
+    "Estas son las ejecuciones de agentes filtradas. Abre las fuentes para consultar evidencias, reglas y resultados.",
+    "Ecco le esecuzioni filtrate degli agenti. Apri le fonti per consultare evidenze, regole e risultati."
+  ],
+  "Owner payable for the filtered period is {0} (display conversion). Native ledgers: ": [
+    "El importe al propietario del período filtrado es {0} (conversión de visualización). Libros por moneda: ",
+    "L’importo al proprietario per il periodo filtrato è {0} (conversione di visualizzazione). Registri per valuta: "
+  ],
+  "No feasible assignment is available. Review the task and shift; I have not assigned anyone.": [
+    "No hay una asignación viable. Revisa la tarea y el turno; no he asignado a nadie.",
+    "Non è disponibile un’assegnazione fattibile. Controlla l’attività e il turno; non ho assegnato nessuno."
+  ],
+  "All required evidence is complete.": [
+    "Toda la evidencia requerida está completa.",
+    "Tutte le evidenze richieste sono complete."
+  ],
+  "The current record supports reviewing channel fees and posted costs; it does not prove a causal performance decline.": [
+    "Los registros actuales permiten revisar comisiones del canal y gastos contabilizados, pero no demuestran una causa del descenso del rendimiento.",
+    "I record attuali permettono di esaminare commissioni del canale e spese registrate, ma non dimostrano una causa del calo di rendimento."
+  ],
+  "No arrival blockers in the selected portfolio.": [
+    "No hay bloqueos de llegada en la cartera seleccionada.",
+    "Nessun blocco degli arrivi nel portafoglio selezionato."
+  ],
+  "What needs attention before today's arrivals?": [
+    "¿Qué necesita atención antes de las llegadas de hoy?",
+    "Cosa richiede attenzione prima degli arrivi di oggi?"
+  ],
+  "Why is the London townhouse not ready?": [
+    "¿Por qué la casa adosada de Londres no está lista?",
+    "Perché la casa a schiera di Londra non è pronta?"
+  ],
+  "What is our owner payable for this month?": [
+    "¿Qué importe corresponde a los propietarios este mes?",
+    "Qual è l’importo dovuto ai proprietari questo mese?"
+  ],
+  "Show everything the agents did today.": [
+    "Muéstrame todo lo que han hecho los agentes hoy.",
+    "Mostrami tutto ciò che hanno fatto gli agenti oggi."
+  ],
+  "Record {0} was not found.": [
+    "No se ha encontrado el registro {0}.",
+    "Il record {0} non è stato trovato."
+  ],
+  "You": ["Tú", "Tu"],
+  "Approval requested · {0}": [
+    "Aprobación solicitada · {0}",
+    "Approvazione richiesta · {0}"
+  ],
+  "Simulated agent": ["Agente simulado", "Agente simulato"],
+  "Turnover · {0}": [
+    "Limpieza entre estancias · {0}",
+    "Pulizie tra soggiorni · {0}"
+  ],
+  "Task created · {0}": ["Tarea creada · {0}", "Attività creata · {0}"],
+  "Scheduled check / domain event": [
+    "Comprobación programada / evento del dominio",
+    "Verifica programmata / evento operativo"
+  ],
+  "Local simulation. Sensitive actions require explicit approval. Readiness requires evidence.": [
+    "Simulación local. Las acciones sensibles requieren aprobación explícita. La preparación requiere evidencias.",
+    "Simulazione locale. Le azioni sensibili richiedono approvazione esplicita. La preparazione richiede evidenze."
+  ],
+  "A traceable local change, with no external side effect.": [
+    "Un cambio local trazable, sin efectos externos.",
+    "Una modifica locale tracciabile, senza effetti esterni."
+  ],
+  "Postcondition checked against shared state.": [
+    "Resultado verificado contra el estado compartido.",
+    "Risultato verificato rispetto allo stato condiviso."
+  ],
+  "Human review or more evidence required.": [
+    "Se requiere revisión humana o más evidencia.",
+    "È richiesta una revisione umana o un’ulteriore evidenza."
+  ],
+  "The simulated owner role is read-only. Switch to Admin to change portfolio records.": [
+    "El rol de propietario simulado es de solo lectura. Cambia a Administración para modificar registros.",
+    "Il ruolo proprietario simulato è di sola lettura. Passa ad Amministratore per modificare i record."
+  ],
+  "A simulated Finance or Admin role is required for this action.": [
+    "Esta acción requiere el rol simulado de Finanzas o Administración.",
+    "Questa azione richiede il ruolo simulato Finanza o Amministratore."
+  ],
+  "This stay includes a blocked night. Remove the block or choose different dates.": [
+    "Esta estancia incluye una noche bloqueada. Elimina el bloqueo o elige otras fechas.",
+    "Questo soggiorno include una notte bloccata. Rimuovi il blocco o scegli altre date."
+  ],
+  "Use valid arrival and departure dates.": [
+    "Introduce fechas de llegada y salida válidas.",
+    "Inserisci date di arrivo e partenza valide."
+  ],
+  "Departure must be after arrival.": [
+    "La salida debe ser posterior a la llegada.",
+    "La partenza deve essere successiva all’arrivo."
+  ],
+  "Guest count must be between 1 and {0}.": [
+    "El número de huéspedes debe estar entre 1 y {0}.",
+    "Il numero di ospiti deve essere compreso tra 1 e {0}."
+  ],
+  "This home already has a reservation on those nights. Adjacent checkout/check-in is allowed.": [
+    "Este alojamiento ya tiene una reserva esas noches. Se permiten salida y entrada consecutivas.",
+    "Questo alloggio ha già una prenotazione per quelle notti. Sono ammesse partenza e arrivo consecutivi."
+  ],
+  "This approval is stale. Request a fresh review.": [
+    "Esta aprobación está desactualizada. Solicita una nueva revisión.",
+    "Questa approvazione non è più valida. Richiedi una nuova revisione."
+  ],
+  "Rejected · {0}": ["Rechazado · {0}", "Rifiutato · {0}"],
+  "The quote has changed. This approval is stale; request a fresh review.": [
+    "El presupuesto ha cambiado. Esta aprobación está desactualizada; solicita una nueva revisión.",
+    "Il preventivo è cambiato. Questa approvazione non è più valida: richiedi una nuova revisione."
+  ],
+  "The repair is no longer awaiting this approval.": [
+    "La reparación ya no está pendiente de esta aprobación.",
+    "La riparazione non è più in attesa di questa approvazione."
+  ],
+  "Pricing proposal is no longer current.": [
+    "La propuesta de precios ya no está vigente.",
+    "La proposta tariffaria non è più attuale."
+  ],
+  "Availability or rates changed. Request a fresh pricing proposal.": [
+    "Han cambiado la disponibilidad o los precios. Solicita una nueva propuesta.",
+    "Disponibilità o tariffe sono cambiate. Richiedi una nuova proposta."
+  ],
+  "Proposed rate is outside property bounds.": [
+    "La tarifa propuesta está fuera de los límites del alojamiento.",
+    "La tariffa proposta supera i limiti dell’alloggio."
+  ],
+  "Stock request changed; request a fresh review.": [
+    "La solicitud de existencias ha cambiado; solicita una nueva revisión.",
+    "La richiesta di scorte è cambiata: richiedi una nuova revisione."
+  ],
+  "This draft is no longer an unresolved duplicate.": [
+    "Este borrador ya no es un duplicado pendiente.",
+    "Questa bozza non è più un duplicato da risolvere."
+  ],
+  "Message": ["Mensaje", "Messaggio"],
+  "Only a current draft can be sent.": [
+    "Solo se puede enviar un borrador vigente.",
+    "È possibile inviare solo una bozza attuale."
+  ],
+  "Approved · {0}": ["Aprobado · {0}", "Approvato · {0}"],
+  "Cost approval recorded. No repair evidence supplied.": [
+    "Aprobación del coste registrada. No se ha aportado evidencia de reparación.",
+    "Approvazione del costo registrata. Nessuna evidenza della riparazione fornita."
+  ],
+  "Schedule repair": ["Programar reparación", "Programma riparazione"],
+  "Repair scheduled; property remains blocked.": [
+    "Reparación programada; el alojamiento sigue bloqueado.",
+    "Riparazione programmata; l’alloggio resta bloccato."
+  ],
+  "This guest is unmatched. Resolve the visible review queue before preparing a reply.": [
+    "Este huésped no tiene coincidencia. Resuelve la cola visible de revisión antes de preparar una respuesta.",
+    "Questo ospite non è abbinato. Risolvi la coda di revisione visibile prima di preparare una risposta."
+  ],
+  "Thank you for letting us know. Our team is reviewing the issue at {0}. We will confirm once the repair and inspection have been verified. Please contact the demo operations desk for urgent assistance.": [
+    "Gracias por avisarnos. Nuestro equipo está revisando la incidencia en {0}. Confirmaremos cuando se hayan verificado la reparación y la inspección. Para ayuda urgente, contacte con el equipo de operaciones de la demo.",
+    "Grazie per averci avvisato. Il nostro team sta verificando il problema presso {0}. Confermeremo dopo la verifica della riparazione e dell’ispezione. Per assistenza urgente, contattate il team operativo della demo."
+  ],
+  "Your home at {0} is inspected and ready. {1} We look forward to welcoming you.": [
+    "Tu alojamiento {0} está inspeccionado y listo. {1} ¡Te esperamos!",
+    "La tua casa {0} è stata ispezionata ed è pronta. {1} Ti aspettiamo!"
+  ],
+  "Prepared guest reply · scripted demo content": [
+    "Respuesta al huésped preparada · contenido de demo guionizado",
+    "Risposta all’ospite predisposta · contenuto demo predefinito"
+  ],
+  "Guest Experience": ["Experiencia del huésped", "Esperienza ospiti"],
+  "Verify arrival readiness · {0}": [
+    "Verificar preparación de llegada · {0}",
+    "Verifica preparazione all’arrivo · {0}"
+  ],
+  "Check arrival readiness": [
+    "Comprobar preparación para la llegada",
+    "Controlla preparazione all’arrivo"
+  ],
+  "Review critical repair": [
+    "Revisar reparación crítica",
+    "Esamina riparazione critica"
+  ],
+  "Independent verification needed.": [
+    "Se requiere verificación independiente.",
+    "È necessaria una verifica indipendente."
+  ],
+  "Repair evidence still missing.": [
+    "Sigue faltando evidencia de reparación.",
+    "Mancano ancora le evidenze della riparazione."
+  ],
+  "Same supplier reference as {0}": [
+    "Misma referencia de proveedor que {0}",
+    "Stesso riferimento fornitore di {0}"
+  ],
+  "Flag duplicate draft": [
+    "Marcar borrador duplicado",
+    "Segnala bozza duplicata"
+  ],
+  "Excluded from posted expenses.": [
+    "Excluido de los gastos contabilizados.",
+    "Escluso dalle spese registrate."
+  ],
+  "Housekeeping & Quality": ["Limpieza y calidad", "Pulizie e qualità"],
+  "{0} units; minimum {1}": [
+    "{0} unidades; mínimo {1}",
+    "{0} unità; minimo {1}"
+  ],
+  "Propose restocking": ["Proponer reposición", "Proponi rifornimento"],
+  "Purchase requires approval.": [
+    "La compra requiere aprobación.",
+    "L’acquisto richiede approvazione."
+  ],
+  "Shared records evaluated against deterministic demo rules.": [
+    "Registros compartidos evaluados con reglas deterministas de demo.",
+    "Record condivisi valutati secondo regole demo deterministiche."
+  ],
+  "Portfolio check": ["Comprobación de la cartera", "Verifica del portafoglio"],
+  "Check complete. No autonomous sensitive changes.": [
+    "Comprobación completa. Sin cambios sensibles autónomos.",
+    "Verifica completata. Nessuna modifica sensibile autonoma."
+  ],
+  "Agent check complete · evidence and policies evaluated": [
+    "Comprobación del agente completa · evidencias y reglas evaluadas",
+    "Verifica agente completata · evidenze e regole valutate"
+  ],
+  "Central manager": ["Coordinador central", "Coordinatore centrale"],
+  "Launch a scenario first.": [
+    "Inicia primero un escenario.",
+    "Avvia prima uno scenario."
+  ],
+  "Detect arrival blockers": [
+    "Detectar bloqueos de llegada",
+    "Rileva blocchi all’arrivo"
+  ],
+  "Repair and inspection required.": [
+    "Se requieren reparación e inspección.",
+    "Sono necessarie riparazione e ispezione."
+  ],
+  "Prepare owner arrival-rescue update": [
+    "Preparar actualización del rescate de llegada para el propietario",
+    "Prepara aggiornamento sull’arrivo per il proprietario"
+  ],
+  "Verified ready · guest message sent locally and owner update prepared": [
+    "Preparación verificada · mensaje al huésped enviado localmente y actualización del propietario preparada",
+    "Preparazione verificata · messaggio all’ospite inviato localmente e aggiornamento proprietario predisposto"
+  ],
+  "Revenue & Pricing": ["Ingresos y precios", "Ricavi e prezzi"],
+  "Unbooked future nights identified using current availability.": [
+    "Noches futuras sin reserva identificadas con la disponibilidad actual.",
+    "Notti future non prenotate individuate dalla disponibilità attuale."
+  ],
+  "Review a quiet period": [
+    "Revisar un período de baja demanda",
+    "Esamina un periodo di bassa domanda"
+  ],
+  "Hypothesis: a modest reduction may improve enquiry volume.": [
+    "Hipótesis: una reducción moderada podría mejorar el volumen de consultas.",
+    "Ipotesi: una riduzione moderata potrebbe aumentare le richieste."
+  ],
+  "Applied batch checked against availability and bounds.": [
+    "Lote aplicado comprobado contra la disponibilidad y los límites.",
+    "Gruppo applicato verificato rispetto a disponibilità e limiti."
+  ],
+  "Verify rates": ["Verificar tarifas", "Verifica tariffe"],
+  "Available rates changed; confirmed reservation amounts unchanged.": [
+    "Tarifas disponibles modificadas; importes de las reservas confirmadas intactos.",
+    "Tariffe disponibili modificate; importi delle prenotazioni confermate invariati."
+  ],
+  "Duplicate supplier and reference; one posted bill, one draft.": [
+    "Proveedor y referencia duplicados: una factura contabilizada y un borrador.",
+    "Fornitore e riferimento duplicati: una fattura registrata e una bozza."
+  ],
+  "Identify duplicate": ["Identificar duplicado", "Identifica duplicato"],
+  "Draft excluded from posted totals.": [
+    "Borrador excluido de los totales contabilizados.",
+    "Bozza esclusa dai totali registrati."
+  ],
+  "Duplicate draft excluded; original posted bill retained.": [
+    "Borrador duplicado excluido; factura original contabilizada conservada.",
+    "Bozza duplicata esclusa; fattura originale registrata conservata."
+  ],
+  "Reconcile statement": ["Conciliar extracto", "Riconcilia rendiconto"],
+  "No cash recovered. Posted ledger unchanged and reconciled.": [
+    "Sin efectivo recuperado. Libro contabilizado intacto y conciliado.",
+    "Nessun denaro recuperato. Registro contabilizzato invariato e riconciliato."
+  ],
+  "A late-night guest reports a heating concern. Human review requested.": [
+    "Un huésped comunica de noche un problema de calefacción. Se solicita revisión humana.",
+    "Un ospite segnala di notte un problema al riscaldamento. Richiesta una revisione umana."
+  ],
+  "Night-shift guest message received · synthetic replay": [
+    "Mensaje nocturno del huésped recibido · reproducción sintética",
+    "Messaggio notturno dell’ospite ricevuto · riproduzione sintetica"
+  ],
+  "Night-shift guest handover": [
+    "Relevo nocturno del huésped",
+    "Passaggio di consegne notturno dell’ospite"
+  ],
+  "Urgent heating concern; no unverified safety claim.": [
+    "Problema urgente de calefacción; sin afirmaciones de seguridad no verificadas.",
+    "Problema urgente al riscaldamento; nessuna dichiarazione di sicurezza non verificata."
+  ],
+  "Escalate to operations": [
+    "Escalar a operaciones",
+    "Inoltra alle operazioni"
+  ],
+  "Human review and service task created.": [
+    "Revisión humana y tarea de servicio creadas.",
+    "Revisione umana e attività di assistenza create."
+  ],
+  "Request a current cost approval before continuing the handover.": [
+    "Solicita una aprobación de coste vigente antes de continuar el relevo.",
+    "Richiedi un’approvazione del costo attuale prima di proseguire il passaggio di consegne."
+  ],
+  "Demo operations desk confirmed guest handover after independent repair verification. Follow-up remains factual and local.": [
+    "El equipo de operaciones de demo confirmó el relevo del huésped tras la verificación independiente de la reparación. El seguimiento sigue siendo factual y local.",
+    "Il team operativo demo ha confermato il passaggio di consegne dopo la verifica indipendente della riparazione. Il seguito resta basato sui fatti e locale."
+  ],
+  "Prepared factual follow-up: the repair has been independently verified. Any remaining inspection requirements are still visible in operations.": [
+    "Seguimiento factual preparado: la reparación se ha verificado de forma independiente. Los requisitos de inspección pendientes siguen visibles en operaciones.",
+    "Seguito basato sui fatti predisposto: la riparazione è stata verificata in modo indipendente. I requisiti di ispezione ancora necessari restano visibili nelle operazioni."
+  ],
+  "Prepared factual post-repair follow-up": [
+    "Seguimiento factual posterior a la reparación preparado",
+    "Seguito basato sui fatti dopo la riparazione predisposto"
+  ],
+  "Shift handover verified · factual follow-up prepared": [
+    "Relevo de turno verificado · seguimiento factual preparado",
+    "Passaggio di consegne verificato · seguito basato sui fatti predisposto"
+  ],
+  "Current reservations show OTA exposure; direct bookings have a lower illustrative channel fee.": [
+    "Las reservas actuales muestran exposición a plataformas; las reservas directas tienen una comisión ilustrativa menor.",
+    "Le prenotazioni attuali mostrano dipendenza dalle piattaforme; le prenotazioni dirette hanno una commissione illustrativa inferiore."
+  ],
+  "Evaluate channel mix": [
+    "Evaluar distribución de canales",
+    "Valuta distribuzione dei canali"
+  ],
+  "Hypothesis: a direct-stay follow-up may reduce future acquisition cost.": [
+    "Hipótesis: un seguimiento de estancias directas podría reducir el coste futuro de captación.",
+    "Ipotesi: un seguito per i soggiorni diretti potrebbe ridurre il costo futuro di acquisizione."
+  ],
+  "Operations lead": ["Responsable de operaciones", "Responsabile operativo"],
+  "First growth action completed · results remain a hypothesis": [
+    "Primera acción comercial completada · los resultados siguen siendo una hipótesis",
+    "Prima azione commerciale completata · i risultati restano un’ipotesi"
+  ],
+  "30 / 60 / 90 day measurement scheduled. No revenue uplift claimed.": [
+    "Medición a 30, 60 y 90 días programada. No se afirma ninguna mejora de ingresos.",
+    "Misurazione a 30, 60 e 90 giorni programmata. Nessun aumento dei ricavi dichiarato."
+  ],
+  "Finance or Admin is required to edit a fictional owner agreement.": [
+    "Para editar un acuerdo ficticio se requiere Finanzas o Administración.",
+    "Per modificare un accordo fittizio occorre il ruolo Finanza o Amministratore."
+  ],
+  "Management fee must be between 0% and 50%.": [
+    "La comisión de gestión debe estar entre el 0% y el 50%.",
+    "La commissione di gestione deve essere compresa tra 0% e 50%."
+  ],
+  "Fictional owner agreement updated": [
+    "Acuerdo ficticio del propietario actualizado",
+    "Accordo fittizio del proprietario aggiornato"
+  ],
+  "Choose a supported expense category.": [
+    "Elige una categoría de gasto compatible.",
+    "Scegli una categoria di spesa supportata."
+  ],
+  "Expense category updated": [
+    "Categoría del gasto actualizada",
+    "Categoria della spesa aggiornata"
+  ],
+  "Choose a valid date.": [
+    "Elige una fecha válida.",
+    "Scegli una data valida."
+  ],
+  "A confirmed stay cannot be blocked.": [
+    "No se puede bloquear una estancia confirmada.",
+    "Non è possibile bloccare un soggiorno confermato."
+  ],
+  "Owner / operations block": [
+    "Bloqueo del propietario / operaciones",
+    "Blocco del proprietario / operazioni"
+  ],
+  "Night blocked · {0}": ["Noche bloqueada · {0}", "Notte bloccata · {0}"],
+  "Night released · {0}": [
+    "Noche liberada · {0}",
+    "Notte resa disponibile · {0}"
+  ],
+  "Amounts must be non-negative.": [
+    "Los importes no pueden ser negativos.",
+    "Gli importi non possono essere negativi."
+  ],
+  "Use a synthetic @example.test guest email.": [
+    "Utiliza un correo sintético de huésped @example.test.",
+    "Usa un’email sintetica dell’ospite @example.test."
+  ],
+  "Created in local demo": [
+    "Creado en la demo local",
+    "Creato nella demo locale"
+  ],
+  "Reservation created · {0}": [
+    "Reserva creada · {0}",
+    "Prenotazione creata · {0}"
+  ],
+  "Dates updated at {0}": [
+    "Fechas actualizadas a las {0}",
+    "Date aggiornate alle {0}"
+  ],
+  "Reservation updated; turnover rescheduled": [
+    "Reserva actualizada; limpieza reprogramada",
+    "Prenotazione aggiornata; pulizie riprogrammate"
+  ],
+  "Cancelled at {0}": ["Cancelado a las {0}", "Annullato alle {0}"],
+  "Reservation cancelled in demo": [
+    "Reserva cancelada en la demo",
+    "Prenotazione annullata nella demo"
+  ],
+  "A name and positive capacity are required.": [
+    "Se requieren un nombre y una capacidad positiva.",
+    "Sono richiesti un nome e una capacità positiva."
+  ],
+  "An existing home's country and ledger currency must stay fixed. Create a new property for another country.": [
+    "El país y la moneda contable de un alojamiento existente no pueden cambiar. Crea otro alojamiento para otro país.",
+    "Paese e valuta contabile di un alloggio esistente non possono cambiare. Crea un nuovo alloggio per un altro paese."
+  ],
+  "This capacity would be smaller than an existing reservation's guest count.": [
+    "Esta capacidad sería inferior al número de huéspedes de una reserva existente.",
+    "Questa capacità sarebbe inferiore al numero di ospiti di una prenotazione esistente."
+  ],
+  "Arrival inspection · {0}": [
+    "Inspección de llegada · {0}",
+    "Ispezione all’arrivo · {0}"
+  ],
+  "New home: inspection and evidence required.": [
+    "Nuevo alojamiento: se requieren inspección y evidencias.",
+    "Nuovo alloggio: sono richieste ispezione ed evidenze."
+  ],
+  "Welcome kits": ["Kits de bienvenida", "Kit di benvenuto"],
+  "Onboarding document review": [
+    "Revisión de documentos de incorporación",
+    "Revisione documenti di registrazione iniziale"
+  ],
+  "Property details saved": [
+    "Datos del alojamiento guardados",
+    "Dati dell’alloggio salvati"
+  ],
+  "Enter a task title.": [
+    "Introduce un título para la tarea.",
+    "Inserisci un titolo per l’attività."
+  ],
+  "Choose an available team member in the property’s country.": [
+    "Elige un miembro del equipo disponible en el país del alojamiento.",
+    "Scegli un membro del team disponibile nel paese dell’alloggio."
+  ],
+  "This person is outside the property’s service area.": [
+    "Esta persona está fuera de la zona de servicio del alojamiento.",
+    "Questa persona è fuori dalla zona di servizio dell’alloggio."
+  ],
+  "This person does not have the required skill.": [
+    "Esta persona no tiene la habilidad requerida.",
+    "Questa persona non possiede la competenza richiesta."
+  ],
+  "This shift is at capacity. Choose another feasible assignment.": [
+    "El turno está completo. Elige otra asignación viable.",
+    "Il turno è al completo. Scegli un’altra assegnazione fattibile."
+  ],
+  "Assigned to {0}": ["Asignado a {0}", "Assegnato a {0}"],
+  "Complete all checklist items and add demo photo evidence first.": [
+    "Completa primero todos los elementos de la lista y añade evidencia fotográfica de demo.",
+    "Completa prima tutte le voci della lista e aggiungi un’evidenza fotografica demo."
+  ],
+  "Task updated · {0}": [
+    "Tarea actualizada · {0}",
+    "Attività aggiornata · {0}"
+  ],
+  "Create an inspection task first.": [
+    "Crea primero una tarea de inspección.",
+    "Crea prima un’attività di ispezione."
+  ],
+  "Cleaning must be complete before inspection.": [
+    "La limpieza debe completarse antes de la inspección.",
+    "Le pulizie devono essere completate prima dell’ispezione."
+  ],
+  "Required bedroom photo and checklist evidence are missing.": [
+    "Faltan la foto del dormitorio y las comprobaciones requeridas.",
+    "Mancano la foto della camera e le verifiche richieste."
+  ],
+  "An unresolved critical repair blocks readiness.": [
+    "Una reparación crítica sin resolver bloquea la preparación.",
+    "Una riparazione critica irrisolta blocca la preparazione."
+  ],
+  "Inspection rework requested": [
+    "Corrección de inspección solicitada",
+    "Ripristino dell’ispezione richiesto"
+  ],
+  "Inspection verified · home ready": [
+    "Inspección verificada · alojamiento listo",
+    "Ispezione verificata · alloggio pronto"
+  ],
+  "Inspection failed · rework requested": [
+    "Inspección no superada · corrección solicitada",
+    "Ispezione non superata · ripristino richiesto"
+  ],
+  "Enter an issue description.": [
+    "Introduce una descripción de la incidencia.",
+    "Inserisci una descrizione del problema."
+  ],
+  "General": ["General", "Generale"],
+  "Created locally in demo": [
+    "Creado localmente en la demo",
+    "Creato localmente nella demo"
+  ],
+  "Maintenance issue created": [
+    "Incidencia de mantenimiento creada",
+    "Problema di manutenzione creato"
+  ],
+  "This issue is already verified.": [
+    "Esta incidencia ya está verificada.",
+    "Questo problema è già verificato."
+  ],
+  "Repair quote · {0}": [
+    "Presupuesto de reparación · {0}",
+    "Preventivo di riparazione · {0}"
+  ],
+  "Quote must be a positive amount.": [
+    "El presupuesto debe tener un importe positivo.",
+    "Il preventivo deve avere un importo positivo."
+  ],
+  "Quote revised · previous approvals are stale": [
+    "Presupuesto revisado · aprobaciones anteriores desactualizadas",
+    "Preventivo aggiornato · approvazioni precedenti non più valide"
+  ],
+  "Cannot move a repair from {0} to {1}.": [
+    "No se puede pasar una reparación de {0} a {1}.",
+    "Impossibile spostare una riparazione da {0} a {1}."
+  ],
+  "Repair completion requires evidence.": [
+    "Para completar una reparación se requiere evidencia.",
+    "Per completare una riparazione occorrono evidenze."
+  ],
+  "Repair {0} · independent verification still required": [
+    "Reparación {0} · sigue siendo necesaria verificación independiente",
+    "Riparazione {0} · è ancora necessaria una verifica indipendente"
+  ],
+  "Resolve the repair with evidence before verification.": [
+    "Resuelve la reparación con evidencias antes de verificarla.",
+    "Risolvi la riparazione con evidenze prima della verifica."
+  ],
+  "Repair independently verified · expense posted once": [
+    "Reparación verificada independientemente · gasto contabilizado una sola vez",
+    "Riparazione verificata in modo indipendente · spesa registrata una sola volta"
+  ],
+  "Review the existing pricing proposal first.": [
+    "Revisa primero la propuesta de precios existente.",
+    "Esamina prima la proposta tariffaria esistente."
+  ],
+  "No available future nights in the pricing window.": [
+    "No hay noches futuras disponibles en el período de precios.",
+    "Nessuna notte futura disponibile nel periodo tariffario."
+  ],
+  "5-night pricing proposal · {0}": [
+    "Propuesta de precios de 5 noches · {0}",
+    "Proposta tariffaria per 5 notti · {0}"
+  ],
+  "This batch cannot be undone.": [
+    "Este lote no se puede deshacer.",
+    "Questo gruppo non può essere annullato."
+  ],
+  "Later rate changes or bookings prevent undo. Create a compensating proposal.": [
+    "Hay cambios de tarifas o reservas posteriores que impiden deshacerlo. Crea una propuesta compensatoria.",
+    "Modifiche tariffarie o prenotazioni successive impediscono l’annullamento. Crea una proposta compensativa."
+  ],
+  "Pricing batch undone · original available rates restored": [
+    "Lote de precios deshecho · tarifas disponibles originales restauradas",
+    "Gruppo tariffario annullato · tariffe disponibili originali ripristinate"
+  ],
+  "A purchase is already on order.": [
+    "Ya hay una compra pedida.",
+    "È già presente un acquisto in ordine."
+  ],
+  "Approve a purchase before recording receipt.": [
+    "Aprueba una compra antes de registrar su recepción.",
+    "Approva un acquisto prima di registrarne la ricezione."
+  ],
+  "Fictional stock supplier": [
+    "Proveedor ficticio de existencias",
+    "Fornitore fittizio di scorte"
+  ],
+  "Receipt confirmed · {0} {1}": [
+    "Recepción confirmada · {0} {1}",
+    "Ricezione confermata · {0} {1}"
+  ],
+  "Stock usage must be positive and cannot exceed available units.": [
+    "El consumo debe ser positivo y no superar las unidades disponibles.",
+    "Il consumo deve essere positivo e non superare le unità disponibili."
+  ],
+  "{0} units consumed": ["{0} unidades consumidas", "{0} unità consumate"],
+  "Only a flagged duplicate draft requires this review.": [
+    "Esta revisión solo corresponde a un borrador marcado como duplicado.",
+    "Questa revisione è prevista solo per una bozza segnalata come duplicata."
+  ],
+  "Exclude duplicate · {0}": [
+    "Excluir duplicado · {0}",
+    "Escludi duplicato · {0}"
+  ],
+  "Only a unique draft invoice can be matched.": [
+    "Solo se puede conciliar una factura única en borrador.",
+    "È possibile abbinare solo una fattura univoca in bozza."
+  ],
+  "Invoice matched and posted to the demo ledger": [
+    "Factura conciliada y contabilizada en el libro de demo",
+    "Fattura abbinata e registrata nel libro demo"
+  ],
+  "A reference and positive amount are required.": [
+    "Se requieren una referencia y un importe positivo.",
+    "Sono richiesti un riferimento e un importo positivo."
+  ],
+  "This invoice reference already exists.": [
+    "Esta referencia de factura ya existe.",
+    "Questo riferimento fattura esiste già."
+  ],
+  "Draft invoice created": [
+    "Factura borrador creada",
+    "Fattura in bozza creata"
+  ],
+  "Prepare a draft first.": [
+    "Prepara primero un borrador.",
+    "Prepara prima una bozza."
+  ],
+  "Guest reply · {0}": [
+    "Respuesta al huésped · {0}",
+    "Risposta all’ospite · {0}"
+  ],
+  "Routine reply sent locally under enabled demo policy": [
+    "Respuesta rutinaria enviada localmente según la política de demo habilitada",
+    "Risposta ordinaria inviata localmente secondo la regola demo abilitata"
+  ],
+  "Thank you for sharing your experience. We have passed your factual feedback to our operations team and will follow up on the recorded issue.": [
+    "Gracias por compartir tu experiencia. Hemos transmitido tus comentarios al equipo de operaciones y haremos seguimiento de la incidencia registrada.",
+    "Grazie per aver condiviso la tua esperienza. Abbiamo inoltrato i tuoi commenti al team operativo e seguiremo il problema registrato."
+  ],
+  "Factual review response drafted · prepared demo content": [
+    "Respuesta factual a reseña preparada · contenido de demo preparado",
+    "Risposta alla recensione basata sui fatti predisposta · contenuto demo predefinito"
+  ],
+  "30 days · prepare direct-stay follow-up template": [
+    "30 días · preparar plantilla de seguimiento de estancia directa",
+    "30 giorni · prepara modello di seguito per soggiorni diretti"
+  ],
+  "60 days · evaluate direct versus OTA enquiry mix": [
+    "60 días · evaluar consultas directas frente a plataformas",
+    "60 giorni · valuta richieste dirette rispetto alle piattaforme"
+  ],
+  "90 days · measure acquisition cost per confirmed stay": [
+    "90 días · medir coste de captación por estancia confirmada",
+    "90 giorni · misura costo di acquisizione per soggiorno confermato"
+  ],
+  "Hypothesis: a direct-stay follow-up may reduce future channel cost. Owner: Operations lead. Measure direct share and channel fee per booking; no guaranteed uplift.": [
+    "Hipótesis: el seguimiento de estancias directas podría reducir el coste futuro del canal. Responsable: operaciones. Medir cuota directa y comisión por reserva; sin mejora garantizada.",
+    "Ipotesi: il seguito per i soggiorni diretti potrebbe ridurre il costo futuro del canale. Responsabile: responsabile operativo. Misura quota diretta e commissione per prenotazione; nessun aumento garantito."
+  ],
+  "Clock step must be 1–1440 minutes.": [
+    "El avance del reloj debe ser de 1 a 1440 minutos.",
+    "L’avanzamento dell’orologio deve essere tra 1 e 1440 minuti."
+  ],
+  "Simulated checkout · cleaning and inspection evidence required": [
+    "Salida simulada · se requiere evidencia de limpieza e inspección",
+    "Partenza simulata · sono richieste evidenze di pulizia e ispezione"
+  ],
+  "Illustrative tax adjustment must be between 0% and 50%.": [
+    "El ajuste fiscal ilustrativo debe estar entre el 0% y el 50%.",
+    "L’adeguamento fiscale illustrativo deve essere tra 0% e 50%."
+  ],
+  "Unknown scenario.": ["Escenario desconocido.", "Scenario sconosciuto."],
+  "{0}; {1} open tasks": [
+    "{0}; {1} tareas abiertas",
+    "{0}; {1} attività aperte"
+  ],
+  "Scenario launched · {0}": [
+    "Escenario iniciado · {0}",
+    "Scenario avviato · {0}"
+  ],
+  "Synthetic sync replayed · no external connection": [
+    "Sincronización sintética reproducida · sin conexión externa",
+    "Sincronizzazione sintetica riprodotta · nessuna connessione esterna"
+  ],
+  "Simulated integration": ["Integración simulada", "Integrazione simulata"],
+  "The Collection": ["La colección", "La collezione"],
+  "Reputation": ["Reputación", "Reputazione"],
+  "Owner Relations": [
+    "Relaciones con propietarios",
+    "Relazioni con i proprietari"
+  ],
+  "Compliance Assistant": [
+    "Asistente de cumplimiento",
+    "Assistente conformità"
+  ],
+  "Detect the blockers": ["Detectar los bloqueos", "Rileva i blocchi"],
+  "Prepare a repair quote": [
+    "Preparar presupuesto de reparación",
+    "Prepara preventivo di riparazione"
+  ],
+  "Approve the cost": ["Aprobar el coste", "Approva il costo"],
+  "Complete the repair": ["Completar la reparación", "Completa la riparazione"],
+  "Verify the repair": ["Verificar la reparación", "Verifica la riparazione"],
+  "Inspect the home": ["Inspeccionar el alojamiento", "Ispeziona l’alloggio"],
+  "Reassure guest & owner": [
+    "Informar al huésped y propietario",
+    "Rassicura ospite e proprietario"
+  ],
+  "Identify available nights": [
+    "Identificar noches disponibles",
+    "Individua notti disponibili"
+  ],
+  "Prepare a pricing proposal": [
+    "Preparar propuesta de precios",
+    "Prepara proposta tariffaria"
+  ],
+  "Approve & apply": ["Aprobar y aplicar", "Approva e applica"],
+  "Verify the rate history": [
+    "Verificar historial de tarifas",
+    "Verifica cronologia delle tariffe"
+  ],
+  "Detect the duplicate": ["Detectar el duplicado", "Rileva il duplicato"],
+  "Request finance review": [
+    "Solicitar revisión de Finanzas",
+    "Richiedi revisione finanziaria"
+  ],
+  "Approve the exception": ["Aprobar la excepción", "Approva l’eccezione"],
+  "Verify the statement": ["Verificar el extracto", "Verifica il rendiconto"],
+  "Receive a night-shift message": [
+    "Recibir mensaje nocturno",
+    "Ricevi messaggio notturno"
+  ],
+  "Classify & create a task": [
+    "Clasificar y crear tarea",
+    "Classifica e crea attività"
+  ],
+  "Prepare a Spanish reply": [
+    "Preparar respuesta en español",
+    "Prepara risposta in spagnolo"
+  ],
+  "Approve & send in demo": [
+    "Aprobar y enviar en demo",
+    "Approva e invia nella demo"
+  ],
+  "Resolve & follow up": ["Resolver y hacer seguimiento", "Risolvi e segui"],
+  "Find the channel opportunity": [
+    "Detectar la oportunidad de canal",
+    "Individua l’opportunità del canale"
+  ],
+  "Create the linked plan": [
+    "Crear el plan vinculado",
+    "Crea il piano collegato"
+  ],
+  "Assign the owner": ["Asignar responsable", "Assegna il responsabile"],
+  "Complete the first action": [
+    "Completar la primera acción",
+    "Completa la prima azione"
+  ],
+  "Schedule measurement": ["Programar medición", "Programma misurazione"],
+  "Inspector": ["Inspector", "Ispettore"],
+  "Cleaner": ["Personal de limpieza", "Addetto alle pulizie"],
+  "Technician": ["Técnico", "Tecnico"],
+  "{0} Fictional {1}": [
+    "{0}, dirección ficticia {1}",
+    "{0}, indirizzo fittizio {1}"
+  ],
+  "Terrace": ["Terraza", "Terrazza"],
+  "Garden": ["Jardín", "Giardino"],
+  "Quiet hours 22:00–08:00. No parties. No smoking indoors.": [
+    "Horario de silencio: 22:00–08:00. No se permiten fiestas ni fumar en el interior.",
+    "Orario di silenzio: 22:00–08:00. Vietate le feste e vietato fumare all’interno."
+  ],
+  "Self check-in from 15:00. Demo access code: DEMO-ONLY.": [
+    "Entrada autónoma desde las 15:00. Código de demo: DEMO-ONLY.",
+    "Check-in autonomo dalle 15:00. Codice demo: DEMO-ONLY."
+  ],
+  "Late arrival; please leave a warm welcome.": [
+    "Llegada tardía; prepara una bienvenida acogedora.",
+    "Arrivo tardivo; prepara un’accoglienza calorosa."
+  ],
+  "Synthetic reservation created": [
+    "Reserva sintética creada",
+    "Prenotazione sintetica creata"
+  ],
+  "Arriving early. Is the home ready?": [
+    "Llegamos pronto. ¿Está listo el alojamiento?",
+    "Arriviamo in anticipo. L’alloggio è pronto?"
+  ],
+  "Required rooms checked.": [
+    "Habitaciones requeridas revisadas.",
+    "Stanze richieste controllate."
+  ],
+  "Bedroom evidence required.": [
+    "Se requiere evidencia del dormitorio.",
+    "È richiesta un’evidenza della camera."
+  ],
+  "Heating not responding": [
+    "La calefacción no responde",
+    "Il riscaldamento non risponde"
+  ],
+  "Bedroom window latch": [
+    "Pestillo de la ventana del dormitorio",
+    "Fermo della finestra della camera"
+  ],
+  "Dishwasher needs attention": [
+    "El lavavajillas necesita atención",
+    "La lavastoviglie richiede attenzione"
+  ],
+  "Heating / cooling": [
+    "Calefacción / refrigeración",
+    "Riscaldamento / raffrescamento"
+  ],
+  "Fixtures": ["Instalaciones", "Impianti"],
+  "Reported in a synthetic guest conversation. Repair and independent verification required.": [
+    "Comunicado en una conversación sintética del huésped. Se requieren reparación y verificación independiente.",
+    "Segnalato in una conversazione sintetica dell’ospite. Sono richieste riparazione e verifica indipendente."
+  ],
+  "The heating is not responding. Can you check before we arrive?": [
+    "La calefacción no funciona. ¿Podéis revisarla antes de llegar?",
+    "Il riscaldamento non risponde. Potete controllare prima del nostro arrivo?"
+  ],
+  "Looking forward to our stay! Could you share the check-in details?": [
+    "¡Tenemos muchas ganas de llegar! ¿Nos enviáis las instrucciones?",
+    "Non vediamo l’ora! Potete inviarci le istruzioni per il check-in?"
+  ],
+  "Linen sets": ["Juegos de ropa de cama", "Set di biancheria"],
+  "Illustrative insurance record": [
+    "Registro ilustrativo de seguro",
+    "Documento assicurativo illustrativo"
+  ],
+  "Illustrative safety checklist": [
+    "Lista ilustrativa de seguridad",
+    "Lista di sicurezza illustrativa"
+  ],
+  "Lovely place. The heating took a little time to warm up.": [
+    "Un lugar precioso. La calefacción tardó un poco en calentar.",
+    "Un posto delizioso. Il riscaldamento ha impiegato un po’ di tempo a scaldare."
+  ],
+  "A thoughtful space and a wonderfully smooth stay.": [
+    "Un alojamiento cuidado y una estancia sin complicaciones.",
+    "Un alloggio curato e un soggiorno davvero sereno."
+  ],
+  "Morning handover prepared. Three arrival risks need your attention.": [
+    "Relevo de mañana preparado. Tres riesgos de llegada necesitan tu atención.",
+    "Passaggio di consegne mattutino predisposto. Tre rischi di arrivo richiedono attenzione."
+  ],
+  "Heating repair · {0}": [
+    "Reparación de calefacción · {0}",
+    "Riparazione del riscaldamento · {0}"
+  ],
+  "Morning handover": ["Relevo de mañana", "Passaggio di consegne mattutino"],
+  "Willow Townhouse has an unresolved critical heating issue and missing bedroom inspection evidence.": [
+    "Willow Townhouse tiene una incidencia crítica de calefacción sin resolver y falta evidencia de inspección del dormitorio.",
+    "Willow Townhouse presenta un problema critico irrisolto al riscaldamento e mancano le evidenze dell’ispezione della camera."
+  ],
+  "Readiness requires repair verification and complete inspection evidence.": [
+    "La preparación requiere verificación de reparación y toda la evidencia de inspección.",
+    "La preparazione richiede la verifica della riparazione e tutte le evidenze dell’ispezione."
+  ],
+  "Request human cost approval": [
+    "Solicitar aprobación humana del coste",
+    "Richiedi approvazione umana del costo"
+  ],
+  "A scheduled repair; readiness remains blocked.": [
+    "Reparación programada; la preparación sigue bloqueada.",
+    "Riparazione programmata; la preparazione resta bloccata."
+  ],
+  "Quote prepared for review.": [
+    "Presupuesto preparado para revisión.",
+    "Preventivo predisposto per la revisione."
+  ],
+  "Property remains Not ready.": [
+    "El alojamiento sigue sin estar preparado.",
+    "L’alloggio resta non pronto."
+  ],
+  "Fictional owner maintenance window": [
+    "Franja ficticia de mantenimiento del propietario",
+    "Fascia fittizia di manutenzione del proprietario"
+  ],
+  "Cleaning incomplete": ["Limpieza incompleta", "Pulizie incomplete"],
+  "Bedroom inspection evidence missing": [
+    "Falta evidencia de inspección del dormitorio",
+    "Mancano le evidenze dell’ispezione della camera"
+  ],
+  "Inspection not signed off": [
+    "Inspección sin validar",
+    "Ispezione non convalidata"
+  ],
+  "{0} · repair unverified": [
+    "{0} · reparación sin verificar",
+    "{0} · riparazione non verificata"
+  ],
+  "{0} · {1} readiness blockers": [
+    "{0} · {1} bloqueos de preparación",
+    "{0} · {1} blocchi di preparazione"
+  ],
+  "{0} available-night rates: {1} total": [
+    "{0} tarifas de noches disponibles: {1} en total",
+    "{0} tariffe di notti disponibili: {1} in totale"
+  ],
+  "{0} draft duplicates · posted period costs {1}": [
+    "{0} duplicados en borrador · gastos contabilizados del período {1}",
+    "{0} duplicati in bozza · spese registrate del periodo {1}"
+  ],
+  "{0} unverified critical repairs · {1} verified handovers · {2} local replies": [
+    "{0} reparaciones críticas sin verificar · {1} relevos verificados · {2} respuestas locales",
+    "{0} riparazioni critiche non verificate · {1} passaggi di consegne verificati · {2} risposte locali"
+  ],
+  "{0}/{1} growth actions complete · business outcome remains a hypothesis": [
+    "{0}/{1} acciones comerciales completadas · el resultado sigue siendo una hipótesis",
+    "{0}/{1} azioni commerciali completate · il risultato resta un’ipotesi"
+  ],
+  "Unknown and Needs review remain visible. A simulated compliance assistant can identify a missing record and create a task; a qualified human must assess real obligations.": [
+    "Los estados Desconocido y Requiere revisión siguen visibles. El asistente de cumplimiento simulado puede detectar un registro ausente y crear una tarea; una persona cualificada debe evaluar las obligaciones reales.",
+    "Gli stati Sconosciuto e Da esaminare restano visibili. L’assistente conformità simulato può individuare un record mancante e creare un’attività; una persona qualificata deve valutare gli obblighi reali."
+  ],
+  "Document review task created. No compliance certification was made.": [
+    "Tarea de revisión documental creada. No se ha certificado ningún cumplimiento.",
+    "Attività di revisione documentale creata. Nessuna conformità è stata certificata."
+  ],
+  "audit events": ["eventos de auditoría", "eventi di audit"],
+  "Preferences persist on this browser.": [
+    "Las preferencias se guardan en este navegador.",
+    "Le preferenze sono salvate in questo browser."
+  ],
+  "Demo brand": ["Marca de demo", "Marchio demo"],
+  "Rename centrally in src/domain/seed.ts.": [
+    "Cambiar el nombre en src/domain/seed.ts.",
+    "Rinomina in src/domain/seed.ts."
+  ],
+  "English": ["inglés británico", "inglese britannico"],
+  "Italiano": ["Italiano", "Italiano"],
+  "Presentation motion": [
+    "Animaciones de presentación",
+    "Animazioni di presentazione"
+  ],
+  "System reduced-motion preferences also apply.": [
+    "También se respeta la preferencia de movimiento reducido del sistema.",
+    "Viene rispettata anche la preferenza di movimento ridotto del sistema."
+  ],
+  "Demo clock running": [
+    "Reloj de demo en marcha",
+    "Orologio demo in esecuzione"
+  ],
+  "Hidden tabs pause; missed time is not fabricated.": [
+    "Las pestañas ocultas se pausan; no se inventa tiempo transcurrido.",
+    "Le schede nascoste vengono messe in pausa; il tempo trascorso non viene inventato."
+  ],
+  "For demonstrating views; not production access control.": [
+    "Para mostrar vistas; no es control de acceso de producción.",
+    "Per dimostrare le viste; non è un controllo degli accessi di produzione."
+  ],
+  "Owner is read-only and sees only their own fictional records across all modules. Operations can prepare work; cost approval requires Finance or Admin.": [
+    "El propietario solo puede consultar sus propios registros ficticios en todos los módulos. Operaciones prepara el trabajo; aprobar costes requiere Finanzas o Administración.",
+    "Il proprietario può solo consultare i propri record fittizi in tutti i moduli. Operazioni prepara il lavoro; l’approvazione dei costi richiede Finanza o Amministratore."
+  ],
+  "Read-only owner view": [
+    "Vista del propietario de solo lectura",
+    "Vista proprietario di sola lettura"
+  ],
+  "Demo role active": ["Rol de demo activo", "Ruolo demo attivo"],
+  "All activity stays local, including autonomous actions.": [
+    "Toda la actividad es local, incluidas las acciones autónomas.",
+    "Tutte le attività restano locali, comprese le azioni autonome."
+  ],
+  "Pause all agents": [
+    "Pausar todos los agentes",
+    "Metti in pausa tutti gli agenti"
+  ],
+  "Queue and evidence remain intact.": [
+    "La cola y las evidencias se conservan.",
+    "Coda ed evidenze restano invariate."
+  ],
+  "Allow internal task creation": [
+    "Permitir creación de tareas internas",
+    "Consenti creazione di attività interne"
+  ],
+  "Deduplicated by source and task purpose.": [
+    "Sin duplicados por fuente y finalidad de tarea.",
+    "Deduplicazione per fonte e finalità dell’attività."
+  ],
+  "Allow routine demo replies": [
+    "Permitir respuestas rutinarias de demo",
+    "Consenti risposte ordinarie demo"
+  ],
+  "Urgent and sensitive replies always require review.": [
+    "Las respuestas urgentes y sensibles siempre requieren revisión.",
+    "Le risposte urgenti e sensibili richiedono sempre una revisione."
+  ],
+  "Illustrative tax adjustment": [
+    "Ajuste fiscal ilustrativo",
+    "Adeguamento fiscale illustrativo"
+  ],
+  "Configurable demo assumption applied to accommodation. This does not represent current tax law.": [
+    "Supuesto configurable de demo aplicado al alojamiento. No representa la legislación fiscal vigente.",
+    "Ipotesi demo configurabile applicata al soggiorno. Non rappresenta la normativa fiscale vigente."
+  ],
+  "Spending, pricing, exception resolution and sensitive messaging require explicit approvals. Readiness changes require authorised evidence and verification.": [
+    "Gastos, precios, resolución de excepciones y mensajes sensibles requieren aprobación explícita. Los cambios de preparación requieren evidencias y verificaciones autorizadas.",
+    "Spese, tariffe, risoluzione delle eccezioni e messaggi sensibili richiedono approvazione esplicita. Le modifiche alla preparazione richiedono evidenze e verifiche autorizzate."
+  ],
+  "Fixed seed · schema v1 · localStorage": [
+    "Datos fijos · esquema v1 · localStorage",
+    "Dati fissi · schema v1 · localStorage"
+  ],
+  "Reset restores every reservation, cost, conversation, scenario, policy and event to 20 October 2026 at 09:00 London time. The seed has 36 homes, a year of history and 90+ future days.": [
+    "El reinicio restaura reservas, costes, conversaciones, escenarios, reglas y eventos al 20 de octubre de 2026, a las 09:00 de Londres. Incluye 36 alojamientos, un año de historial y más de 90 días futuros.",
+    "La reimpostazione ripristina prenotazioni, costi, conversazioni, scenari, regole ed eventi al 20 ottobre 2026, ore 09:00 di Londra. I dati includono 36 alloggi, un anno di storico e oltre 90 giorni futuri."
+  ],
+  "Notifications open related records from the bell menu. Display FX:": [
+    "Las notificaciones del icono de campana abren los registros relacionados. Cambio de visualización:",
+    "Le notifiche della campanella aprono i record collegati. Cambio di visualizzazione:"
+  ],
+  ". Illustrative tax adjustment:": [
+    ". Ajuste fiscal ilustrativo:",
+    ". Adeguamento fiscale illustrativo:"
+  ],
+  "% in the simplified accounting model.": [
+    "% en el modelo contable simplificado.",
+    "% nel modello contabile semplificato."
+  ],
+  "Reset all demo data": [
+    "Reiniciar todos los datos de demo",
+    "Reimposta tutti i dati demo"
+  ],
+  "These tiles replay synthetic sync records. They do not connect to external services.": [
+    "Estas tarjetas reproducen sincronizaciones sintéticas. No conectan con servicios externos.",
+    "Queste schede riproducono sincronizzazioni sintetiche. Non si collegano a servizi esterni."
+  ],
+  "Demo bank": ["Banco de demo", "Banca demo"],
+  "Owner portal": ["Portal de propietarios", "Portale proprietari"],
+  "Illustrative market feed": [
+    "Fuente ilustrativa de mercado",
+    "Fonte di mercato illustrativa"
+  ],
+  "Synthetic error: previous handover missed a classification. Replay is available.": [
+    "Error sintético: el relevo anterior omitió una clasificación. Se puede reproducir.",
+    "Errore sintetico: il passaggio precedente ha omesso una classificazione. È possibile riprodurlo."
+  ],
+  "Last synthetic sync: {0}": [
+    "Última sincronización sintética: {0}",
+    "Ultima sincronizzazione sintetica: {0}"
+  ],
+  "Replay synthetic sync": [
+    "Reproducir sincronización sintética",
+    "Riproduci sincronizzazione sintetica"
+  ],
+  "Scenario country": ["País del escenario", "Paese dello scenario"],
+  "DEMO STUDIO": ["ESTUDIO DE DEMOS", "STUDIO DEMO"],
+  "See what changes": ["Descubre qué cambia", "Scopri cosa cambia"],
+  "when your team is in sync.": [
+    "cuando tu equipo está coordinado.",
+    "quando il tuo team lavora in sintonia."
+  ],
+  "A fictional portfolio. Real local decisions.": [
+    "Una cartera ficticia. Decisiones locales reales.",
+    "Un portafoglio fittizio. Decisioni locali concrete."
+  ],
+  "A clear trail from the first signal to the verified result.": [
+    "Un rastro claro desde la primera señal hasta el resultado verificado.",
+    "Un percorso chiaro dal primo segnale al risultato verificato."
+  ],
+  "One connected operating team": [
+    "Un equipo operativo conectado",
+    "Un team operativo connesso"
+  ],
+  "Evidence first": ["La evidencia primero", "Prima le evidenze"],
+  "Verified outcomes": ["Resultados verificados", "Risultati verificati"],
+  "Human decisions": ["Decisiones humanas", "Decisioni umane"],
+  "{0} · {1} · {2}/{3} steps": [
+    "{0} · {1} · {2}/{3} pasos",
+    "{0} · {1} · {2}/{3} passaggi"
+  ],
+  "Evidence, decisions & local outcomes": [
+    "Evidencias, decisiones y resultados locales",
+    "Evidenze, decisioni e risultati locali"
+  ],
+  "Quote approval schedules the repair. Readiness stays blocked until repair completion, independent verification and required inspection evidence are all recorded.": [
+    "La aprobación del presupuesto programa la reparación. La preparación sigue bloqueada hasta registrar reparación completa, verificación independiente y toda la evidencia de inspección.",
+    "L’approvazione del preventivo programma la riparazione. La preparazione resta bloccata finché non vengono registrate riparazione completata, verifica indipendente e tutte le evidenze dell’ispezione."
+  ],
+  "Select a story to begin. Use Next step to present at your own pace.": [
+    "Elige una historia. Usa Siguiente paso para presentarla a tu ritmo.",
+    "Scegli una storia. Usa Passo successivo per presentarla al tuo ritmo."
+  ],
+  "Presenter’s notes": [
+    "Notas para la presentación",
+    "Note per la presentazione"
+  ],
+  "A five-minute route through StayPilot AI": [
+    "Un recorrido de cinco minutos por StayPilot AI",
+    "Un percorso di cinque minuti in StayPilot AI"
+  ],
+  "00:00 — A calmer morning": [
+    "00:00 — Una mañana más tranquila",
+    "00:00 — Una mattina più serena"
+  ],
+  "Open Overview. Explain the explicit demo label and 36-home portfolio.": [
+    "Abre el resumen. Explica la etiqueta de demo y la cartera de 36 alojamientos.",
+    "Apri il riepilogo. Spiega l’etichetta demo e il portafoglio di 36 alloggi."
+  ],
+  "00:45 — Follow the signal": [
+    "00:45 — Sigue la señal",
+    "00:45 — Segui il segnale"
+  ],
+  "Launch Rescue an arrival. Show the critical repair and missing inspection evidence.": [
+    "Inicia Rescatar una llegada. Muestra la reparación crítica y la evidencia de inspección ausente.",
+    "Avvia Salvare un arrivo. Mostra la riparazione critica e le evidenze mancanti dell’ispezione."
+  ],
+  "01:30 — Keep control": [
+    "01:30 — Mantén el control",
+    "01:30 — Mantieni il controllo"
+  ],
+  "Step through quote approval. Show that the property remains blocked.": [
+    "Avanza por la aprobación del presupuesto. Muestra que el alojamiento sigue bloqueado.",
+    "Procedi con l’approvazione del preventivo. Mostra che l’alloggio resta bloccato."
+  ],
+  "02:30 — Verify the result": [
+    "02:30 — Verifica el resultado",
+    "02:30 — Verifica il risultato"
+  ],
+  "Complete repair, verify it, then inspect. Show the linked expense and local guest reply.": [
+    "Completa y verifica la reparación, después inspecciona. Muestra el gasto vinculado y la respuesta local al huésped.",
+    "Completa e verifica la riparazione, poi ispeziona. Mostra la spesa collegata e la risposta locale all’ospite."
+  ],
+  "03:30 — See the whole business": [
+    "03:30 — Mira el conjunto del negocio",
+    "03:30 — Osserva l’intera attività"
+  ],
+  "Show pricing, a native-currency owner statement and a prepared growth plan.": [
+    "Muestra precios, un extracto del propietario en su moneda y un plan comercial preparado.",
+    "Mostra prezzi, un rendiconto del proprietario nella sua valuta e un piano commerciale predisposto."
+  ],
+  "04:30 — Make the boundary clear": [
+    "04:30 — Aclara los límites",
+    "04:30 — Chiarisci i limiti"
+  ],
+  "Open audit history. Everything is synthetic and local; no live AI, messages, prices or money.": [
+    "Abre el historial de auditoría. Todo es sintético y local; sin IA, mensajes, precios ni dinero reales.",
+    "Apri la cronologia di audit. Tutto è sintetico e locale; nessuna IA, messaggio, tariffa o transazione reale."
+  ],
+  "Reset for the next presentation": [
+    "Reiniciar para la próxima presentación",
+    "Reimposta per la prossima presentazione"
+  ],
+  "HOME / APPROVALS": ["INICIO / APROBACIONES", "HOME / APPROVAZIONI"],
+  "The decisions that need your judgement. Review the evidence, make the call, and see exactly what changes.": [
+    "Las decisiones que necesitan tu criterio. Revisa las evidencias, decide y comprueba exactamente qué cambia.",
+    "Le decisioni che richiedono il tuo giudizio. Esamina le evidenze, decidi e verifica esattamente cosa cambia."
+  ],
+  "Ready for your decision": [
+    "Listo para tu decisión",
+    "Pronto per la tua decisione"
+  ],
+  "Evidence and outcomes recorded": [
+    "Evidencias y resultados registrados",
+    "Evidenze e risultati registrati"
+  ],
+  "A fresh review is required": [
+    "Se requiere una nueva revisión",
+    "È richiesta una nuova revisione"
+  ],
+  "Search approvals": ["Buscar aprobaciones", "Cerca approvazioni"],
+  "Search decisions, homes, or reference…": [
+    "Buscar decisiones, alojamientos o referencias…",
+    "Cerca decisioni, alloggi o riferimenti…"
+  ],
+  "All types": ["Todos los tipos", "Tutti i tipi"],
+  "Decision / reference": ["Decisión / referencia", "Decisione / riferimento"],
+  "Decision evaluated against the current evidence. Open the record to see the outcome.": [
+    "Decisión evaluada con la evidencia actual. Abre el registro para consultar el resultado.",
+    "Decisione valutata rispetto alle evidenze attuali. Apri il record per consultare il risultato."
+  ],
+  "Evidence linked": ["Evidencia vinculada", "Evidenze collegate"],
+  "Decision requested": ["Decisión solicitada", "Decisione richiesta"],
+  "Local action": ["Acción local", "Azione locale"],
+  "Authorising the quote schedules the repair. The home stays blocked until repair evidence, verification, and inspection are complete.": [
+    "Autorizar el presupuesto programa la reparación. El alojamiento sigue bloqueado hasta completar las evidencias, la verificación y la inspección.",
+    "Autorizzare il preventivo programma la riparazione. L’alloggio resta bloccato finché non sono complete evidenze, verifica e ispezione."
+  ],
+  "The proposed change is checked against the current record and the same simulated role policy used everywhere in the app.": [
+    "El cambio propuesto se comprueba contra el registro actual y la misma política de roles simulados que usa toda la aplicación.",
+    "La modifica proposta viene verificata rispetto al record attuale e alla stessa regola dei ruoli simulati usata in tutta l’applicazione."
+  ],
+  "Open full decision": ["Abrir decisión completa", "Apri decisione completa"],
+  "Nothing waiting here. Try another status or decision type.": [
+    "No hay decisiones aquí. Prueba otro estado o tipo.",
+    "Nessuna decisione presente. Prova un altro stato o tipo."
+  ],
+  "decisions · selected portfolio": [
+    "decisiones · cartera seleccionada",
+    "decisioni · portafoglio selezionato"
+  ],
+  "Every decision is recorded": [
+    "Cada decisión queda registrada",
+    "Ogni decisione viene registrata"
+  ],
+  "Your judgement. A complete record.": [
+    "Tu criterio. Un registro completo.",
+    "Il tuo giudizio. Un record completo."
+  ],
+  "Approvals check the latest evidence before applying a change. Cost approval schedules work; verified repair and inspection release readiness.": [
+    "Las aprobaciones comprueban la evidencia más reciente antes de aplicar cambios. Aprobar costes programa el trabajo; la reparación verificada y la inspección permiten declarar la preparación.",
+    "Le approvazioni verificano le evidenze più recenti prima di applicare modifiche. L’approvazione del costo programma il lavoro; riparazione verificata e ispezione rendono pronto l’alloggio."
+  ],
+  "See the morning handover": [
+    "Ver el relevo de mañana",
+    "Vedi il passaggio di consegne mattutino"
+  ],
+  "Pricing proposal created. Review the affected nights in Approvals.": [
+    "Propuesta de precios creada. Revisa las noches afectadas en Aprobaciones.",
+    "Proposta tariffaria creata. Esamina le notti interessate in Approvazioni."
+  ],
+  "booked /": ["reservadas /", "prenotate /"],
+  "available nights": ["noches disponibles", "notti disponibili"],
+  "Accommodation allocated to period nights / occupied nights": [
+    "Importe de alojamiento asignado a noches del período / noches ocupadas",
+    "Importo soggiorno assegnato alle notti del periodo / notti occupate"
+  ],
+  "Accommodation allocated to period nights / available nights": [
+    "Importe de alojamiento asignado a noches del período / noches disponibles",
+    "Importo soggiorno assegnato alle notti del periodo / notti disponibili"
+  ],
+  "Booked accommodation": ["Alojamiento reservado", "Soggiorni prenotati"],
+  "Selected arrival period · not a forecast": [
+    "Período de llegada seleccionado · no es una previsión",
+    "Periodo di arrivo selezionato · non è una previsione"
+  ],
+  "Pricing property": ["Alojamiento para precios", "Alloggio per le tariffe"],
+  "Nightly accommodation in {0} · minimum {1} / maximum {2}": [
+    "Tarifa por noche en {0} · mínimo {1} / máximo {2}",
+    "Tariffa notturna in {0} · minimo {1} / massimo {2}"
+  ],
+  "Outside rate window": [
+    "Fuera del período de precios",
+    "Fuori dal periodo tariffario"
+  ],
+  "Booked · fixed reservation": [
+    "Reservado · reserva fija",
+    "Prenotato · prenotazione fissa"
+  ],
+  "An evidence-led experiment": [
+    "Un experimento basado en evidencias",
+    "Un esperimento basato su evidenze"
+  ],
+  "Synthetic signals · illustrative scenario": [
+    "Señales sintéticas · escenario ilustrativo",
+    "Segnali sintetici · scenario illustrativo"
+  ],
+  "The next available nights are the evidence for this proposal. An 8% reduction, clamped to the property bounds, tests whether a modest adjustment could improve enquiries.": [
+    "Las próximas noches disponibles sustentan esta propuesta. Una reducción del 8%, limitada a los márgenes del alojamiento, prueba si un ajuste moderado puede mejorar las consultas.",
+    "Le prossime notti disponibili sono alla base di questa proposta. Una riduzione dell’8%, contenuta nei limiti dell’alloggio, verifica se un aggiustamento moderato possa aumentare le richieste."
+  ],
+  "Illustrative peer nightly rate": [
+    "Tarifa nocturna comparativa ilustrativa",
+    "Tariffa notturna comparativa illustrativa"
+  ],
+  "Current property rate": [
+    "Tarifa actual del alojamiento",
+    "Tariffa attuale dell’alloggio"
+  ],
+  "Peer figures are invented demo assumptions. No booking or revenue uplift is guaranteed.": [
+    "Las cifras comparativas son supuestos de demo inventados. No se garantiza ninguna mejora de reservas ni ingresos.",
+    "I dati comparativi sono ipotesi demo inventate. Non è garantito alcun aumento di prenotazioni o ricavi."
+  ],
+  "Open source reservations": [
+    "Abrir reservas de origen",
+    "Apri prenotazioni di origine"
+  ],
+  "Forecast assumptions": ["Supuestos de previsión", "Ipotesi di previsione"],
+  "Scenarios, not verified market advice": [
+    "Escenarios, no asesoramiento de mercado verificado",
+    "Scenari, non consulenza di mercato verificata"
+  ],
+  "Baseline illustrative accommodation": [
+    "Alojamiento ilustrativo de referencia",
+    "Soggiorni illustrativi di riferimento"
+  ],
+  "Current illustrative scenario": [
+    "Escenario ilustrativo actual",
+    "Scenario illustrativo attuale"
+  ],
+  "Next 28 days, available nights only. Assumed occupancy: 45% at baseline; 50% only on adjusted nights. Invented assumptions, not a prediction. No forecast amount is posted to finance.": [
+    "Próximos 28 días, solo noches disponibles. Ocupación supuesta: 45% de referencia; 50% solo en noches ajustadas. Son supuestos inventados, no predicciones. No se contabiliza ninguna previsión en finanzas.",
+    "Prossimi 28 giorni, solo notti disponibili. Occupazione ipotizzata: 45% di riferimento; 50% solo sulle notti modificate. Ipotesi inventate, non previsioni. Nessun importo previsto viene contabilizzato in finanza."
+  ],
+  "A proposal affects only its selected available nights. No additional bookings are invented when rates change. Confirmed accommodation values and native-currency statements are unaffected.": [
+    "La propuesta solo afecta a las noches disponibles seleccionadas. Cambiar tarifas no inventa nuevas reservas. Los importes confirmados y los extractos por moneda no cambian.",
+    "La proposta interessa solo le notti disponibili selezionate. Modificare le tariffe non inventa nuove prenotazioni. Gli importi confermati e i rendiconti per valuta non cambiano."
+  ],
+  "Cancellation assumption: historical seed frequency. Lead time: 30 days for seeded bookings. Capacity: one unit per home per night.": [
+    "Cancelación supuesta: frecuencia histórica de los datos. Antelación: 30 días en reservas de ejemplo. Capacidad: una unidad por alojamiento y noche.",
+    "Ipotesi di cancellazione: frequenza storica dei dati. Anticipo: 30 giorni per le prenotazioni di esempio. Capacità: un’unità per alloggio per notte."
+  ],
+  "Inspect booked outcomes": [
+    "Consultar resultados reservados",
+    "Esamina risultati prenotati"
+  ],
+  "pricing batches": ["lotes de precios", "gruppi tariffari"],
+  "Batch": ["Lote", "Gruppo"],
+  "Affected nights": ["Noches afectadas", "Notti interessate"],
+  "Original available rates restored.": [
+    "Tarifas disponibles originales restauradas.",
+    "Tariffe disponibili originali ripristinate."
+  ],
+  "Open for evidence": ["Abrir evidencias", "Apri evidenze"],
+  "period reservations are direct. OTA bookings use an illustrative 15% fee; direct stays use 3%.": [
+    "reservas del período son directas. Las plataformas usan una comisión ilustrativa del 15%; las estancias directas, del 3%.",
+    "prenotazioni del periodo sono dirette. Le piattaforme usano una commissione illustrativa del 15%; i soggiorni diretti del 3%."
+  ],
+  "prepared follow-up content may increase repeat direct enquiries. Measure channel share and acquisition cost at 30, 60 and 90 days.": [
+    "el seguimiento preparado podría aumentar las consultas directas de repetición. Medir cuota de canal y coste de captación a los 30, 60 y 90 días.",
+    "il seguito predisposto potrebbe aumentare le richieste dirette ripetute. Misura quota del canale e costo di acquisizione a 30, 60 e 90 giorni."
+  ],
+  "Three linked growth tasks created with a measurement schedule.": [
+    "Tres tareas comerciales vinculadas creadas con un calendario de medición.",
+    "Tre attività commerciali collegate create con un calendario di misurazione."
+  ],
+  "View plan · {0}/3 actions": [
+    "Ver plan · {0}/3 acciones",
+    "Vedi piano · {0}/3 azioni"
+  ],
+  "Create 30 / 60 / 90 day plan": [
+    "Crear plan a 30 / 60 / 90 días",
+    "Crea piano a 30 / 60 / 90 giorni"
+  ],
+  "Source: property reservations": [
+    "Fuente: reservas del alojamiento",
+    "Fonte: prenotazioni dell’alloggio"
+  ],
+  "integer minor units": [
+    "importes enteros en unidades menores",
+    "importi interi in unità minori"
+  ],
+  "{0} · Native-currency ledger": [
+    "{0} · Libro en moneda original",
+    "{0} · Registro nella valuta originale"
+  ],
+  "Active reservations arriving {0} — {1}": [
+    "Reservas activas con llegada del {0} al {1}",
+    "Prenotazioni attive con arrivo dal {0} al {1}"
+  ],
+  "Accommodation booked": [
+    "Importe de alojamiento reservado",
+    "Importo soggiorni prenotati"
+  ],
+  "Cleaning collected / paid through": [
+    "Limpieza cobrada y repercutida",
+    "Pulizie incassate e riaddebitate"
+  ],
+  "Channel fees": ["Comisiones del canal", "Commissioni del canale"],
+  "Operator management fee": [
+    "Comisión de gestión del operador",
+    "Commissione di gestione del gestore"
+  ],
+  "Posted portfolio expenses": [
+    "Gastos de cartera contabilizados",
+    "Spese del portafoglio registrate"
+  ],
+  "Illustrative tax adjustment ·": [
+    "Ajuste fiscal ilustrativo ·",
+    "Adeguamento fiscale illustrativo ·"
+  ],
+  "Outstanding guest balances": [
+    "Saldos de huéspedes pendientes",
+    "Saldi ospiti da incassare"
+  ],
+  "Reconciles: owner + operator + channel + expenses + illustrative tax = accommodation.": [
+    "Conciliación: propietario + operador + canal + gastos + ajuste fiscal ilustrativo = alojamiento.",
+    "Riconciliazione: proprietario + gestore + canale + spese + imposte illustrative = soggiorni."
+  ],
+  "View native source records": [
+    "Ver registros de origen en moneda original",
+    "Vedi record di origine nella valuta originale"
+  ],
+  "A documented illustrative model": [
+    "Un modelo ilustrativo documentado",
+    "Un modello illustrativo documentato"
+  ],
+  "Accommodation is allocated to channel fees (3% direct / 15% OTA), a 20% operator fee on accommodation after channel fees, and owner payable after posted expenses. Cleaning is collected and paid through at cost. Draft and duplicate bills have no ledger effect. Posted expenses follow the selected invoice-date period; this is a booked-allocation statement, not a regulated financial statement.": [
+    "El importe del alojamiento se reparte entre comisiones del canal (3% directo / 15% plataformas), una comisión del operador del 20% sobre el alojamiento tras dichas comisiones, y el importe al propietario tras los gastos contabilizados. La limpieza se cobra y repercute al coste. Los borradores y duplicados no afectan al libro. Los gastos contabilizados siguen el período de fecha de factura seleccionado; es un extracto de asignación de reservas, no un estado financiero regulado.",
+    "L’importo del soggiorno viene ripartito tra commissioni del canale (3% diretto / 15% piattaforme), commissione del gestore del 20% sul soggiorno al netto di tali commissioni e importo al proprietario al netto delle spese registrate. Le pulizie sono incassate e riaddebitate al costo. Bozze e duplicati non influiscono sul registro. Le spese registrate seguono il periodo selezionato per data fattura; è un rendiconto di ripartizione delle prenotazioni, non un bilancio regolamentato."
+  ],
+  "Received guest cash ·": [
+    "Efectivo recibido de huéspedes ·",
+    "Denaro ricevuto dagli ospiti ·"
+  ],
+  "Illustrative tax adjustment:": [
+    "Ajuste fiscal ilustrativo:",
+    "Adeguamento fiscale illustrativo:"
+  ],
+  "% (configurable in Settings). No current country tax law is represented. Payment status is simulated.": [
+    "% (configurable en Configuración). No representa la normativa fiscal vigente de ningún país. El estado de pago es simulado.",
+    "% (configurabile nelle Impostazioni). Non rappresenta la normativa fiscale vigente di alcun paese. Lo stato di pagamento è simulato."
+  ],
+  "Duplicate drafts need a human exception decision. Removing a duplicate draft is not cash recovered.": [
+    "Los borradores duplicados requieren una decisión humana. Eliminar un borrador duplicado no equivale a recuperar efectivo.",
+    "Le bozze duplicate richiedono una decisione umana. Rimuovere una bozza duplicata non equivale a recuperare denaro."
+  ],
+  "Same reference as {0}": [
+    "Misma referencia que {0}",
+    "Stesso riferimento di {0}"
+  ],
+  "No duplicate flagged": [
+    "Sin duplicados detectados",
+    "Nessun duplicato segnalato"
+  ],
+  "unpaid balances": ["saldos pendientes de pago", "saldi da incassare"],
+  "Total": ["Total", "Totale"],
+  "Received": ["Recibido", "Ricevuto"],
+  "Balance": ["Saldo", "Saldo"],
+  "Owner statement": [
+    "Extracto del propietario",
+    "Rendiconto del proprietario"
+  ],
+  "Simulated owner role limits the entire app to the selected owner’s homes.": [
+    "El rol simulado de propietario limita toda la aplicación a los alojamientos del propietario seleccionado.",
+    "Il ruolo proprietario simulato limita tutta l’applicazione agli alloggi del proprietario selezionato."
+  ],
+  "STAYPILOT AI / OWNER STATEMENT": [
+    "STAYPILOT AI / EXTRACTO DEL PROPIETARIO",
+    "STAYPILOT AI / RENDICONTO DEL PROPRIETARIO"
+  ],
+  "· Fictional owner": ["· Propietario ficticio", "· Proprietario fittizio"],
+  "Booked allocation · simplified demo accounting": [
+    "Asignación de reservas · contabilidad de demo simplificada",
+    "Ripartizione prenotazioni · contabilità demo semplificata"
+  ],
+  "Management fee ·": ["Comisión de gestión ·", "Commissione di gestione ·"],
+  "% after channel fees": [
+    "% tras las comisiones del canal",
+    "% al netto delle commissioni del canale"
+  ],
+  "Posted expenses": ["Gastos contabilizados", "Spese registrate"],
+  "Prepared explanation: booked accommodation is allocated after channel fees, your agreement’s management fee, and posted fictional costs. Draft duplicates are excluded. Future stay values represent bookings, not achieved revenue. No real payout occurs.": [
+    "Explicación preparada: el importe del alojamiento se asigna tras las comisiones del canal, la comisión de gestión del acuerdo y los costes ficticios contabilizados. Se excluyen los duplicados en borrador. Las estancias futuras son reservas, no ingresos realizados. No se efectúa ningún pago real.",
+    "Spiegazione predisposta: l’importo del soggiorno è ripartito al netto delle commissioni del canale, della commissione di gestione dell’accordo e dei costi fittizi registrati. I duplicati in bozza sono esclusi. I soggiorni futuri rappresentano prenotazioni, non ricavi realizzati. Nessun pagamento reale viene effettuato."
+  ],
+  "statement reservations": [
+    "reservas del extracto",
+    "prenotazioni del rendiconto"
+  ],
+  "Fictional guest rating": [
+    "Valoración ficticia de huéspedes",
+    "Valutazione fittizia degli ospiti"
+  ],
+  "seeded reviews": ["reseñas de ejemplo", "recensioni di esempio"],
+  "Urgent conversations": ["Conversaciones urgentes", "Conversazioni urgenti"],
+  "Escalated for a human handover": [
+    "Escaladas para relevo humano",
+    "Inoltrate per un passaggio di consegne umano"
+  ],
+  "Guest follow-ups": ["Seguimiento de huéspedes", "Seguito degli ospiti"],
+  "Tracked through completion": [
+    "Seguimiento hasta su resolución",
+    "Monitoraggio fino al completamento"
+  ],
+  "{0} · Fictional guest": ["{0} · Huésped ficticio", "{0} · Ospite fittizio"],
+  "PREPARED REPLY DRAFT": [
+    "BORRADOR DE RESPUESTA PREPARADA",
+    "BOZZA DI RISPOSTA PREDISPOSTA"
+  ],
+  "A factual review response was drafted. No review was posted.": [
+    "Respuesta factual a reseña preparada. No se ha publicado ninguna reseña.",
+    "Risposta alla recensione basata sui fatti predisposta. Nessuna recensione è stata pubblicata."
+  ],
+  "Guest feedback follow-up · {0}": [
+    "Seguimiento de comentario del huésped · {0}",
+    "Seguito del commento dell’ospite · {0}"
+  ],
+  "Follow-up task created. Invitations are available for all eligible fictional guests.": [
+    "Tarea de seguimiento creada. Se puede invitar a todos los huéspedes ficticios aptos.",
+    "Attività di seguito creata. Gli inviti sono disponibili per tutti gli ospiti fittizi idonei."
+  ],
+  "Every eligible fictional guest is included, regardless of sentiment.": [
+    "Se incluye a todo huésped ficticio apto, con independencia de su sentimiento.",
+    "È incluso ogni ospite fittizio idoneo, indipendentemente dal sentimento."
+  ],
+  "Pre-arrival: share prepared check-in information. Arrival: verify readiness. In-stay: track unresolved issues. Departure: create turnover work. Post-stay: prepare a review invitation for every completed stay. No real guest is contacted.": [
+    "Antes de llegar: compartir instrucciones preparadas. Llegada: verificar preparación. Durante la estancia: seguir incidencias abiertas. Salida: crear limpieza. Tras la estancia: preparar invitación de reseña para todas las estancias completadas. No se contacta con huéspedes reales.",
+    "Prima dell’arrivo: condividi le istruzioni predisposte. Arrivo: verifica la preparazione. Durante il soggiorno: segui i problemi aperti. Partenza: crea le pulizie. Dopo il soggiorno: prepara un invito alla recensione per ogni soggiorno completato. Nessun ospite reale viene contattato."
+  ],
+  "View eligible stays": ["Ver estancias aptas", "Vedi soggiorni idonei"],
+  "Active period within 2026 · selected homes · {0} display conversion at fixed demo FX. Table below uses the active arrival period.": [
+    "Período activo de 2026 · alojamientos seleccionados · conversión a {0} al cambio fijo de demo. La tabla usa el período de llegada activo.",
+    "Periodo attivo nel 2026 · alloggi selezionati · conversione in {0} al cambio fisso demo. La tabella usa il periodo di arrivo attivo."
+  ],
+  "agent runs": ["ejecuciones de agentes", "esecuzioni degli agenti"],
+  "Agent": ["Agente", "Agente"],
+  "Observed result": ["Resultado observado", "Risultato osservato"],
+  "Native currencies remain explicit; hypothetical avoided costs and time savings are excluded from earnings.": [
+    "Las monedas originales siguen explícitas; el ahorro hipotético de costes y tiempo no se suma a los ingresos.",
+    "Le valute originali restano esplicite; risparmi ipotetici di costi e tempo sono esclusi dai ricavi."
+  ],
+  "report rows": ["filas del informe", "righe del report"],
+  "Completed tasks": ["Tareas completadas", "Attività completate"],
+  "Fictional rating": ["Valoración ficticia", "Valutazione fittizia"],
+  "{0} selected homes": [
+    "{0} alojamientos seleccionados",
+    "{0} alloggi selezionati"
+  ],
+  "Turnover work created automatically": [
+    "Trabajo de limpieza creado automáticamente",
+    "Attività di pulizia create automaticamente"
+  ],
+  "{0} / {1} available nights": [
+    "{0} / {1} noches disponibles",
+    "{0} / {1} notti disponibili"
+  ],
+  "This period": ["Este período", "Questo periodo"],
+  "{0} active reservations": [
+    "{0} reservas activas",
+    "{0} prenotazioni attive"
+  ],
+  "Your judgement makes the difference": [
+    "Tu criterio marca la diferencia",
+    "Il tuo giudizio fa la differenza"
+  ],
+  "of {0} homes · verified evidence": [
+    "de {0} alojamientos · evidencia verificada",
+    "su {0} alloggi · evidenze verificate"
+  ],
+  "Live records": ["Registros actuales", "Record attuali"],
+  "beautiful homes.": ["alojamientos con encanto.", "alloggi di charme."],
+  "decisions waiting.": ["decisiones pendientes.", "decisioni in attesa."],
+  "A little clarity for the day ahead.": [
+    "Un poco de claridad para el día que empieza.",
+    "Un po’ di chiarezza per la giornata che inizia."
+  ],
+  "UK · Spain · Italy": [
+    "Reino Unido · España · Italia",
+    "Regno Unito · Spagna · Italia"
+  ],
+  "Agents paused": ["Agentes en pausa", "Agenti in pausa"],
+  "Your simulated team is on it": [
+    "Tu equipo simulado ya está trabajando",
+    "Il tuo team simulato è già al lavoro"
+  ],
+  "Standard check-in opens in": [
+    "La entrada estándar abre en",
+    "Il check-in standard apre tra"
+  ],
+  "Your check-in window is open": [
+    "La franja de entrada está abierta",
+    "La fascia di check-in è aperta"
+  ],
+  "Welcome home": ["Te damos la bienvenida", "Benvenuti a casa"],
+  "15:00 London · UK standard check-in": [
+    "15:00 de Londres · entrada estándar del Reino Unido",
+    "15:00 di Londra · check-in standard nel Regno Unito"
+  ],
+  "Your morning handover is ready": [
+    "El relevo de mañana está preparado",
+    "Il passaggio di consegne mattutino è pronto"
+  ],
+  "Arrival confidence": [
+    "Confianza en las llegadas",
+    "Affidabilità degli arrivi"
+  ],
+  "homes have complete readiness evidence.": [
+    "alojamientos cuentan con toda la evidencia de preparación.",
+    "alloggi hanno tutte le evidenze di preparazione."
+  ],
+  "Key insight": ["Dato clave", "Informazione chiave"],
+  "{0} needs a little attention before arrival.": [
+    "{0} necesita atención antes de la llegada.",
+    "{0} richiede attenzione prima dell’arrivo."
+  ],
+  "Every selected home is ready to welcome guests.": [
+    "Todos los alojamientos seleccionados están listos para recibir huéspedes.",
+    "Tutti gli alloggi selezionati sono pronti ad accogliere gli ospiti."
+  ],
+  "View full AI analysis": [
+    "Ver análisis completo de IA",
+    "Vedi l’analisi IA completa"
+  ],
+  "OPERATIONS AGENT": ["AGENTE DE OPERACIONES", "AGENTE OPERATIVO"],
+  "Your homes are looking good": [
+    "Tus alojamientos están en buen estado",
+    "I tuoi alloggi sono in ottime condizioni"
+  ],
+  "{0} has {1} readiness blockers. Your team has a plan to get every detail right.": [
+    "{0} tiene {1} bloqueos de preparación. Tu equipo tiene un plan para cuidar cada detalle.",
+    "{0} ha {1} blocchi di preparazione. Il tuo team ha un piano per curare ogni dettaglio."
+  ],
+  "The selected homes have complete evidence for readiness.": [
+    "Los alojamientos seleccionados tienen toda la evidencia de preparación.",
+    "Gli alloggi selezionati hanno tutte le evidenze di preparazione."
+  ],
+  "FINANCE AGENT": ["AGENTE DE FINANZAS", "AGENTE FINANZIARIO"],
+  "One decision. A smoother stay.": [
+    "Una decisión. Una estancia más tranquila.",
+    "Una decisione. Un soggiorno più sereno."
+  ],
+  "Your approval inbox is clear": [
+    "Tu bandeja de aprobaciones está vacía",
+    "La casella delle approvazioni è vuota"
+  ],
+  "{0}. Review the linked quote and evidence, then let your team get to work.": [
+    "{0}. Revisa el presupuesto y las evidencias vinculadas; después, deja trabajar a tu equipo.",
+    "{0}. Esamina preventivo ed evidenze collegate, poi lascia lavorare il tuo team."
+  ],
+  "Every decision is saved with its evidence and a local audit record.": [
+    "Cada decisión se guarda con sus evidencias y un registro local de auditoría.",
+    "Ogni decisione è salvata con le evidenze e un record di audit locale."
+  ],
+  "Mock supplier quote · approval schedules work": [
+    "Presupuesto simulado · aprobar programa el trabajo",
+    "Preventivo simulato · l’approvazione programma il lavoro"
+  ],
+  "A portfolio with perspective": [
+    "Una cartera con perspectiva",
+    "Un portafoglio con prospettiva"
+  ],
+  "Booked accommodation · selected reporting period · demo FX": [
+    "Alojamiento reservado · período seleccionado · cambio de demo",
+    "Soggiorni prenotati · periodo selezionato · cambio demo"
+  ],
+  "Reports": ["Informes", "Report"],
+  "Across your selected homes": [
+    "En los alojamientos seleccionados",
+    "Negli alloggi selezionati"
+  ],
+  "Three countries. One collection.": [
+    "Tres países. Una colección.",
+    "Tre paesi. Una collezione."
+  ],
+  "Select a country to explore its homes": [
+    "Elige un país para explorar sus alojamientos",
+    "Scegli un paese per esplorarne gli alloggi"
+  ],
+  "United Kingdom": ["Reino Unido", "Regno Unito"],
+  "homes ·": ["alojamientos ·", "alloggi ·"],
+  "Observations, decisions, and verified actions": [
+    "Observaciones, decisiones y acciones verificadas",
+    "Osservazioni, decisioni e azioni verificate"
+  ],
+  "No open tasks due today.": [
+    "No hay tareas abiertas para hoy.",
+    "Nessuna attività aperta per oggi."
+  ],
+  "View all tasks": ["Ver todas las tareas", "Vedi tutte le attività"],
+  "Every detail, accounted for.": [
+    "Cada detalle, bajo control.",
+    "Ogni dettaglio, sotto controllo."
+  ],
+  "A home is ready when the evidence says so.": [
+    "Un alojamiento está listo cuando lo demuestran las evidencias.",
+    "Un alloggio è pronto quando lo dimostrano le evidenze."
+  ],
+  "Open Demo Studio": ["Abrir Estudio de demos", "Apri Studio demo"],
+  "Active": ["Activo", "Attivo"],
+  "Risk": ["Riesgo", "Rischio"],
+  "Arrival at risk": ["Llegada en riesgo", "Arrivo a rischio"],
+  "Needs attention": ["Necesita atención", "Richiede attenzione"],
+  "Review repair plan": [
+    "Revisar plan de reparación",
+    "Esamina piano di riparazione"
+  ],
+  "Cost approval and verified repair are separate steps.": [
+    "Aprobar el coste y verificar la reparación son pasos distintos.",
+    "Approvazione del costo e verifica della riparazione sono passaggi distinti."
+  ],
+  "linked readiness checks": [
+    "comprobaciones de preparación vinculadas",
+    "verifiche di preparazione collegate"
+  ],
+  "Your maintenance team has prepared the quote. Authorise the cost to schedule the repair, then independently verify the work.": [
+    "El equipo de mantenimiento ha preparado el presupuesto. Autoriza el coste para programar la reparación y después verifica el trabajo de forma independiente.",
+    "Il team di manutenzione ha predisposto il preventivo. Autorizza il costo per programmare la riparazione, poi verifica il lavoro in modo indipendente."
+  ],
+  "Review the proposed change and source evidence. Approval revalidates the record before applying the local demo command.": [
+    "Revisa el cambio propuesto y las evidencias. La aprobación vuelve a validar el registro antes de aplicar el comando local de demo.",
+    "Esamina la modifica proposta e le evidenze. L’approvazione ricontrolla il record prima di applicare il comando demo locale."
+  ],
+  "Approval schedules work; repair evidence is still required.": [
+    "La aprobación programa el trabajo; sigue siendo necesaria evidencia de reparación.",
+    "L’approvazione programma il lavoro; restano necessarie le evidenze della riparazione."
+  ],
+  "Current-state checks and the same approval policy apply.": [
+    "Se comprueban el estado actual y las mismas reglas de aprobación.",
+    "Si applicano le verifiche dello stato attuale e le stesse regole di approvazione."
+  ],
+  "{0} source records linked": [
+    "{0} registros de origen vinculados",
+    "{0} record di origine collegati"
+  ],
+  "Dismissed": ["Descartado", "Ignorato"],
+  "HOME / AI INSIGHTS": ["INICIO / INFORMACIÓN IA", "HOME / INFORMAZIONI IA"],
+  "Risks, decisions, and opportunities your team found across the portfolio. Every insight comes with evidence.": [
+    "Riesgos, decisiones y oportunidades detectados por tu equipo en la cartera. Cada recomendación incluye evidencias.",
+    "Rischi, decisioni e opportunità individuati dal tuo team nel portafoglio. Ogni suggerimento include evidenze."
+  ],
+  "Agent checks evaluated against the current demo records.": [
+    "Comprobaciones de agentes evaluadas con los registros actuales de la demo.",
+    "Verifiche degli agenti valutate rispetto ai record attuali della demo."
+  ],
+  "Portfolio intelligence": [
+    "Inteligencia de la cartera",
+    "Analisi del portafoglio"
+  ],
+  "Evidence-based readiness · simulated AI": [
+    "Preparación basada en evidencias · IA simulada",
+    "Preparazione basata su evidenze · IA simulata"
+  ],
+  "THE CENTRAL MANAGER": ["COORDINADOR CENTRAL", "COORDINATORE CENTRALE"],
+  "A clear view. A calmer day.": [
+    "Una visión clara. Un día más tranquilo.",
+    "Una visione chiara. Una giornata più serena."
+  ],
+  "Looking good, together.": [
+    "Todo en orden, juntos.",
+    "Tutto in ordine, insieme."
+  ],
+  "Your team found {0} issues to look after and {1} decisions that need your judgement. Here’s where a little attention makes the biggest difference.": [
+    "Tu equipo ha detectado {0} incidencias y {1} decisiones que necesitan tu criterio. Aquí es donde tu atención puede marcar la diferencia.",
+    "Il tuo team ha trovato {0} problemi e {1} decisioni che richiedono il tuo giudizio. È qui che la tua attenzione può fare la differenza."
+  ],
+  "Your team is watching the details. Open any insight to see the source records and exactly what happens next.": [
+    "Tu equipo cuida los detalles. Abre una recomendación para consultar los registros de origen y saber qué viene después.",
+    "Il tuo team cura i dettagli. Apri un suggerimento per vedere i record di origine e sapere esattamente cosa succede dopo."
+  ],
+  "Open risks": ["Riesgos abiertos", "Rischi aperti"],
+  "Pending decisions": ["Decisiones pendientes", "Decisioni in attesa"],
+  "Completed checks": ["Comprobaciones completadas", "Verifiche completate"],
+  "Read the morning handover": [
+    "Leer el relevo de mañana",
+    "Leggi il passaggio di consegne mattutino"
+  ],
+  "Suggestions": ["Sugerencias", "Suggerimenti"],
+  "active ·": ["activas ·", "attive ·"],
+  "applied ·": ["aplicadas ·", "applicate ·"],
+  "View outcome": ["Ver resultado", "Vedi risultato"],
+  "Decision evaluated. Open the outcome to inspect the result.": [
+    "Decisión evaluada. Abre el resultado para consultar los detalles.",
+    "Decisione valutata. Apri il risultato per consultare i dettagli."
+  ],
+  "Restore": ["Restaurar", "Ripristina"],
+  "Dismiss": ["Descartar", "Ignora"],
+  "All clear here. Switch a filter to explore the other suggestions.": [
+    "Todo en orden. Cambia un filtro para explorar otras sugerencias.",
+    "Tutto in ordine. Cambia un filtro per esplorare altri suggerimenti."
+  ],
+  "Risk radar": ["Radar de riesgos", "Radar dei rischi"],
+  "Current evidence by home. Select a cell to see what needs attention.": [
+    "Evidencia actual por alojamiento. Selecciona una celda para ver qué requiere atención.",
+    "Evidenze attuali per alloggio. Seleziona una cella per vedere cosa richiede attenzione."
+  ],
+  "Repair": ["Reparación", "Riparazione"],
+  "Clear": ["Sin incidencias", "Nessun problema"],
+  "Action needed": ["Acción necesaria", "Azione necessaria"],
+  "{0} {1} risk: {2}": ["{0} {1} riesgo: {2}", "{0} {1} rischio: {2}"],
+  "Show fewer homes": ["Mostrar menos alojamientos", "Mostra meno alloggi"],
+  "View all {0} homes": [
+    "Ver los {0} alojamientos",
+    "Vedi tutti i {0} alloggi"
+  ],
+  "Ask about your portfolio": [
+    "Pregunta por tu cartera",
+    "Chiedi del tuo portafoglio"
+  ],
+  "Answers from the same records as this page.": [
+    "Respuestas basadas en los mismos registros de esta página.",
+    "Risposte basate sugli stessi record di questa pagina."
+  ],
+  "What needs my attention?": [
+    "¿Qué necesita mi atención?",
+    "Cosa richiede la mia attenzione?"
+  ],
+  "Ask portfolio question": [
+    "Enviar pregunta sobre la cartera",
+    "Invia domanda sul portafoglio"
+  ],
+  "Prepared demo responses · no live LLM": [
+    "Respuestas de demo preparadas · sin modelo de IA en directo",
+    "Risposte demo predisposte · nessun modello IA in tempo reale"
+  ],
+  "Your operating team": ["Tu equipo operativo", "Il tuo team operativo"],
+  "11 agents": ["11 agentes", "11 agenti"],
+  "Last check": ["Última comprobación", "Ultima verifica"],
+  "Waiting for the next scheduled check.": [
+    "En espera de la próxima comprobación programada.",
+    "In attesa della prossima verifica programmata."
+  ],
+  "Not yet run": ["Aún no ejecutado", "Non ancora eseguito"],
+  "Next check": ["Próxima comprobación", "Prossima verifica"],
+  "Completed / queued": ["Completadas / en cola", "Completate / in coda"],
+  "Human approval for all financial changes": [
+    "Aprobación humana para todos los cambios financieros",
+    "Approvazione umana per tutte le modifiche finanziarie"
+  ],
+  "Observe, draft, create tasks. Escalate sensitive actions.": [
+    "Observar, preparar y crear tareas. Escalar acciones sensibles.",
+    "Osserva, prepara e crea attività. Inoltra le azioni sensibili."
+  ],
+  "Check executed or safely deduplicated for this time slot.": [
+    "Comprobación ejecutada o deduplicada para esta franja horaria.",
+    "Verifica eseguita o deduplicata per questa fascia oraria."
+  ],
+  "View evidence & outcome": [
+    "Ver evidencias y resultado",
+    "Vedi evidenze e risultato"
+  ],
+  "Run check": ["Ejecutar comprobación", "Esegui verifica"],
+  "Previous month": ["Mes anterior", "Mese precedente"],
+  "Next month": ["Mes siguiente", "Mese successivo"],
+  "month overview": ["resumen mensual", "riepilogo mensile"],
+  "Next arrivals": ["Próximas llegadas", "Prossimi arrivi"],
+  "Selected homes, today": [
+    "Alojamientos seleccionados, hoy",
+    "Alloggi selezionati, oggi"
+  ],
+  "Open workload": ["Carga de trabajo abierta", "Carico di lavoro aperto"],
+  "Tasks due today": ["Tareas para hoy", "Attività per oggi"],
+  "Unverified issues": ["Incidencias sin verificar", "Problemi non verificati"],
+  "Independent evidence required": [
+    "Se requiere evidencia independiente",
+    "È richiesta un’evidenza indipendente"
+  ],
+  "Awaiting a decision": [
+    "En espera de decisión",
+    "In attesa di una decisione"
+  ],
+  "Human approval required": [
+    "Se requiere aprobación humana",
+    "È richiesta un’approvazione umana"
+  ],
+  "Evidence complete. Inspected and ready.": [
+    "Evidencias completas. Inspeccionado y listo.",
+    "Evidenze complete. Ispezionato e pronto."
+  ],
+  "{0} min to arrival": ["{0} min para la llegada", "{0} min all’arrivo"],
+  "No arrival today": ["Sin llegadas hoy", "Nessun arrivo oggi"],
+  "Unassigned": ["Sin asignar", "Non assegnato"],
+  "{0}/3 checks · {1}": ["{0}/3 comprobaciones · {1}", "{0}/3 verifiche · {1}"],
+  "photo present": ["foto registrada", "foto presente"],
+  "photo required": ["se requiere foto", "foto richiesta"],
+  "Housekeeping checks evaluated with duplicate prevention.": [
+    "Comprobaciones de limpieza evaluadas evitando duplicados.",
+    "Verifiche delle pulizie valutate evitando duplicati."
+  ],
+  "Cleaning jobs": ["Tareas de limpieza", "Attività di pulizia"],
+  "Open turnover jobs": [
+    "Limpiezas abiertas entre estancias",
+    "Pulizie aperte tra soggiorni"
+  ],
+  "Inspections needed": ["Inspecciones necesarias", "Ispezioni necessarie"],
+  "Evidence and human verification": [
+    "Evidencias y verificación humana",
+    "Evidenze e verifica umana"
+  ],
+  "Linen & welcome stock": [
+    "Ropa de cama y existencias de bienvenida",
+    "Biancheria e scorte di benvenuto"
+  ],
+  "Items below minimum": [
+    "Artículos por debajo del mínimo",
+    "Articoli sotto il minimo"
+  ],
+  "Open a task to assign a feasible person, check each requirement, attach local evidence, and verify completion.": [
+    "Abre una tarea para asignar a una persona adecuada, comprobar cada requisito, adjuntar evidencias locales y verificar su finalización.",
+    "Apri un’attività per assegnare una persona idonea, verificare ogni requisito, allegare evidenze locali e confermarne il completamento."
+  ],
+  "recorded issues": ["incidencias registradas", "problemi registrati"],
+  "Maintenance status": ["Estado del mantenimiento", "Stato manutenzione"],
+  "All stages": ["Todas las etapas", "Tutte le fasi"],
+  "maintenance issues": [
+    "incidencias de mantenimiento",
+    "problemi di manutenzione"
+  ],
+  "Verified": ["Verificado", "Verificato"],
+  "Needs independent verification": [
+    "Necesita verificación independiente",
+    "Richiede verifica indipendente"
+  ],
+  "Heating / cooling, fixtures and appliances are linked to their maintenance records.": [
+    "Climatización, instalaciones y electrodomésticos vinculados a sus registros de mantenimiento.",
+    "Climatizzazione, impianti ed elettrodomestici collegati ai loro record di manutenzione."
+  ],
+  "General household assets": [
+    "Activos generales del alojamiento",
+    "Beni generali dell’alloggio"
+  ],
+  "· fictional asset register": [
+    "· registro ficticio de activos",
+    "· registro fittizio dei beni"
+  ],
+  "stock items": ["artículos de inventario", "articoli di magazzino"],
+  "Receipt recorded. Available stock updated once.": [
+    "Recepción registrada. Existencias disponibles actualizadas una sola vez.",
+    "Ricezione registrata. Scorte disponibili aggiornate una sola volta."
+  ],
+  "Purchase request sent to the approval inbox.": [
+    "Solicitud de compra enviada a la bandeja de aprobaciones.",
+    "Richiesta d’acquisto inviata alla casella delle approvazioni."
+  ],
+  "Fictional supplier · no external contact": [
+    "Proveedor ficticio · sin contacto externo",
+    "Fornitore fittizio · nessun contatto esterno"
+  ],
+  "Service area:": ["Zona de servicio:", "Zona di servizio:"],
+  ". Linen, welcome kits and replenishment. Prepared supplier comparison, not a live quote.": [
+    ". Ropa de cama, kits de bienvenida y reposición. Comparación de proveedores preparada, no es un presupuesto real.",
+    ". Biancheria, kit di benvenuto e rifornimenti. Confronto fornitori predisposto, non è un preventivo reale."
+  ],
+  "Standard · 3 days": ["Estándar · 3 días", "Standard · 3 giorni"],
+  "/ unit": ["/ unidad", "/ unità"],
+  "Priority · 1 day": ["Prioritario · 1 día", "Prioritario · 1 giorno"],
+  "Review stock & purchase": [
+    "Revisar existencias y compra",
+    "Esamina scorte e acquisto"
+  ],
+  "Shift": ["Turno", "Turno"],
+  "Skills": ["Habilidades", "Competenze"],
+  "Today’s workload": ["Carga de trabajo de hoy", "Carico di lavoro di oggi"],
+  "/ 4 tasks": ["/ 4 tareas", "/ 4 attività"],
+  "Open assignments": ["Asignaciones abiertas", "Assegnazioni aperte"],
+  "Select a task for assignment and conflict feedback.": [
+    "Selecciona una tarea para asignarla y ver posibles conflictos.",
+    "Seleziona un’attività per l’assegnazione e la verifica dei conflitti."
+  ],
+  "Search properties": ["Buscar alojamientos", "Cerca alloggi"],
+  "Find your next favourite home…": [
+    "Encuentra tu próximo alojamiento favorito…",
+    "Trova il tuo prossimo alloggio preferito…"
+  ],
+  "Property type": ["Tipo de alojamiento", "Tipo di alloggio"],
+  "Readiness status": ["Estado de preparación", "Stato di preparazione"],
+  "All readiness states": [
+    "Todos los estados de preparación",
+    "Tutti gli stati di preparazione"
+  ],
+  "Grid view": ["Vista de tarjetas", "Vista a schede"],
+  "List view": ["Vista de lista", "Vista elenco"],
+  "FICTIONAL HOME · ILLUSTRATION": [
+    "ALOJAMIENTO FICTICIO · ILUSTRACIÓN",
+    "ALLOGGIO FITTIZIO · ILLUSTRAZIONE"
+  ],
+  "/ night": ["/ noche", "/ notte"],
+  "Reservation status": ["Estado de la reserva", "Stato prenotazione"],
+  "All statuses": ["Todos los estados", "Tutti gli stati"],
+  "Previous fortnight": ["Quincena anterior", "Quindicina precedente"],
+  "Next fortnight": ["Quincena siguiente", "Quindicina successiva"],
+  "Each cell is one night. Click a stay to inspect it, or an empty night for reservation and availability controls.": [
+    "Cada celda es una noche. Selecciona una estancia para consultarla o una noche vacía para reservar y gestionar disponibilidad.",
+    "Ogni cella è una notte. Seleziona un soggiorno per consultarlo oppure una notte vuota per prenotare e gestire la disponibilità."
+  ],
+  "Direct · simulated": ["Directo · simulado", "Diretto · simulato"],
+  "OTA · simulated": ["Plataformas · simulado", "Piattaforme · simulato"],
+  "Unshaded nights are available": [
+    "Las noches sin sombreado están disponibles",
+    "Le notti senza sfondo sono disponibili"
+  ],
+  "Inbox channel": ["Canal de la bandeja", "Canale della casella"],
+  "All simulated channels": [
+    "Todos los canales simulados",
+    "Tutti i canali simulati"
+  ],
+  "· Simulated": ["· Simulado", "· Simulato"],
+  "Reservation": ["Reserva", "Prenotazione"],
+  "Prepared demo draft": [
+    "Borrador de demo preparado",
+    "Bozza demo predisposta"
+  ],
+  "Local outbound message": [
+    "Mensaje saliente local",
+    "Messaggio in uscita locale"
+  ],
+  "Message evaluated against policy. Review the approval inbox if required.": [
+    "Mensaje evaluado según las reglas. Consulta la bandeja de aprobaciones si es necesario.",
+    "Messaggio valutato secondo le regole. Consulta la casella delle approvazioni se necessario."
+  ],
+  "Prepared templates · no live translation": [
+    "Plantillas preparadas · sin traducción en directo",
+    "Modelli predisposti · nessuna traduzione in tempo reale"
+  ],
+  "A contextual reply was prepared from the current property state.": [
+    "Respuesta contextual preparada a partir del estado actual del alojamiento.",
+    "Risposta contestuale predisposta dallo stato attuale dell’alloggio."
+  ],
+  "Draft {0} reply": ["Preparar respuesta en {0}", "Prepara risposta in {0}"],
+  "Spanish demo reply prepared.": [
+    "Respuesta de demo en español preparada.",
+    "Risposta demo in spagnolo predisposta."
+  ],
+  "Italian demo reply prepared.": [
+    "Respuesta de demo en italiano preparada.",
+    "Risposta demo in italiano predisposta."
+  ],
+  "Follow up with {0}": ["Hacer seguimiento con {0}", "Segui {0}"],
+  "Guest follow-up task created or safely reused.": [
+    "Tarea de seguimiento creada o reutilizada sin duplicados.",
+    "Attività di seguito creata o riutilizzata senza duplicati."
+  ],
+  "Service task": ["Tarea de servicio", "Attività di assistenza"],
+  "· Sentiment:": ["· Sentimiento:", "· Sentimento:"],
+  "· Assigned:": ["· Asignado a:", "· Assegnato a:"],
+  "Market": ["Mercado", "Mercato"],
+  "Market selection": ["Selección de mercado", "Selezione mercato"],
+  "Market, language and currency": [
+    "Mercado, idioma y moneda",
+    "Mercato, lingua e valuta"
+  ],
+  "Automatic — use my location": [
+    "Automático — usar mi ubicación",
+    "Automatico — usa la mia posizione"
+  ],
+  "Close market preferences": [
+    "Cerrar preferencias de mercado",
+    "Chiudi preferenze mercato"
+  ],
+  "Preferred interface language": [
+    "Idioma de interfaz preferido",
+    "Lingua dell’interfaccia preferita"
+  ],
+  "Preferred display currency": [
+    "Moneda de visualización preferida",
+    "Valuta di visualizzazione preferita"
+  ],
+  "United Kingdom · GB": ["Reino Unido · GB", "Regno Unito · GB"],
+  "Spain · ES": ["España · ES", "Spagna · ES"],
+  "Italy · IT": ["Italia · IT", "Italia · IT"],
+  "British English": ["Inglés británico", "Inglese britannico"],
+  "Detecting market…": ["Detectando mercado…", "Rilevamento mercato…"],
+  "Market selected by this link.": [
+    "Mercado seleccionado por este enlace.",
+    "Mercato selezionato da questo link."
+  ],
+  "Your deliberate preferences are saved on this browser.": [
+    "Tus preferencias manuales se guardan en este navegador.",
+    "Le tue preferenze manuali sono salvate in questo browser."
+  ],
+  "Automatic selection. You can change it at any time.": [
+    "Selección automática. Puedes cambiarla cuando quieras.",
+    "Selezione automatica. Puoi modificarla in qualsiasi momento."
+  ],
+  "Demo FX: €1 = £0.86. Transaction currencies stay unchanged.": [
+    "CAMBIO DEMO: 1 € = 0,86 £. Las monedas de las transacciones no cambian.",
+    "CAMBIO DEMO: 1 € = 0,86 £. Le valute delle transazioni restano invariate."
+  ],
+  "Display totals — converted at DEMO FX": [
+    "Totales de visualización — convertidos al cambio de demo",
+    "Totali di visualizzazione — convertiti al cambio demo"
+  ],
+  "Original transaction currencies and native ledgers stay unchanged.": [
+    "Las monedas originales y los libros por moneda no cambian.",
+    "Valute originali e registri per valuta restano invariati."
+  ],
+  "of": ["de", "di"],
+  "homes": ["alojamientos", "alloggi"],
+  "bedrooms": ["dormitorios", "camere"],
+  "guests": ["huéspedes", "ospiti"],
+  "records": ["registros", "record"],
+  "risks": ["riesgos", "rischi"],
+  "decisions": ["decisiones", "decisioni"],
+  "dismissed": ["descartadas", "ignorate"],
+  "applied": ["aplicadas", "applicate"],
+  "Forecast": ["Previsión", "Previsione"],
+  "Assumption": ["Supuesto", "Ipotesi"],
+  "Hypothesis": ["Hipótesis", "Ipotesi"],
+  "Measurement": ["Medición", "Misurazione"],
+  "Comment": ["Comentario", "Commento"],
+  "bookings": ["reservas", "prenotazioni"],
+  "Guest-ready": ["Listo para huéspedes", "Pronto per gli ospiti"],
+  "GBP": ["GBP", "GBP"],
+  "EUR": ["EUR", "EUR"],
+  "UK": ["Reino Unido", "Regno Unito"],
+  "all amounts": ["todos los importes", "tutti gli importi"],
+  "Currency": ["Moneda", "Valuta"],
+  "Gross": ["Bruto", "Lordo"],
+  "Tax": ["Impuestos", "Imposte"],
+  "Expenses": ["Gastos", "Spese"],
+  "Percentage": ["Porcentaje", "Percentuale"],
+  "Notes": ["Notas", "Note"],
+  "Reason": ["Motivo", "Motivo"],
+  "risk": ["riesgo", "rischio"],
+  "readiness": ["preparación", "preparazione"],
+  "Decisions": ["Decisiones", "Decisioni"],
+  "Risks": ["Riesgos", "Rischi"],
+  "Language": ["Idioma", "Lingua"],
+  "Unknown scenario": ["Escenario desconocido", "Scenario sconosciuto"],
+  "Spanish": ["español", "spagnolo"],
+  "Italian": ["italiano", "italiano"],
+  "Search {0}": ["Buscar {0}", "Cerca {0}"],
+  "Show {0}": ["Mostrar {0}", "Mostra {0}"],
+  "Dismiss {0}": ["Descartar {0}", "Ignora {0}"],
+  "Restore {0}": ["Restaurar {0}", "Ripristina {0}"],
+  "Expand {0}": ["Ampliar {0}", "Espandi {0}"],
+  "Approve {0}": ["Aprobar {0}", "Approva {0}"],
+  "{0} linked readiness checks": [
+    "{0} comprobaciones vinculadas de preparación",
+    "{0} verifiche di preparazione collegate"
+  ],
+  "{0} readiness": ["Preparación de {0}", "Preparazione di {0}"],
+  "{0} maintenance": ["Mantenimiento de {0}", "Manutenzione di {0}"],
+  "{0} guests": ["Huéspedes de {0}", "Ospiti di {0}"],
+  "{0} finance": ["Finanzas de {0}", "Finanze di {0}"],
+  "agents": ["agentes", "agenti"],
+  "local": ["hora local", "ora locale"],
+  "statement": ["liquidación", "rendiconto"],
+  "Please complete this field.": [
+    "Completa este campo.",
+    "Compila questo campo."
+  ],
+  "Please enter a valid value.": [
+    "Introduce un valor válido.",
+    "Inserisci un valore valido."
+  ],
+  "The value is below the allowed minimum.": [
+    "El valor es inferior al mínimo permitido.",
+    "Il valore è inferiore al minimo consentito."
+  ],
+  "The value exceeds the allowed maximum.": [
+    "El valor supera el máximo permitido.",
+    "Il valore supera il massimo consentito."
+  ],
+  "Please use a valid increment.": [
+    "Usa un incremento válido.",
+    "Usa un incremento valido."
+  ],
+  "Please use the requested format.": [
+    "Usa el formato solicitado.",
+    "Usa il formato richiesto."
+  ],
+  "Please check this value.": [
+    "Revisa este valor.",
+    "Controlla questo valore."
+  ],
+  "Prepared demo bedroom evidence · illustration": [
+    "Evidencia del dormitorio · ilustración de demo",
+    "Prova della camera · illustrazione demo"
+  ],
+  "{0}: {1}. Readiness is derived from the following evidence: {2}": [
+    "{0}: {1}. La preparación se determina a partir de estas evidencias: {2}",
+    "{0}: {1}. La preparazione è determinata dalle seguenti prove: {2}"
+  ],
+  "Readiness is derived from the following evidence: {0}": [
+    "La preparación se determina a partir de estas evidencias: {0}",
+    "La preparazione è determinata dalle seguenti prove: {0}"
+  ],
+  "{0}: {1}": ["{0}: {1}", "{0}: {1}"],
+  "{0} ({1})": ["{0} ({1})", "{0} ({1})"],
+  "{0} {1} → {2}": ["{0} {1} → {2}", "{0} {1} → {2}"],
+  "Owner payable for the filtered period is {0} (display conversion). Native ledgers: {1}": [
+    "El importe a liquidar al propietario en el período filtrado es {0} (conversión para visualización). Libros en moneda original: {1}",
+    "L’importo da liquidare al proprietario per il periodo filtrato è {0} (conversione per la visualizzazione). Registri in valuta originale: {1}"
+  ],
+  "maximum": ["máximo", "massimo"],
+  "invoices": ["facturas", "fatture"],
+  "approval": ["aprobación", "approvazione"],
+  "GBP {0}": ["GBP {0}", "GBP {0}"],
+  "EUR {0}": ["EUR {0}", "EUR {0}"],
+  "I found an available inspector with the right service area. Assignment will revalidate shift capacity. {0} → {1}": [
+    "He encontrado una persona disponible con la zona de servicio adecuada. La asignación volverá a validar la capacidad del turno. {0} → {1}",
+    "Ho trovato una persona disponibile con la zona di servizio corretta. L’assegnazione verificherà di nuovo la capacità del turno. {0} → {1}"
+  ],
+  "Your home at {0} is inspected and ready. Self check-in from 15:00. Demo access code: DEMO-ONLY. We look forward to welcoming you.": [
+    "Su alojamiento {0} está inspeccionado y listo. Entrada autónoma desde las 15:00. Código de demostración: DEMO-ONLY. ¡Le esperamos!",
+    "La vostra casa {0} è stata ispezionata ed è pronta. Check-in autonomo dalle 15:00. Codice demo: DEMO-ONLY. Vi aspettiamo!"
+  ]
+}

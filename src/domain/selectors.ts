@@ -1,3 +1,4 @@
+import { localeFor } from "../localization/preferences";
 import type { State, Filters, Property, Currency, Booking } from "./types";
 import { day, FX_EUR_GBP } from "./seed";
 export const activeBooking = (b: Booking) => b.status !== "Cancelled";
@@ -43,15 +44,14 @@ export function money(
   language = "en",
   compact = false,
 ) {
-  return new Intl.NumberFormat(
-    language === "en" ? "en-GB" : language === "es" ? "es-ES" : "it-IT",
-    {
-      style: "currency",
-      currency,
-      maximumFractionDigits: compact ? 0 : 2,
-      notation: compact ? "compact" : "standard",
-    },
-  ).format(amount / 100);
+  return new Intl.NumberFormat(localeFor(language), {
+    style: "currency",
+    currencyDisplay: "narrowSymbol",
+    useGrouping: "always",
+    currency,
+    maximumFractionDigits: compact ? 0 : 2,
+    notation: compact ? "compact" : "standard",
+  }).format(amount / 100);
 }
 export function ledger(
   s: State,
@@ -313,14 +313,11 @@ export function dateTime(
   language = "en",
   timezone = "Europe/London",
 ) {
-  return new Intl.DateTimeFormat(
-    language === "en" ? "en-GB" : language === "es" ? "es-ES" : "it-IT",
-    {
-      day: "numeric",
-      month: "short",
-      hour: "2-digit",
-      minute: "2-digit",
-      timeZone: timezone,
-    },
-  ).format(new Date(date));
+  return new Intl.DateTimeFormat(localeFor(language), {
+    day: "numeric",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: timezone,
+  }).format(new Date(date));
 }

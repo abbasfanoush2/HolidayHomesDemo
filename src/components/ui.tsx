@@ -1,3 +1,4 @@
+import { localeFor } from "../localization/preferences";
 import {
   useEffect,
   useMemo,
@@ -143,18 +144,17 @@ export function Tabs({
   return (
     <div className={`tabs ${className}`}>
       {Children.map(translated(children, state.language), (child) => {
-        if (
-          !isValidElement<{ className?: string; children?: ReactNode }>(
-            child,
-          ) ||
-          !child.props.className?.split(" ").includes("selected")
-        )
-          return child;
-        return cloneElement(
-          child,
-          {},
+        type TabProps = {
+          className?: string;
+          children?: ReactNode;
+          original?: { className?: string; children?: ReactNode };
+        };
+        if (!isValidElement<TabProps>(child)) return child;
+        const props = child.props.original || child.props;
+        if (!props.className?.split(" ").includes("selected")) return child;
+        const content = (
           <>
-            {child.props.children}
+            {props.children}
             <motion.span
               className="tab-active-line"
               layoutId={`tab-${id}`}
@@ -164,8 +164,12 @@ export function Tabs({
               }}
               aria-hidden="true"
             />
-          </>,
+          </>
         );
+        // Intrinsic elements carry their canonical props through the locale runtime.
+        return child.props.original
+          ? cloneElement(child, { original: { ...props, children: content } })
+          : cloneElement(child, {}, content);
       })}
     </div>
   );
@@ -213,7 +217,9 @@ export function Table<T extends { id: string }>({
     const data = rows.filter(
       (r) =>
         !query ||
-        Object.values(r).join(" ").toLowerCase().includes(query.toLowerCase()),
+        `${Object.values(r).join(" ")} ${phrase(Object.values(r).join(" · "), state.language)}`
+          .toLowerCase()
+          .includes(query.toLowerCase()),
     );
     const col = columns.find((c) => c.key === sort.key);
     if (col?.sort)
@@ -223,7 +229,7 @@ export function Table<T extends { id: string }>({
         return (x < y ? -1 : x > y ? 1 : 0) * (sort.asc ? 1 : -1);
       });
     return data;
-  }, [rows, query, columns, sort]);
+  }, [rows, query, columns, sort, state.language]);
   const pages = Math.max(1, Math.ceil(result.length / pageSize)),
     safePage = Math.min(page, pages - 1);
   return (
@@ -243,7 +249,7 @@ export function Table<T extends { id: string }>({
             />
           </label>
           <span>
-            {result.length.toLocaleString()} {label}
+            {result.length.toLocaleString(localeFor(state.language))} {label}
           </span>
         </div>
       )}
@@ -345,17 +351,33 @@ export function Table<T extends { id: string }>({
     </div>
   );
 }
-export function exportCsv(filename: string, rows: Record<string, unknown>[]) {
-  const keys = Object.keys(rows[0] || {}),
-    q = (v: unknown) =>
+export function exportCsv(
+  filename: string,
+  rows: Record<string, unknown>[],
+  language: "en" | "es" | "it" = "en",
+) {
+  const keys = Object.keys(rows[0] || {});
+  const separator = language === "en" ? "," : ";";
+  const q = (value: unknown) => {
+    const text =
+      typeof value === "number"
+        ? new Intl.NumberFormat(localeFor(language), {
+            useGrouping: false,
+            maximumFractionDigits: 20,
+          }).format(value)
+        : phrase(String(value ?? ""), language);
+    return (
       '"' +
-      String(v ?? "")
-        .replace(/"/g, '""')
-        .replace(/^[=+@-]/, "'$&") +
-      '"';
+      (typeof value === "string"
+        ? text.replace(/^[=+@-]/, "'$&")
+        : text
+      ).replace(/"/g, '""') +
+      '"'
+    );
+  };
   const csv = [
-    keys.map(q).join(","),
-    ...rows.map((r) => keys.map((k) => q(r[k])).join(",")),
+    keys.map((k) => q(k.replace(/_/g, " "))).join(separator),
+    ...rows.map((r) => keys.map((k) => q(r[k])).join(separator)),
   ].join("\r\n");
   const url = URL.createObjectURL(
       new Blob(["\ufeff" + csv], { type: "text/csv;charset=utf-8;" }),
@@ -373,9 +395,11 @@ export function ExportButton({
   rows: Record<string, unknown>[];
   name: string;
 }) {
-  const { t } = useStore();
+  const { t, state } = useStore();
   return (
-    <Button onClick={() => exportCsv(`staypilot-${name}.csv`, rows)}>
+    <Button
+      onClick={() => exportCsv(`staypilot-${name}.csv`, rows, state.language)}
+    >
       <Download size={15} />
       {t("export")}
     </Button>

@@ -161,9 +161,16 @@ test("assistant actions use the same commands, preserve history, and follow coun
     "Draft a reply",
   );
   await page.getByRole("button", { name: "Close assistant" }).click();
-  await page.getByLabel("Interface language").selectOption("es");
+  await page
+    .getByRole("button", { name: "Market, language and currency", exact: true })
+    .click();
+  await page
+    .getByLabel("Interface language", { exact: true })
+    .selectOption("es");
   await expect(page.locator("h1")).toContainText("Buenos días");
-  await page.getByLabel("Interface language").selectOption("it");
+  await page
+    .getByLabel("Idioma de interfaz", { exact: true })
+    .selectOption("it");
   await expect(page.locator("h1")).toContainText("Buongiorno");
 });
 test("clock controls, pause, reset and corrupt-data recovery", async ({
